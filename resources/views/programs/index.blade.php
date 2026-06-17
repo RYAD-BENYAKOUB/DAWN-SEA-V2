@@ -77,15 +77,7 @@
                 @foreach($programs as $program)
                     <div class="ds-card ds-animate-in">
                         @php
-                            // Fallback image queries depending on title/location
-                            $imgUrl = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80';
-                            if (Str::contains(strtolower($program->title), 'sahara') || Str::contains(strtolower($program->location), 'djanet')) {
-                                $imgUrl = 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80';
-                            } elseif (Str::contains(strtolower($program->location), 'jijel') || Str::contains(strtolower($program->location), 'alger')) {
-                                $imgUrl = 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=600&q=80';
-                            } elseif (Str::contains(strtolower($program->location), 'constantine')) {
-                                $imgUrl = 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80';
-                            }
+                            $imgUrl = $program->image ? asset($program->image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80';
                         @endphp
                         <div style="position: relative;">
                             <img src="{{ $imgUrl }}" alt="{{ $program->title }}" class="ds-card-img" style="object-fit: cover;">
