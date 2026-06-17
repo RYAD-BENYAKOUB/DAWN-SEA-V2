@@ -43,50 +43,12 @@ L'identité graphique est inspirée des paysages côtiers et sahariens de l'Alg�
 
 ---
 
-## 💻 Installation et Configuration Locale
-
-### Prérequis
-- PHP 8.2+
-- Composer
-- Node.js & NPM
-- SQLite (ou autre SGBD configuré dans votre `.env`)
-
-### Étapes d'installation
-
-1. **Cloner le projet** :
-   ```bash
-   git clone <url-du-depot>
-   cd dawnsea-v2
-   ```
-
-2. **Installer les dépendances PHP et JavaScript** :
-   ```bash
-   composer install
-   npm install
-   ```
-
-3. **Configurer l'environnement** :
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
-
-4. **Initialiser la base de données et charger les données de démo** :
-   ```bash
-   php artisan migrate:fresh --seed --seeder=DemoSeeder
-   ```
-
-5. **Compiler les ressources frontend** :
-   ```bash
-   npm run build
-   ```
-
-6. **Lancer le serveur de développement** :
-   ```bash
-   php artisan serve
-   ```
-
-L'application sera accessible à l'adresse suivante : [http://127.0.0.1:8000](http://127.0.0.1:8000).
+## 🛠️ Technologies Utilisées
+- **Backend** : Laravel 12 (avec Laravel Breeze pour l'authentification et les middlewares de rôles)
+- **Base de données** : SQLite (via Eloquent ORM et Migrations)
+- **Frontend** : Blade Templates, CSS3 personnalisé (Design System Dawn & Sea), Tailwind CSS (pour les utilitaires Breeze)
+- **Interactivité & Analytics** : Alpine.js, Google Charts API (pour les graphiques d'analyse)
+- **Build system** : Vite
 
 ---
 
