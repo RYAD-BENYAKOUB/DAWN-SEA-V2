@@ -88,6 +88,37 @@ class CsvDataSeeder extends Seeder
             ]
         );
 
+        // Guide 4: Yasmine Fellahi (Discover Ed & Events)
+        $userYasmine = User::firstOrCreate(
+            ['email' => 'yasmine@example.com'],
+            [
+                'name' => 'Yasmine Fellahi',
+                'password' => Hash::make('password'),
+                'role' => 'guide',
+            ]
+        );
+        $guideYasmine = Guide::firstOrCreate(
+            ['user_id' => $userYasmine->id],
+            [
+                'bio' => 'Fondatrice de la startup Discover Ed & Events, spécialiste en tourisme éducatif et thérapeutique. Passionnée par l\'apprentissage expérientiel et le bien-être par le voyage. Découvrez mon portfolio : https://beacons.ai/discover_ed_events',
+                'phone' => '+213 555 987 654',
+                'location' => 'Alger',
+                'speciality' => 'Tourisme Éducatif & Thérapeutique',
+                'rating' => 4.95,
+                'avatar' => 'storage/guides/discover_ed_event.png',
+                'is_verified' => true,
+            ]
+        );
+
+        // Copy Yasmine's avatar image to storage
+        $guideStorageDir = public_path('storage/guides');
+        if (!is_dir($guideStorageDir)) {
+            mkdir($guideStorageDir, 0777, true);
+        }
+        if (file_exists(base_path('DATA/discover_ed_event.png'))) {
+            copy(base_path('DATA/discover_ed_event.png'), $guideStorageDir . '/discover_ed_event.png');
+        }
+
         // Ensure we have some regular travelers for favorites
         $traveler1 = User::firstOrCreate(
             ['email' => 'sara@example.com'],
@@ -175,8 +206,10 @@ class CsvDataSeeder extends Seeder
                 'rating' => 4.5
             ];
 
-            // Decide Guide based on address
-            if (Str::contains(strtolower($address), ['oran', 'tlemcen'])) {
+            // Decide Guide based on address and specific educational/therapeutic IDs
+            if (in_array((int)$id, [2, 6, 11, 14])) {
+                $guideId = $guideYasmine->id;
+            } elseif (Str::contains(strtolower($address), ['oran', 'tlemcen'])) {
                 $guideId = $guideMourad->id;
             } elseif (Str::contains(strtolower($address), ['adrar', 'béchar', 'béni abbès', 'timimoun', 'taghit'])) {
                 $guideId = $guideYacine->id;

@@ -58,9 +58,13 @@
                         </h2>
                         
                         <div style="display: flex; gap: 2rem; align-items: flex-start;">
-                            <div class="ds-sidebar-avatar-placeholder" style="width: 80px; height: 80px; font-size: 1.75rem; flex-shrink: 0;">
-                                {{ strtoupper(substr($program->guide->user->name ?? 'G', 0, 1)) }}
-                            </div>
+                            @if($program->guide->avatar)
+                                <img src="{{ asset($program->guide->avatar) }}" alt="{{ $program->guide->user->name }}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); flex-shrink: 0;">
+                            @else
+                                <div class="ds-sidebar-avatar-placeholder" style="width: 80px; height: 80px; font-size: 1.75rem; flex-shrink: 0;">
+                                    {{ strtoupper(substr($program->guide->user->name ?? 'G', 0, 1)) }}
+                                </div>
+                            @endif
                             
                             <div>
                                 <h3 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--charcoal); margin: 0 0 0.5rem 0; display: flex; align-items: center; gap: 0.75rem;">
@@ -75,7 +79,7 @@
                                 </span>
                                 
                                 <p style="font-size: 0.95rem; color: var(--charcoal-soft); line-height: 1.6; margin: 0 0 1.5rem 0;">
-                                    {{ $program->guide->bio ?? 'Aucune biographie fournie.' }}
+                                    {!! preg_replace('/(https?:\/\/[^\s]+)/', '<a href="$1" target="_blank" style="color: var(--gold); text-decoration: underline;">$1</a>', e($program->guide->bio ?? 'Aucune biographie fournie.')) !!}
                                 </p>
 
                                 @auth
