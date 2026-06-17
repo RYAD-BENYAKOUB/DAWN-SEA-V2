@@ -97,7 +97,7 @@
         <div class="ds-grid-3">
             @forelse($programs ?? [] as $program)
                 <div class="ds-card">
-                    <img src="{{ $program->image ?? 'https://images.unsplash.com/photo-1504512485720-7d83a16ee930?w=600&q=80' }}" alt="{{ $program->title }}" class="ds-card-img" loading="lazy">
+                    <img src="{{ $program->image ? asset($program->image) : 'https://images.unsplash.com/photo-1504512485720-7d83a16ee930?w=600&q=80' }}" alt="{{ $program->title }}" class="ds-card-img" loading="lazy">
                     <div class="ds-card-body">
                         <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:0.5rem;">
                             <span class="ds-badge ds-badge-taupe">{{ $program->duration ?? '3 jours' }}</span>

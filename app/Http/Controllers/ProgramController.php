@@ -107,6 +107,9 @@ class ProgramController extends Controller
         $program = new Program($validated);
         $program->guide_id = $guide->id;
         $program->is_active = true; // Active by default
+        if (isset($validated['image_url'])) {
+            $program->image = $validated['image_url'];
+        }
         $program->save();
 
         return redirect()->route('dashboard')->with('success', 'Le programme a été créé avec succès !');
@@ -151,6 +154,10 @@ class ProgramController extends Controller
 
         // If is_active is missing in request (e.g. checkbox unchecked), set to false
         $validated['is_active'] = $request->has('is_active');
+        if (array_key_exists('image_url', $validated)) {
+            $validated['image'] = $validated['image_url'];
+            unset($validated['image_url']);
+        }
 
         $program->update($validated);
 

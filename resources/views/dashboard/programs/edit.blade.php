@@ -85,7 +85,7 @@
                 <!-- Image URL (optional) -->
                 <div class="ds-input-group">
                     <x-input-label for="image_url" :value="__('URL de l\'image (optionnel)')" />
-                    <x-text-input id="image_url" name="image_url" type="url" style="margin-top: 0.25rem;" :value="old('image_url', $program->image_url)" placeholder="https://images.unsplash.com/..." />
+                    <x-text-input id="image_url" name="image_url" type="url" style="margin-top: 0.25rem;" :value="old('image_url', $program->image)" placeholder="https://images.unsplash.com/..." />
                     <x-input-error :messages="$errors->get('image_url')" style="margin-top: 0.5rem;" />
                 </div>
             </div>
