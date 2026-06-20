@@ -22,7 +22,7 @@
                 {{ __('Explorer les programmes') }}
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
-            <a href="#destinations" class="ds-btn ds-btn-secondary" style="border-color:rgba(255,255,255,0.4); color:white;">
+            <a href="{{ url('/destinations') }}" class="ds-btn ds-btn-secondary" style="border-color:rgba(255,255,255,0.4); color:white;">
                 {{ __('Nos destinations') }}
             </a>
         </div>

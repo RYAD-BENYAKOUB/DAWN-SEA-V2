@@ -27,6 +27,11 @@ class ProgramController extends Controller
             });
         }
 
+        // Location filter
+        if ($request->filled('location')) {
+            $query->where('location', 'like', '%' . $request->input('location') . '%');
+        }
+
         // Difficulty filter
         if ($request->filled('difficulty')) {
             $query->where('difficulty', $request->input('difficulty'));
