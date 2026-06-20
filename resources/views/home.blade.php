@@ -7,7 +7,7 @@
 <!-- Hero Section -->
 <section class="ds-hero" id="hero">
     <div class="ds-hero-bg">
-        <img src="https://images.unsplash.com/photo-1583521214690-73421a1829a9?w=1920&q=80" alt="Algérie côte méditerranéenne" loading="eager">
+        <img src="{{ asset('storage/images/ALG.jfif') }}" alt="Algérie côte méditerranéenne" loading="eager">
     </div>
     <div class="ds-hero-overlay"></div>
     <div class="ds-hero-content ds-animate-in">

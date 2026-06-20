@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- Hero Section -->
-<div style="background: linear-gradient(rgba(44, 44, 44, 0.4), rgba(44, 44, 44, 0.6)), url('https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; padding: 120px 0 80px; text-align: center; color: var(--white);">
+<div style="background: linear-gradient(rgba(44, 44, 44, 0.4), rgba(44, 44, 44, 0.6)), url('{{ asset('storage/images/ALG_SHRA.jfif') }}') no-repeat center center/cover; padding: 120px 0 80px; text-align: center; color: var(--white);">
     <div class="ds-container">
         <h1 style="color: var(--white); font-size: 3.5rem; font-family: var(--font-serif); margin-bottom: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
             {{ __('Nos Programmes d\'Élite') }}
