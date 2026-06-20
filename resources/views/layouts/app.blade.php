@@ -31,6 +31,7 @@
                 <ul class="ds-navbar-links" id="navbar-links">
                     <li><a href="{{ url('/') }}" class="{{ request()->is('/') ? 'active' : '' }}">{{ __('Accueil') }}</a></li>
                     <li><a href="{{ url('/programs') }}" class="{{ request()->is('programs*') ? 'active' : '' }}">{{ __('Programmes') }}</a></li>
+                    <li><a href="{{ url('/guides') }}" class="{{ request()->is('guides*') ? 'active' : '' }}">{{ __('Guides') }}</a></li>
                     <li><a href="#destinations" class="{{ request()->is('destinations*') ? 'active' : '' }}">{{ __('Destinations') }}</a></li>
                     <li><a href="#contact">{{ __('Contact') }}</a></li>
                 </ul>
@@ -67,6 +68,7 @@
             <div id="mobile-menu" class="hidden" style="padding: 1rem 0; border-top: 1px solid rgba(168,155,138,0.15);">
                 <a href="{{ url('/') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); font-size:0.9rem;">{{ __('Accueil') }}</a>
                 <a href="{{ url('/programs') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); font-size:0.9rem;">{{ __('Programmes') }}</a>
+                <a href="{{ url('/guides') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); font-size:0.9rem;">{{ __('Guides') }}</a>
                 <a href="#destinations" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); font-size:0.9rem;">{{ __('Destinations') }}</a>
                 @auth
                     <a href="{{ url('/profile') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--gold); font-weight:600; font-size:0.9rem;">{{ Auth::user()->name }}</a>
