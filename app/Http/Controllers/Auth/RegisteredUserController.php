@@ -31,15 +31,31 @@ class RegisteredUserController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
-            'name' => ['required', 'string', 'max:255'],
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'phone' => ['nullable', 'string', 'max:50'],
+            'country_of_birth' => ['nullable', 'string', 'max:255'],
+            'birth_date' => ['nullable', 'date'],
+            'avatar' => ['nullable', 'image', 'max:2048'],
             'role' => ['required', 'in:user,guide'],
         ]);
 
+        $avatarData = null;
+        if ($request->hasFile('avatar')) {
+            $avatarData = file_get_contents($request->file('avatar')->getRealPath());
+        }
+
         $user = User::create([
-            'name' => $request->name,
+            'name' => $request->first_name . ' ' . $request->last_name,
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
             'email' => $request->email,
+            'phone' => $request->phone,
+            'country_of_birth' => $request->country_of_birth,
+            'birth_date' => $request->birth_date,
+            'avatar' => $avatarData,
             'password' => Hash::make($request->password),
             'role' => $request->role,
         ]);

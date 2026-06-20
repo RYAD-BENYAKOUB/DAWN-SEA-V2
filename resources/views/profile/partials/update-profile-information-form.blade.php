@@ -3,14 +3,46 @@
         @csrf
     </form>
 
-    <form method="post" action="{{ route('profile.update') }}" style="display: flex; flex-direction: column; gap: 1.5rem;">
+    <form method="post" action="{{ route('profile.update') }}" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 1.5rem;">
         @csrf
         @method('patch')
 
+        <div style="display: flex; gap: 1rem;">
+            <div class="ds-input-group" style="flex: 1;">
+                <x-input-label for="first_name" :value="__('Prénom')" />
+                <x-text-input id="first_name" name="first_name" type="text" style="margin-top: 0.25rem;" :value="old('first_name', $user->first_name)" required autofocus autocomplete="given-name" />
+                <x-input-error style="margin-top: 0.5rem;" :messages="$errors->get('first_name')" />
+            </div>
+            <div class="ds-input-group" style="flex: 1;">
+                <x-input-label for="last_name" :value="__('Nom')" />
+                <x-text-input id="last_name" name="last_name" type="text" style="margin-top: 0.25rem;" :value="old('last_name', $user->last_name)" required autocomplete="family-name" />
+                <x-input-error style="margin-top: 0.5rem;" :messages="$errors->get('last_name')" />
+            </div>
+        </div>
+
         <div class="ds-input-group">
-            <x-input-label for="name" :value="__('Nom')" />
-            <x-text-input id="name" name="name" type="text" style="margin-top: 0.25rem;" :value="old('name', $user->name)" required autofocus autocomplete="name" />
-            <x-input-error style="margin-top: 0.5rem;" :messages="$errors->get('name')" />
+            <x-input-label for="avatar" :value="__('Photo de profil')" />
+            <input id="avatar" name="avatar" type="file" accept="image/*" class="ds-input" style="margin-top: 0.25rem; padding: 0.5rem;" />
+            <x-input-error style="margin-top: 0.5rem;" :messages="$errors->get('avatar')" />
+        </div>
+
+        <div style="display: flex; gap: 1rem;">
+            <div class="ds-input-group" style="flex: 1;">
+                <x-input-label for="phone" :value="__('Téléphone')" />
+                <x-text-input id="phone" name="phone" type="tel" style="margin-top: 0.25rem;" :value="old('phone', $user->phone)" />
+                <x-input-error style="margin-top: 0.5rem;" :messages="$errors->get('phone')" />
+            </div>
+            <div class="ds-input-group" style="flex: 1;">
+                <x-input-label for="birth_date" :value="__('Date de naissance')" />
+                <x-text-input id="birth_date" name="birth_date" type="date" style="margin-top: 0.25rem;" :value="old('birth_date', $user->birth_date)" />
+                <x-input-error style="margin-top: 0.5rem;" :messages="$errors->get('birth_date')" />
+            </div>
+        </div>
+        
+        <div class="ds-input-group">
+            <x-input-label for="country_of_birth" :value="__('Pays de naissance')" />
+            <x-text-input id="country_of_birth" name="country_of_birth" type="text" style="margin-top: 0.25rem;" :value="old('country_of_birth', $user->country_of_birth)" />
+            <x-input-error style="margin-top: 0.5rem;" :messages="$errors->get('country_of_birth')" />
         </div>
 
         <div class="ds-input-group">

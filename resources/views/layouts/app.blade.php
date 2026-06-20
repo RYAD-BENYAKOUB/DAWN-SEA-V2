@@ -33,7 +33,7 @@
                     <li><a href="{{ url('/programs') }}" class="{{ request()->is('programs*') ? 'active' : '' }}">{{ __('Programmes') }}</a></li>
                     <li><a href="{{ url('/guides') }}" class="{{ request()->is('guides*') ? 'active' : '' }}">{{ __('Guides') }}</a></li>
                     <li><a href="{{ url('/destinations') }}" class="{{ request()->is('destinations*') ? 'active' : '' }}">{{ __('Destinations') }}</a></li>
-                    <li><a href="#contact">{{ __('Contact') }}</a></li>
+                    <li><a href="{{ url('/contact') }}" class="{{ request()->is('contact*') ? 'active' : '' }}">{{ __('Contact') }}</a></li>
                 </ul>
 
                 <!-- Auth Actions -->
@@ -43,8 +43,12 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                             {{ Auth::user()->name }}
                         </a>
-                        @if(Auth::user()->isGuide())
+                        @if(Auth::user()->isAdmin())
+                            <a href="{{ route('dashboard.superadmin') }}" class="ds-btn ds-btn-primary ds-btn-sm" style="background: var(--charcoal); border-color: var(--charcoal);">{{ __('Admin') }}</a>
+                        @elseif(Auth::user()->isGuide())
                             <a href="{{ url('/dashboard') }}" class="ds-btn ds-btn-primary ds-btn-sm">{{ __('Dashboard') }}</a>
+                        @else
+                            <a href="{{ url('/dashboard') }}" class="ds-btn ds-btn-primary ds-btn-sm">{{ __('Tableau de bord') }}</a>
                         @endif
                         <form method="POST" action="{{ route('logout') }}" style="display:inline;">
                             @csrf
@@ -70,8 +74,17 @@
                 <a href="{{ url('/programs') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); font-size:0.9rem;">{{ __('Programmes') }}</a>
                 <a href="{{ url('/guides') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); font-size:0.9rem;">{{ __('Guides') }}</a>
                 <a href="{{ url('/destinations') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); font-size:0.9rem;">{{ __('Destinations') }}</a>
+                <a href="{{ url('/contact') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); font-size:0.9rem;">{{ __('Contact') }}</a>
                 @auth
                     <a href="{{ url('/profile') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--gold); font-weight:600; font-size:0.9rem;">{{ Auth::user()->name }}</a>
+                    @if(Auth::user()->isAdmin())
+                        <a href="{{ route('dashboard.superadmin') }}" style="display:block; padding:0.5rem 1rem; color:var(--charcoal-soft); text-decoration:none; font-size:0.9rem; transition:background 0.2s;">
+                            {{ __('Administration') }}
+                        </a>
+                    @endif
+                    <a href="{{ route('dashboard') }}" style="display:block; padding:0.5rem 1rem; color:var(--charcoal-soft); text-decoration:none; font-size:0.9rem; transition:background 0.2s;">
+                        {{ __('Tableau de bord') }}
+                    </a>
                 @else
                     <a href="{{ route('login') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--gold); font-weight:600; font-size:0.9rem;">{{ __('Connexion') }}</a>
                 @endauth
@@ -109,9 +122,9 @@
                         <div>
                             <h4>{{ __('Informations') }}</h4>
                             <ul>
-                                <li><a href="#">{{ __('À Propos') }}</a></li>
-                                <li><a href="#">{{ __('Conditions') }}</a></li>
-                                <li><a href="#">{{ __('Confidentialité') }}</a></li>
+                                <li><a href="{{ url('/contact') }}">{{ __('Notre Équipe') }}</a></li>
+                                <li><a href="{{ url('/contact') }}">{{ __('Contactez-nous') }}</a></li>
+                                <li><a href="#">{{ __('FAQ') }}</a></li>
                             </ul>
                         </div>
                         <div>

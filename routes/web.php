@@ -6,6 +6,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\GuideController;
 use App\Http\Controllers\DestinationController;
+use App\Http\Controllers\SuperAdminDashboardController;
+use App\Http\Controllers\UserManagementController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +23,7 @@ Route::get('/programs', [ProgramController::class, 'index'])->name('programs.ind
 Route::get('/programs/{slug}', [ProgramController::class, 'show'])->name('programs.show');
 Route::get('/guides', [GuideController::class, 'index'])->name('guides.index');
 Route::get('/destinations', [DestinationController::class, 'index'])->name('destinations.index');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
 // Authenticated Routes
 Route::middleware('auth')->group(function () {
@@ -46,6 +50,13 @@ Route::middleware(['auth', 'verified', 'role:guide'])->prefix('dashboard')->grou
         'update' => 'dashboard.programs.update',
         'destroy' => 'dashboard.programs.destroy',
     ]);
+});
+
+// Superadmin Dashboard Routes
+Route::middleware(['auth', 'verified', 'role:superadmin'])->prefix('dashboard/superadmin')->group(function () {
+    Route::get('/', [SuperAdminDashboardController::class, 'index'])->name('dashboard.superadmin');
+    Route::get('/users', [UserManagementController::class, 'index'])->name('dashboard.users.index');
+    Route::patch('/users/{user}/role', [UserManagementController::class, 'updateRole'])->name('dashboard.users.updateRole');
 });
 
 require __DIR__.'/auth.php';

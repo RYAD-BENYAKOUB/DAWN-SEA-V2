@@ -2,16 +2,21 @@
     <h2 class="ds-auth-title">{{ __('Créer un compte') }}</h2>
     <p class="ds-auth-subtitle">{{ __('Rejoignez Dawn & Sea et explorez l\'Algérie') }}</p>
 
-    <form method="POST" action="{{ route('register') }}">
+    <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
         @csrf
 
-        <!-- Name -->
-        <div class="ds-input-group">
-            <label for="name" class="ds-label">{{ __('Nom complet') }}</label>
-            <input id="name" class="ds-input @error('name') ds-input-error @enderror" type="text" name="name" value="{{ old('name') }}" required autofocus autocomplete="name" placeholder="{{ __('Votre nom') }}">
-            @error('name')
-                <p class="ds-error-text">{{ $message }}</p>
-            @enderror
+        <!-- Prénom & Nom -->
+        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="flex: 1;">
+                <label for="first_name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">{{ __('Prénom') }}</label>
+                <input id="first_name" class="ds-input" type="text" name="first_name" value="{{ old('first_name') }}" required autofocus autocomplete="given-name" placeholder="Votre prénom" />
+                <x-input-error :messages="$errors->get('first_name')" style="color: var(--error); font-size: 0.85rem; margin-top: 0.25rem;" />
+            </div>
+            <div style="flex: 1;">
+                <label for="last_name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">{{ __('Nom') }}</label>
+                <input id="last_name" class="ds-input" type="text" name="last_name" value="{{ old('last_name') }}" required autocomplete="family-name" placeholder="Votre nom" />
+                <x-input-error :messages="$errors->get('last_name')" style="color: var(--error); font-size: 0.85rem; margin-top: 0.25rem;" />
+            </div>
         </div>
 
         <!-- Email Address -->
@@ -21,6 +26,34 @@
             @error('email')
                 <p class="ds-error-text">{{ $message }}</p>
             @enderror
+        </div>
+
+        <!-- Téléphone & Date de naissance -->
+        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="flex: 1;">
+                <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">{{ __('Téléphone (Optionnel)') }}</label>
+                <input id="phone" class="ds-input" type="tel" name="phone" value="{{ old('phone') }}" autocomplete="tel" placeholder="+213..." />
+                <x-input-error :messages="$errors->get('phone')" style="color: var(--error); font-size: 0.85rem; margin-top: 0.25rem;" />
+            </div>
+            <div style="flex: 1;">
+                <label for="birth_date" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">{{ __('Date de naissance (Optionnel)') }}</label>
+                <input id="birth_date" class="ds-input" type="date" name="birth_date" value="{{ old('birth_date') }}" />
+                <x-input-error :messages="$errors->get('birth_date')" style="color: var(--error); font-size: 0.85rem; margin-top: 0.25rem;" />
+            </div>
+        </div>
+
+        <!-- Pays de naissance & Avatar -->
+        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="flex: 1;">
+                <label for="country_of_birth" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">{{ __('Pays de naissance (Optionnel)') }}</label>
+                <input id="country_of_birth" class="ds-input" type="text" name="country_of_birth" value="{{ old('country_of_birth') }}" placeholder="Ex: Algérie" />
+                <x-input-error :messages="$errors->get('country_of_birth')" style="color: var(--error); font-size: 0.85rem; margin-top: 0.25rem;" />
+            </div>
+            <div style="flex: 1;">
+                <label for="avatar" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">{{ __('Photo de profil (Optionnelle)') }}</label>
+                <input id="avatar" class="ds-input" type="file" name="avatar" accept="image/*" style="padding: 0.6rem 1rem;" />
+                <x-input-error :messages="$errors->get('avatar')" style="color: var(--error); font-size: 0.85rem; margin-top: 0.25rem;" />
+            </div>
         </div>
 
         <!-- Role Selection -->
