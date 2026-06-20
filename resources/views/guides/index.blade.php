@@ -16,7 +16,7 @@
 </div>
 
 <div class="ds-container" style="padding: 4rem 0;">
-    <div class="ds-grid">
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2.5rem;">
         @foreach($guides as $guide)
             <div class="ds-card ds-animate-in">
                 <div style="padding: 2rem; text-align: center;">
