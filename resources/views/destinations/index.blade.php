@@ -15,7 +15,7 @@
     </div>
 </div>
 
-<div class="ds-container" style="padding: 4rem 0;">
+<div class="ds-container" style="padding-top: 4rem; padding-bottom: 4rem;">
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2.5rem;">
         @foreach($destinations as $destination)
             <div class="ds-card ds-animate-in" style="overflow: hidden; border-radius: 8px;">
