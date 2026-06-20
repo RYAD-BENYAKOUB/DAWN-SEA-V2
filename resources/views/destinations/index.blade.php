@@ -18,11 +18,11 @@
 <div class="ds-container" style="padding: 4rem 0;">
     <div class="ds-grid">
         @foreach($destinations as $destination)
-            <div class="ds-card ds-animate-in">
-                <div class="ds-card-img" style="height: 200px;">
+            <div class="ds-card ds-animate-in" style="overflow: hidden; border-radius: 8px;">
+                <div style="position: relative; height: 200px; overflow: hidden;">
                     <a href="{{ url('/programs?location=' . urlencode($destination['name'])) }}">
-                        <img src="{{ $destination['image'] ? asset($destination['image']) : 'https://images.unsplash.com/photo-1583521214690-73421a1829a9?auto=format&fit=crop&w=800&q=80' }}" alt="{{ $destination['name'] }}">
-                        <div class="ds-badge" style="position: absolute; top: 1rem; left: 1rem;">{{ $destination['count'] }} programme(s)</div>
+                        <img src="{{ $destination['image'] ? asset($destination['image']) : 'https://images.unsplash.com/photo-1583521214690-73421a1829a9?auto=format&fit=crop&w=800&q=80' }}" alt="{{ $destination['name'] }}" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="ds-badge" style="position: absolute; top: 1rem; left: 1rem; z-index: 10; background: var(--gold); color: white;">{{ $destination['count'] }} programme(s)</div>
                     </a>
                 </div>
                 <div class="ds-card-content" style="text-align: center;">
