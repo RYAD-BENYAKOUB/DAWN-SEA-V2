@@ -6,10 +6,21 @@ use App\Models\Program;
 use App\Models\Visit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Str;
+use App\DTOs\Program\CreateProgramDTO;
+use App\DTOs\Program\UpdateProgramDTO;
+use App\Actions\Program\CreateProgramAction;
+use App\Actions\Program\UpdateProgramAction;
+use App\Actions\Program\DeleteProgramAction;
+use App\Exceptions\ProgramOwnershipException;
 
 class ProgramController extends Controller
 {
+    public function __construct(
+        private CreateProgramAction $createProgramAction,
+        private UpdateProgramAction $updateProgramAction,
+        private DeleteProgramAction $deleteProgramAction
+    ) {}
+
     /**
      * Display a listing of the programs (public).
      */
@@ -98,24 +109,8 @@ class ProgramController extends Controller
             return redirect()->back()->with('error', 'Profil de guide introuvable.');
         }
 
-        $validated = $request->validate([
-            'title' => 'required|string|max:255|unique:programs,title',
-            'description' => 'required|string',
-            'location' => 'required|string|max:255',
-            'duration' => 'required|string|max:255',
-            'price' => 'required|numeric|min:0',
-            'max_participants' => 'required|integer|min:1',
-            'difficulty' => 'required|in:facile,modéré,difficile',
-            'image_url' => 'nullable|url',
-        ]);
-
-        $program = new Program($validated);
-        $program->guide_id = $guide->id;
-        $program->is_active = true; // Active by default
-        if (isset($validated['image_url'])) {
-            $program->image = $validated['image_url'];
-        }
-        $program->save();
+        $dto = CreateProgramDTO::fromRequest($request);
+        $this->createProgramAction->execute($dto, $guide);
 
         return redirect()->route('dashboard')->with('success', 'Le programme a été créé avec succès !');
     }
@@ -125,11 +120,7 @@ class ProgramController extends Controller
      */
     public function edit(Program $program)
     {
-        // Authorize: ensure the program belongs to the logged-in guide
-        $guide = Auth::user()->guide;
-        if (!$guide || $program->guide_id !== $guide->id) {
-            abort(403, 'Action non autorisée.');
-        }
+        $this->authorizeGuideOwnership($program);
 
         return view('dashboard.programs.edit', compact('program'));
     }
@@ -139,32 +130,10 @@ class ProgramController extends Controller
      */
     public function update(Request $request, Program $program)
     {
-        // Authorize: ensure the program belongs to the logged-in guide
-        $guide = Auth::user()->guide;
-        if (!$guide || $program->guide_id !== $guide->id) {
-            abort(403, 'Action non autorisée.');
-        }
+        $this->authorizeGuideOwnership($program);
 
-        $validated = $request->validate([
-            'title' => 'required|string|max:255|unique:programs,title,' . $program->id,
-            'description' => 'required|string',
-            'location' => 'required|string|max:255',
-            'duration' => 'required|string|max:255',
-            'price' => 'required|numeric|min:0',
-            'max_participants' => 'required|integer|min:1',
-            'difficulty' => 'required|in:facile,modéré,difficile',
-            'image_url' => 'nullable|url',
-            'is_active' => 'boolean',
-        ]);
-
-        // If is_active is missing in request (e.g. checkbox unchecked), set to false
-        $validated['is_active'] = $request->has('is_active');
-        if (array_key_exists('image_url', $validated)) {
-            $validated['image'] = $validated['image_url'];
-            unset($validated['image_url']);
-        }
-
-        $program->update($validated);
+        $dto = UpdateProgramDTO::fromRequest($request, $program);
+        $this->updateProgramAction->execute($dto, $program);
 
         return redirect()->route('dashboard')->with('success', 'Le programme a été mis à jour avec succès !');
     }
@@ -174,14 +143,22 @@ class ProgramController extends Controller
      */
     public function destroy(Program $program)
     {
-        // Authorize: ensure the program belongs to the logged-in guide
+        $this->authorizeGuideOwnership($program);
+
+        $this->deleteProgramAction->execute($program);
+
+        return redirect()->route('dashboard')->with('success', 'Le programme a été supprimé.');
+    }
+
+    /**
+     * Ensure the logged-in user is a guide and owns the program.
+     * @throws ProgramOwnershipException
+     */
+    private function authorizeGuideOwnership(Program $program)
+    {
         $guide = Auth::user()->guide;
         if (!$guide || $program->guide_id !== $guide->id) {
-            abort(403, 'Action non autorisée.');
+            throw new ProgramOwnershipException();
         }
-
-        $program->delete();
-
-        return redirect()->route('dashboard')->with('success', 'Le programme a été supprimé avec succès !');
     }
 }

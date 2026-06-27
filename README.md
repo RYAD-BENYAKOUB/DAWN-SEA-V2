@@ -1,65 +1,104 @@
-# Dawn & Sea — Tourisme de Luxe en Algérie (V2)
+# 🌅 Dawn & Sea (V2)
 
-**Dawn & Sea** est une plateforme moderne et performante de tourisme de luxe en Algérie. Elle permet de mettre en relation des voyageurs exigeants à la recherche d'expériences uniques avec des guides locaux certifiés proposant des circuits haut de gamme (désert, patrimoine culturel, littoral).
+Bienvenue sur le dépôt officiel de **Dawn & Sea V2**, la plateforme touristique de nouvelle génération développée par **Addou Houssem** et **Mohammed Ryad Benyakoub**.
 
----
-
-## 🎨 Design System — "Luxury Saharan Coast"
-L'identité graphique est inspirée des paysages côtiers et sahariens de l'Algérie avec une orientation esthétique de luxe minimaliste :
-- **Palette de Couleurs** : 
-  - Fond Principal : Crème (`#FFF8F0`)
-  - Accent / CTA : Or chaud (`#C5A55A`)
-  - Texte secondaire / Bordures : Taupe (`#8B7D6B`)
-  - Texte Principal : Charcoal (`#2C2C2C`)
-- **Polices** :
-  - Titres : *Playfair Display* (Serif sophistiqué)
-  - Corps de texte et formulaires : *Inter* (Sans-serif lisible et moderne)
-- **Composants** : Boutons avec arrondis complets (Pill-shaped), bordures douces, effet de flou en arrière-plan (glassmorphism) sur la barre de navigation et animations de zoom douces au survol des cartes de destination.
+Cette application a pour objectif de connecter les guides touristiques en Algérie avec les voyageurs, en offrant une interface utilisateur premium, une gestion avancée des programmes et des destinations, et une architecture robuste prête à intégrer l'Intelligence Artificielle.
 
 ---
 
-## 🚀 Fonctionnalités Clés
-1. **Contrôle d'Accès par Rôles** :
-   - Rôles définis via un enum : `user` (Voyageur) et `guide` (Guide certifié).
-   - Middleware dédié `EnsureUserHasRole` protégeant les routes.
-   - Redirection automatique intelligente lors de la connexion.
-2. **Espace Voyageur** :
-   - Fiche profil et formulaires de gestion de compte re-stylisés.
-   - Galerie publique de programmes touristiques avec recherche en direct par mots-clés et filtres dynamiques (difficulté et budget).
-3. **Espace Guide (Tableau de Bord)** :
-   - Graphique analytique des visites mensuelles interactif généré avec **Google Charts**.
-   - Indice de performance clé (KPI) : Visites globales, programmes actifs, nombre de favoris reçus, note moyenne.
-   - Liste des ajouts récents aux favoris par les voyageurs.
-   - Gestionnaire complet (CRUD) des programmes de voyage (Créer, modifier, désactiver et supprimer).
+## 🛠️ Stack Technique
+
+- **Framework Backend** : [Laravel 12](https://laravel.com/)
+- **Frontend & UI** : [Tailwind CSS](https://tailwindcss.com/) (compilé via Vite)
+- **Base de données** : PostgreSQL / SQLite
+- **Stockage de Médias** : [Supabase Storage](https://supabase.com/) (intégration en cours)
+- **Authentification** : Laravel Breeze
 
 ---
 
-## 📂 Structure de Données (Base de Données)
-- **`users`** : Table étendue avec le champ `role` (`user`, `guide`).
-- **`guides`** : Profil professionnel (bio, téléphone, localisation, spécialité, note de satisfaction, statut de vérification).
-- **`programs`** : Fiches d'expériences (titre, slug unique, description, localisation, durée, prix DA, limite de participants, difficulté, statut d'activité).
-- **`favorites`** : Table de pivot (many-to-many) gérant les favoris des voyageurs.
-- **`visits`** : Journal de trafic stockant les visites de programmes pour alimenter le graphique du guide.
+## 🏗️ Architecture Logicielle (Action-Domain-Responder)
+
+Pour garantir une évolutivité maximale et la capacité d'intégration avec des serveurs MCP (Model Context Protocol) pour l'Intelligence Artificielle, le projet suit une architecture hautement découplée :
+
+- **Controllers Anémiques** : Les contrôleurs HTTP (ex: `ProgramController`) ne contiennent aucune logique métier. Ils se contentent de valider la requête et d'appeler des Actions.
+- **DTOs (Data Transfer Objects)** : Toutes les requêtes entrantes sont validées et fortement typées via des DTOs (situés dans `app/DTOs/`) avant d'être passées aux couches inférieures.
+- **Actions** : La logique métier pure (création, mise à jour, suppression, appels externes) est isolée dans des classes dédiées (situées dans `app/Actions/`) suivant le *Single Responsibility Principle*.
+- **Exceptions de Domaine** : Une gestion structurée des erreurs est en place avec des exceptions personnalisées (héritant de `app/Exceptions/BaseBusinessException.php`).
+
+> Pour plus de détails sur les normes de développement, consultez le fichier [`ARCHITECTURE_GUIDELINES.md`](ARCHITECTURE_GUIDELINES.md).
 
 ---
 
-## 🛠️ Technologies Utilisées
-- **Backend** : Laravel 12 (avec Laravel Breeze pour l'authentification et les middlewares de rôles)
-- **Base de données** : SQLite (via Eloquent ORM et Migrations)
-- **Frontend** : Blade Templates, CSS3 personnalisé (Design System Dawn & Sea), Tailwind CSS (pour les utilitaires Breeze)
-- **Interactivité & Analytics** : Alpine.js, Google Charts API (pour les graphiques d'analyse)
-- **Build system** : Vite
+## 🚀 Fonctionnalités Principales
+
+- **🧑‍💼 Espace Utilisateurs & Guides** : Inscription, rôles distincts (Utilisateur vs Guide), gestion de profil et sécurisation stricte des champs.
+- **🗺️ Programmes Touristiques** : Création, édition et suppression de programmes de voyage par les guides (Titre, Lieu, Prix, Difficulté, Durée, Limite de participants).
+- **🏖️ Destinations** : Exploration de diverses destinations algériennes.
+- **📊 Tableaux de Bord (Dashboards)** :
+  - *Guides* : Statistiques des visites de leurs programmes, gestion de leur catalogue.
+  - *SuperAdmin* : Vue globale des utilisateurs, statistiques système.
+- **📈 Tracking Analytique** : Suivi des visites par programme et statistiques temporelles fluides.
 
 ---
 
-## 🔑 Identifiants de Test (Données de démo)
+## ⚙️ Installation & Lancement Local
 
-Pour tester rapidement les différentes interfaces de l'application, connectez-vous avec les comptes suivants :
+### Pré-requis
+- PHP 8.2 ou supérieur
+- Composer
+- Node.js (v18+) & NPM
 
-### 🧔 Espace Guide (Dashboard & Analytics)
-- **Email** : `yacine@example.com`
-- **Mot de passe** : `password`
+### Étapes
 
-### 👩 Espace Voyageur (Profil & Favoris)
-- **Email** : `sara@example.com`
-- **Mot de passe** : `password`
+1. **Cloner le projet**
+   ```bash
+   git clone https://github.com/RYAD-BENYAKOUB/DAWN-SEA-V2.git
+   cd DAWN-SEA-V2
+   ```
+
+2. **Installer les dépendances PHP et Node**
+   ```bash
+   composer install
+   npm install
+   ```
+
+3. **Configuration de l'environnement**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+   *Assurez-vous de configurer votre base de données (ex: `DB_CONNECTION=sqlite`) dans le `.env`.*
+
+4. **Migrations et Seeders**
+   ```bash
+   php artisan migrate --seed
+   ```
+
+5. **Lancer les serveurs de développement**
+   Ouvrez deux terminaux et exécutez :
+   ```bash
+   # Terminal 1 : Serveur Backend Laravel
+   php artisan serve
+
+   # Terminal 2 : Compilation des assets (Vite)
+   npm run dev
+   ```
+
+---
+
+## 🤖 Préparation pour l'Intelligence Artificielle
+
+Ce dépôt intègre un dossier `app/AI/` prêt à recevoir :
+- **Serveurs MCP (Model Context Protocol)** : Pour interagir directement avec des LLM sans exposer de clés d'API dans le front-end.
+- **Moteurs de recommandation** : Pour suggérer des programmes adaptés au profil des utilisateurs.
+
+---
+
+## 🔒 Sécurité
+Une vigilance particulière a été accordée à la sécurité :
+- Protection contre l'**Escalade de privilèges** (Mass-assignment désactivé sur les rôles).
+- **Validation stricte** des payloads (Form Requests + DTOs).
+- **Dependencies** : Audits NPM et Composer automatisés.
+
+---
+*Fait avec passion pour le tourisme algérien.* 🇩🇿

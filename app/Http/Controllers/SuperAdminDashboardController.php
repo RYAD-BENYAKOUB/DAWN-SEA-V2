@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Program;
-use App\Models\Guide;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class SuperAdminDashboardController extends Controller
@@ -26,7 +26,7 @@ class SuperAdminDashboardController extends Controller
         ];
 
         // Data for Programs per Location Bar Chart
-        $programsPerLocation = Program::select('location', \DB::raw('count(*) as total'))
+        $programsPerLocation = Program::select('location', DB::raw('count(*) as total'))
                                       ->groupBy('location')
                                       ->get();
         

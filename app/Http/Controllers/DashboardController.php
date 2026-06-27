@@ -45,21 +45,7 @@ class DashboardController extends Controller
             ->select('users.name as user_name', 'programs.title as program_title')
             ->get() : collect();
 
-        // Chart data — visits per month for the last 12 months
-        $chartData = [['Mois', 'Visites']];
-        if ($guideId) {
-            $monthlyVisits = Visit::whereHas('program', fn($q) => $q->where('guide_id', $guideId))
-                ->where('visited_at', '>=', now()->subMonths(12))
-                ->selectRaw("strftime('%m', visited_at) as month, COUNT(*) as count")
-                ->groupBy('month')
-                ->orderBy('month')
-                ->pluck('count', 'month');
-
-            $months = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc'];
-            for ($i = 1; $i <= 12; $i++) {
-                $chartData[] = [$months[$i - 1], $monthlyVisits[str_pad($i, 2, '0', STR_PAD_LEFT)] ?? 0];
-            }
-        }
+        $chartData = $this->getMonthlyVisitChart($guideId);
 
         return view('dashboard.index', compact('stats', 'programs', 'recentFavorites', 'chartData'));
     }
@@ -73,23 +59,31 @@ class DashboardController extends Controller
         $guide = $user->guide;
         $guideId = $guide?->id;
 
+        return response()->json($this->getMonthlyVisitChart($guideId));
+    }
+
+    /**
+     * Get chart data for monthly visits.
+     */
+    private function getMonthlyVisitChart($guideId)
+    {
+        $chartData = [['Mois', 'Visites']];
         if (!$guideId) {
-            return response()->json([]);
+            return $chartData;
         }
 
         $monthlyVisits = Visit::whereHas('program', fn($q) => $q->where('guide_id', $guideId))
             ->where('visited_at', '>=', now()->subMonths(12))
-            ->selectRaw("strftime('%m', visited_at) as month, COUNT(*) as count")
+            ->selectRaw("TO_CHAR(visited_at, 'MM') as month, COUNT(*) as count")
             ->groupBy('month')
             ->orderBy('month')
             ->pluck('count', 'month');
 
         $months = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc'];
-        $chartData = [['Mois', 'Visites']];
         for ($i = 1; $i <= 12; $i++) {
             $chartData[] = [$months[$i - 1], $monthlyVisits[str_pad($i, 2, '0', STR_PAD_LEFT)] ?? 0];
         }
 
-        return response()->json($chartData);
+        return $chartData;
     }
 }

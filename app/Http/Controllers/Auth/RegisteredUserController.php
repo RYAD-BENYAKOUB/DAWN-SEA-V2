@@ -47,7 +47,7 @@ class RegisteredUserController extends Controller
             $avatarData = file_get_contents($request->file('avatar')->getRealPath());
         }
 
-        $user = User::create([
+        $user = new User([
             'name' => $request->first_name . ' ' . $request->last_name,
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
@@ -57,8 +57,9 @@ class RegisteredUserController extends Controller
             'birth_date' => $request->birth_date,
             'avatar' => $avatarData,
             'password' => Hash::make($request->password),
-            'role' => $request->role,
         ]);
+        $user->role = $request->role;
+        $user->save();
 
         // Auto-create guide profile if role is guide
         if ($request->role === 'guide') {
