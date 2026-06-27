@@ -1,6 +1,6 @@
 # 🌅 Dawn & Sea (V2)
 
-Bienvenue sur le dépôt officiel de **Dawn & Sea V2**, la plateforme touristique de nouvelle génération développée par **Addou Houssem** et **Mohammed Ryad Benyakoub**.
+Bienvenue sur le dépôt officiel de **Dawn & Sea V2**, la plateforme touristique de nouvelle génération développée par **Mohammed Ryad Benyakoub**.
 
 Cette application a pour objectif de connecter les guides touristiques en Algérie avec les voyageurs, en offrant une interface utilisateur premium, une gestion avancée des programmes et des destinations, et une architecture robuste prête à intégrer l'Intelligence Artificielle.
 
