@@ -75,7 +75,7 @@
         @else
             <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2.5rem; margin-bottom: 3.5rem;">
                 @foreach($programs as $program)
-                    <div class="ds-card ds-animate-in">
+                    <div class="ds-card ds-animate-in" style="display: flex; flex-direction: column; height: 100%;">
                         @php
                             $imgUrl = $program->image ? asset($program->image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80';
                         @endphp
@@ -88,7 +88,7 @@
                             </div>
                         </div>
 
-                        <div class="ds-card-body" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="ds-card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
                             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
                                 <span style="font-size: 0.8rem; color: var(--taupe); font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">
                                     {{ $program->duration }}
@@ -117,9 +117,21 @@
                                     <span style="font-size: 0.75rem; color: var(--taupe); display: block;">{{ __('À partir de') }}</span>
                                     <span class="ds-price">{{ number_format($program->price, 0, ',', ' ') }}</span> <span class="ds-price-currency">DA</span>
                                 </div>
-                                <a href="{{ route('programs.show', $program->slug) }}" class="ds-btn ds-btn-primary ds-btn-sm" style="padding: 0.6rem 1.25rem;">
-                                    {{ __('Découvrir') }}
-                                </a>
+                                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                                    @auth
+                                        @php
+                                            $isFavorited = Auth::user()->hasFavorited($program);
+                                        @endphp
+                                        <button type="button" onclick="toggleFavorite(event, '{{ $program->slug }}', this)" class="ds-btn ds-btn-ghost ds-btn-sm" style="padding: 0.6rem; color: {{ $isFavorited ? 'var(--error)' : 'var(--taupe)' }};" title="{{ __('Ajouter aux favoris') }}">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="{{ $isFavorited ? 'currentColor' : 'none' }}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                            </svg>
+                                        </button>
+                                    @endauth
+                                    <a href="{{ route('programs.show', $program->slug) }}" class="ds-btn ds-btn-primary ds-btn-sm" style="padding: 0.6rem 1.25rem;">
+                                        {{ __('Découvrir') }}
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

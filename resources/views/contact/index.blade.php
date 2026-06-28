@@ -44,7 +44,7 @@
                         $userAvatar = App\Models\User::where('email', 'ryadbenyakoub@gmail.com')->first()?->avatar;
                     @endphp
                     @if($userAvatar)
-                        <img src="data:image/jpeg;base64,{{ base64_encode($userAvatar) }}" alt="Ryad Benyakoub" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="{{ asset('storage/' . $userAvatar) }}" alt="Ryad Benyakoub" style="width: 100%; height: 100%; object-fit: cover;">
                     @else
                         <img src="https://ui-avatars.com/api/?name=Ryad+Benyakoub&background=C5A880&color=fff&size=150" alt="Ryad Benyakoub" style="width: 100%; height: 100%; object-fit: cover;">
                     @endif

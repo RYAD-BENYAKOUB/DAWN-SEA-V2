@@ -21,6 +21,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/programs', [ProgramController::class, 'index'])->name('programs.index');
 Route::get('/programs/{slug}', [ProgramController::class, 'show'])->name('programs.show');
+Route::post('/programs/{program}/favorite', [ProgramController::class, 'toggleFavorite'])
+    ->name('programs.favorite')
+    ->middleware('auth');
 Route::get('/guides', [GuideController::class, 'index'])->name('guides.index');
 Route::get('/destinations', [DestinationController::class, 'index'])->name('destinations.index');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
@@ -32,9 +35,15 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// Dashboard — redirects users to profile, guides to guide dashboard
+// Dashboard — redirects based on user role
 Route::get('/dashboard', function () {
-    if (auth()->check() && auth()->user()->isGuide()) {
+    $user = auth()->user();
+    if (!$user) return redirect()->route('login');
+
+    if ($user->isAdmin() || $user->role === 'superadmin') {
+        return redirect()->route('dashboard.superadmin');
+    }
+    if ($user->isGuide()) {
         return app(DashboardController::class)->index();
     }
     return redirect()->route('profile.edit');

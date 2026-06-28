@@ -29,14 +29,19 @@ class ProfileController extends Controller
         $user = $request->user();
         
         $validated = $request->validated();
-        $user->fill($validated);
+        $user->fill(collect($validated)->except('avatar')->toArray());
         
         if (isset($validated['first_name']) && isset($validated['last_name'])) {
             $user->name = $validated['first_name'] . ' ' . $validated['last_name'];
         }
 
         if ($request->hasFile('avatar')) {
-            $user->avatar = file_get_contents($request->file('avatar')->getRealPath());
+            // Supprimer l'ancien avatar s'il existe (vérifier que c'est un chemin texte, pas du binaire hérité)
+            if ($user->avatar && is_string($user->avatar) && !str_starts_with($user->avatar, "\xFF") && \Illuminate\Support\Facades\Storage::disk('public')->exists($user->avatar)) {
+                \Illuminate\Support\Facades\Storage::disk('public')->delete($user->avatar);
+            }
+            $path = $request->file('avatar')->store('avatars', 'public');
+            $user->avatar = $path;
         }
 
         if ($user->isDirty('email')) {

@@ -187,6 +187,8 @@
         letter-spacing: 0.02em;
         text-decoration: none;
         transition: opacity var(--transition-fast);
+        margin-right: 3rem;
+        white-space: nowrap;
     }
 
     .ds-navbar-logo:hover {

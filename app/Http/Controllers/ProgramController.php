@@ -161,4 +161,18 @@ class ProgramController extends Controller
             throw new ProgramOwnershipException();
         }
     }
+
+    /**
+     * Toggle favorite status for a program.
+     */
+    public function toggleFavorite(Program $program)
+    {
+        $user = Auth::user();
+        $user->favoritePrograms()->toggle($program->id);
+
+        return response()->json([
+            'status' => 'success',
+            'is_favorited' => $user->hasFavorited($program),
+        ]);
+    }
 }

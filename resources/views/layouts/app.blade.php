@@ -44,9 +44,11 @@
                             {{ Auth::user()->name }}
                         </a>
                         @if(Auth::user()->isAdmin())
-                            <a href="{{ route('dashboard.superadmin') }}" class="ds-btn ds-btn-primary ds-btn-sm" style="background: var(--charcoal); border-color: var(--charcoal);">{{ __('Admin') }}</a>
+                            <a href="{{ url('/dashboard') }}" class="ds-btn ds-btn-primary ds-btn-sm" style="background: var(--charcoal); border-color: var(--charcoal); color: var(--gold);">
+                                🛡️ {{ __('Tableau de bord') }}
+                            </a>
                         @elseif(Auth::user()->isGuide())
-                            <a href="{{ url('/dashboard') }}" class="ds-btn ds-btn-primary ds-btn-sm">{{ __('Dashboard') }}</a>
+                            <a href="{{ url('/dashboard') }}" class="ds-btn ds-btn-primary ds-btn-sm">{{ __('Tableau de bord') }}</a>
                         @else
                             <a href="{{ url('/dashboard') }}" class="ds-btn ds-btn-primary ds-btn-sm">{{ __('Tableau de bord') }}</a>
                         @endif
@@ -153,6 +155,47 @@
                     navbar.classList.remove('scrolled');
                 }
             });
+
+            async function toggleFavorite(event, programId, btnElement) {
+                try {
+                    // Prevent any default button action just in case
+                    if (event) event.preventDefault();
+                    
+                    const response = await fetch(`/programs/${programId}/favorite`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        const svg = btnElement.querySelector('svg');
+                        if (svg) {
+                            if (data.is_favorited) {
+                                svg.setAttribute('fill', 'currentColor');
+                                btnElement.style.color = 'var(--error)';
+                            } else {
+                                svg.setAttribute('fill', 'none');
+                                btnElement.style.color = 'var(--taupe)';
+                            }
+                        } else {
+                            console.error('SVG element not found in button.');
+                        }
+                    } else if (response.status === 401) {
+                        window.location.href = '/login';
+                    } else {
+                        const errorData = await response.text();
+                        console.error('Server error:', response.status, errorData);
+                        alert('Erreur serveur lors de l\'ajout aux favoris. Veuillez réessayer.');
+                    }
+                } catch (error) {
+                    console.error('Error toggling favorite:', error);
+                    alert('Une erreur s\'est produite. Vérifiez votre connexion.');
+                }
+            }
         </script>
 
         @stack('scripts')

@@ -44,7 +44,7 @@ class SuperAdminDashboardController extends Controller
         $recentUsers = User::orderBy('created_at', 'desc')->take(5)->get();
 
         return view('dashboard.superadmin.index', compact(
-            'totalUsers', 'totalGuides', 'totalPrograms', 
+            'totalUsers', 'totalGuides', 'totalPrograms', 'totalAdmins',
             'roleData', 'locationData', 'recentUsers'
         ));
     }

@@ -150,9 +150,21 @@
                             {{ __('Réserver cette Expérience') }}
                         </button>
                         
-                        <button class="ds-btn ds-btn-secondary" style="width: 100%; padding: 0.85rem; font-size: 0.9rem;" onclick="alert('Ajouté à vos favoris (simulation).')">
-                            ❤️ {{ __('Ajouter aux favoris') }}
-                        </button>
+                        @auth
+                            @php
+                                $isFavorited = Auth::user()->hasFavorited($program);
+                            @endphp
+                            <button type="button" onclick="toggleFavorite(event, '{{ $program->slug }}', this)" class="ds-btn ds-btn-secondary" style="width: 100%; padding: 0.85rem; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: {{ $isFavorited ? 'var(--error)' : 'var(--taupe)' }};">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="{{ $isFavorited ? 'currentColor' : 'none' }}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                                {{ __('Ajouter aux favoris') }}
+                            </button>
+                        @else
+                            <a href="{{ route('login') }}" class="ds-btn ds-btn-secondary" style="width: 100%; padding: 0.85rem; font-size: 0.9rem; text-align: center; display: block;">
+                                ❤️ {{ __('Connectez-vous pour ajouter aux favoris') }}
+                            </a>
+                        @endauth
                     </div>
                 </div>
             </div>

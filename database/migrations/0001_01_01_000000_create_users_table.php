@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('country_of_birth')->nullable();
             $table->date('birth_date')->nullable();
-            $table->binary('avatar')->nullable();
+            $table->string('avatar')->nullable();
             $table->enum('role', ['user', 'guide', 'admin', 'superadmin'])->default('user');
             $table->rememberToken();
             $table->timestamps();

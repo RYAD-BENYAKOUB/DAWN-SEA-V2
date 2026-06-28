@@ -42,9 +42,9 @@ class RegisteredUserController extends Controller
             'role' => ['required', 'in:user,guide'],
         ]);
 
-        $avatarData = null;
+        $avatarPath = null;
         if ($request->hasFile('avatar')) {
-            $avatarData = file_get_contents($request->file('avatar')->getRealPath());
+            $avatarPath = $request->file('avatar')->store('avatars', 'public');
         }
 
         $user = new User([
@@ -55,7 +55,7 @@ class RegisteredUserController extends Controller
             'phone' => $request->phone,
             'country_of_birth' => $request->country_of_birth,
             'birth_date' => $request->birth_date,
-            'avatar' => $avatarData,
+            'avatar' => $avatarPath,
             'password' => Hash::make($request->password),
         ]);
         $user->role = $request->role;
