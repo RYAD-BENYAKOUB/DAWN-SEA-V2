@@ -11,8 +11,8 @@ COPY . /var/www/html
 # Installation des dépendances avec Composer
 RUN composer install --no-dev --no-interaction --optimize-autoloader
 
-# Configuration des permissions pour Laravel
-RUN chown -R nw:nw /var/www/html/storage /var/www/html/bootstrap/cache
+# CORRECTION ICI : Utilisation de l'utilisateur nginx standard
+RUN chown -R nginx:nginx /var/www/html/storage /var/www/html/bootstrap/cache
 
 # Exposer le port par défaut de Render
 EXPOSE 80
