@@ -33,3 +33,4 @@ copy_data.php
 output.txt
 test.jpg
 DATA/
+DATA/IMG/*  
