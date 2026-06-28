@@ -32,5 +32,7 @@ create_superadmin.php
 copy_data.php
 output.txt
 test.jpg
-DATA/
-DATA/IMG/*  
+DATA/*
+!DATA/IMG/
+DATA/IMG/*
+!DATA/IMG/BDD/
