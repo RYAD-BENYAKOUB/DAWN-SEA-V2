@@ -1,18 +1,26 @@
 FROM richarvey/nginx-php-fpm:latest
 
-# Configuration de l'environnement de production
-ENV AUDIT_DATA_ALERTER=false
-ENV MIX_PROD=true
+# Variables d'environnement
 ENV WEBROOT=/var/www/html/public
+ENV PHP_ERRORS_STDERR=1
+ENV RUN_SCRIPTS=1
+ENV REAL_IP_HEADER=1
 
 # Copie du code source
 COPY . /var/www/html
 
-# Installation des dépendances avec Composer
+WORKDIR /var/www/html
+
+# Installation des dépendances Composer
 RUN composer install --no-dev --no-interaction --optimize-autoloader
 
-# CORRECTION ICI : Utilisation de l'utilisateur nginx standard
-RUN chown -R nginx:nginx /var/www/html/storage /var/www/html/bootstrap/cache
+# Génération de la clé et cache Laravel
+RUN php artisan config:clear
+RUN php artisan route:cache
+RUN php artisan view:cache
 
-# Exposer le port par défaut de Render
+# Permissions correctes
+RUN chown -R nginx:nginx /var/www/html/storage /var/www/html/bootstrap/cache
+RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+
 EXPOSE 80
