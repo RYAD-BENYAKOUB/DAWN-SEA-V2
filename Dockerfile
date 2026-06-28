@@ -9,9 +9,8 @@ COPY . /var/www/html
 
 WORKDIR /var/www/html
 
-# Installation Node.js
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get install -y nodejs
+# Installation Node.js sur Alpine
+RUN apk add --no-cache nodejs npm
 
 # Compilation Vite
 RUN npm install && npm run build && rm -rf node_modules
