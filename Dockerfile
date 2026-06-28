@@ -1,25 +1,30 @@
 FROM richarvey/nginx-php-fpm:latest
 
-# Variables d'environnement
 ENV WEBROOT=/var/www/html/public
 ENV PHP_ERRORS_STDERR=1
 ENV RUN_SCRIPTS=1
 ENV REAL_IP_HEADER=1
 
-# Copie du code source
 COPY . /var/www/html
 
 WORKDIR /var/www/html
 
-# Installation des dépendances Composer
+# Installation Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs
+
+# Compilation Vite
+RUN npm install && npm run build && rm -rf node_modules
+
+# Installation PHP
 RUN composer install --no-dev --no-interaction --optimize-autoloader
 
-# Génération de la clé et cache Laravel
+# Cache Laravel
 RUN php artisan config:clear
 RUN php artisan route:cache
 RUN php artisan view:cache
 
-# Permissions correctes
+# Permissions
 RUN chown -R nginx:nginx /var/www/html/storage /var/www/html/bootstrap/cache
 RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
