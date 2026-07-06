@@ -108,4 +108,20 @@ class User extends Authenticatable
     {
         return $this->favoritePrograms()->where('program_id', $program->id)->exists();
     }
+
+    /**
+     * Get all reviews written by this user.
+     */
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+    /**
+     * Check if the user has already reviewed a program.
+     */
+    public function hasReviewed(Program $program): bool
+    {
+        return $this->reviews()->where('program_id', $program->id)->exists();
+    }
 }

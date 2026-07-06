@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class Program extends Model
 {
@@ -69,6 +70,30 @@ class Program extends Model
     public function visits()
     {
         return $this->hasMany(Visit::class);
+    }
+
+    /**
+     * Get reviews for this program.
+     */
+    public function reviews()
+    {
+        return $this->hasMany(Review::class)->latest();
+    }
+
+    /**
+     * Get the average rating for this program.
+     */
+    public function getAverageRatingAttribute(): float
+    {
+        return round($this->reviews()->avg('rating') ?? 0, 1);
+    }
+
+    /**
+     * Get the reviews count for this program.
+     */
+    public function getReviewsCountAttribute(): int
+    {
+        return $this->reviews()->count();
     }
 
     /**

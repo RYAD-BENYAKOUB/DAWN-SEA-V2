@@ -65,7 +65,7 @@ class ProgramController extends Controller
     {
         $program = Program::where('slug', $slug)
             ->where('is_active', true)
-            ->with(['guide.user', 'guide'])
+            ->with(['guide.user', 'guide', 'reviews.user'])
             ->firstOrFail();
 
         // Record visit statistics
@@ -87,7 +87,12 @@ class ProgramController extends Controller
             ->take(3)
             ->get();
 
-        return view('programs.show', compact('program', 'relatedPrograms'));
+        // Get the authenticated user's existing review (if any)
+        $userReview = Auth::check()
+            ? $program->reviews->firstWhere('user_id', Auth::id())
+            : null;
+
+        return view('programs.show', compact('program', 'relatedPrograms', 'userReview'));
     }
 
     /**
