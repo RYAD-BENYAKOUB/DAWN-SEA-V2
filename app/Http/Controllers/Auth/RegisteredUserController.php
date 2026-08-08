@@ -38,13 +38,13 @@ class RegisteredUserController extends Controller
             'phone' => ['nullable', 'string', 'max:50'],
             'country_of_birth' => ['nullable', 'string', 'max:255'],
             'birth_date' => ['nullable', 'date'],
-            'avatar' => ['nullable', 'image', 'max:2048'],
+            'avatar' => ['nullable', 'image', 'max:2048', 'dimensions:max_width=4000,max_height=4000'],
             'role' => ['required', 'in:user,guide'],
         ]);
 
         $avatarPath = null;
         if ($request->hasFile('avatar')) {
-            $avatarPath = $request->file('avatar')->store('avatars', 'public');
+            $avatarPath = $request->file('avatar')->store('avatars', 's3');
         }
 
         $user = new User([
@@ -58,11 +58,20 @@ class RegisteredUserController extends Controller
             'avatar' => $avatarPath,
             'password' => Hash::make($request->password),
         ]);
-        $user->role = $request->role;
+        $user->role = match ($request->role) {
+            'guide' => 'guide',
+            default => 'user',
+        };
         $user->save();
 
+        $spatieRole = match ($user->role) {
+            'guide' => 'Organisateur',
+            default => 'Participant',
+        };
+        $user->assignRole($spatieRole);
+
         // Auto-create guide profile if role is guide
-        if ($request->role === 'guide') {
+        if ($user->role === 'guide') {
             $user->guide()->create([]);
         }
 

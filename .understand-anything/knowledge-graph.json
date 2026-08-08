@@ -1,0 +1,2824 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "DAWN-SEA-V2",
+    "languages": [
+      "config",
+      "css",
+      "csv",
+      "dockerfile",
+      "javascript",
+      "jfif",
+      "json",
+      "markdown",
+      "php",
+      "txt",
+      "unknown",
+      "xml"
+    ],
+    "frameworks": [
+      "Laravel",
+      "Tailwind CSS",
+      "Vite"
+    ],
+    "description": "Plateforme touristique de nouvelle génération connectant les guides en Algérie avec les voyageurs, dotée d'une interface premium et d'une architecture robuste prête pour l'IA.",
+    "analyzedAt": "2026-07-06T12:03:52.301Z",
+    "gitCommitHash": "13ab49e64a20d47cda0a422dd0db7476ca332505"
+  },
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "type": "file",
+      "name": "AuthenticatedSessionController.php",
+      "filePath": "app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "summary": "Fichier php pour AuthenticatedSessionController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "type": "file",
+      "name": "ConfirmablePasswordController.php",
+      "filePath": "app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "summary": "Fichier php pour ConfirmablePasswordController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "type": "file",
+      "name": "EmailVerificationNotificationController.php",
+      "filePath": "app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "summary": "Fichier php pour EmailVerificationNotificationController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "type": "file",
+      "name": "EmailVerificationPromptController.php",
+      "filePath": "app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "summary": "Fichier php pour EmailVerificationPromptController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/NewPasswordController.php",
+      "type": "file",
+      "name": "NewPasswordController.php",
+      "filePath": "app/Http/Controllers/Auth/NewPasswordController.php",
+      "summary": "Fichier php pour NewPasswordController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "type": "file",
+      "name": "PasswordController.php",
+      "filePath": "app/Http/Controllers/Auth/PasswordController.php",
+      "summary": "Fichier php pour PasswordController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "type": "file",
+      "name": "PasswordResetLinkController.php",
+      "filePath": "app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "summary": "Fichier php pour PasswordResetLinkController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+      "type": "file",
+      "name": "RegisteredUserController.php",
+      "filePath": "app/Http/Controllers/Auth/RegisteredUserController.php",
+      "summary": "Fichier php pour RegisteredUserController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/VerifyEmailController.php",
+      "type": "file",
+      "name": "VerifyEmailController.php",
+      "filePath": "app/Http/Controllers/Auth/VerifyEmailController.php",
+      "summary": "Fichier php pour VerifyEmailController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Controller.php",
+      "type": "file",
+      "name": "Controller.php",
+      "filePath": "app/Http/Controllers/Controller.php",
+      "summary": "Fichier php pour Controller.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "type": "file",
+      "name": "LoginRequest.php",
+      "filePath": "app/Http/Requests/Auth/LoginRequest.php",
+      "summary": "Fichier php pour LoginRequest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:routes/auth.php",
+      "type": "file",
+      "name": "auth.php",
+      "filePath": "routes/auth.php",
+      "summary": "Fichier php pour auth.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Models/User.php",
+      "type": "file",
+      "name": "User.php",
+      "filePath": "app/Models/User.php",
+      "summary": "Fichier php pour User.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/auth.php",
+      "type": "file",
+      "name": "auth.php",
+      "filePath": "config/auth.php",
+      "summary": "Fichier php pour auth.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:create_superadmin.php",
+      "type": "file",
+      "name": "create_superadmin.php",
+      "filePath": "create_superadmin.php",
+      "summary": "Fichier php pour create_superadmin.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/factories/UserFactory.php",
+      "type": "file",
+      "name": "UserFactory.php",
+      "filePath": "database/factories/UserFactory.php",
+      "summary": "Fichier php pour UserFactory.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/seeders/DatabaseSeeder.php",
+      "type": "file",
+      "name": "DatabaseSeeder.php",
+      "filePath": "database/seeders/DatabaseSeeder.php",
+      "summary": "Fichier php pour DatabaseSeeder.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/AuthenticationTest.php",
+      "type": "file",
+      "name": "AuthenticationTest.php",
+      "filePath": "tests/Feature/Auth/AuthenticationTest.php",
+      "summary": "Fichier php pour AuthenticationTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/EmailVerificationTest.php",
+      "type": "file",
+      "name": "EmailVerificationTest.php",
+      "filePath": "tests/Feature/Auth/EmailVerificationTest.php",
+      "summary": "Fichier php pour EmailVerificationTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/PasswordConfirmationTest.php",
+      "type": "file",
+      "name": "PasswordConfirmationTest.php",
+      "filePath": "tests/Feature/Auth/PasswordConfirmationTest.php",
+      "summary": "Fichier php pour PasswordConfirmationTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/PasswordResetTest.php",
+      "type": "file",
+      "name": "PasswordResetTest.php",
+      "filePath": "tests/Feature/Auth/PasswordResetTest.php",
+      "summary": "Fichier php pour PasswordResetTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/PasswordUpdateTest.php",
+      "type": "file",
+      "name": "PasswordUpdateTest.php",
+      "filePath": "tests/Feature/Auth/PasswordUpdateTest.php",
+      "summary": "Fichier php pour PasswordUpdateTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/ProfileTest.php",
+      "type": "file",
+      "name": "ProfileTest.php",
+      "filePath": "tests/Feature/ProfileTest.php",
+      "summary": "Fichier php pour ProfileTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Actions/Program/CreateProgramAction.php",
+      "type": "file",
+      "name": "CreateProgramAction.php",
+      "filePath": "app/Actions/Program/CreateProgramAction.php",
+      "summary": "Fichier php pour CreateProgramAction.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Actions/Program/DeleteProgramAction.php",
+      "type": "file",
+      "name": "DeleteProgramAction.php",
+      "filePath": "app/Actions/Program/DeleteProgramAction.php",
+      "summary": "Fichier php pour DeleteProgramAction.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Actions/Program/UpdateProgramAction.php",
+      "type": "file",
+      "name": "UpdateProgramAction.php",
+      "filePath": "app/Actions/Program/UpdateProgramAction.php",
+      "summary": "Fichier php pour UpdateProgramAction.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/DTOs/Program/CreateProgramDTO.php",
+      "type": "file",
+      "name": "CreateProgramDTO.php",
+      "filePath": "app/DTOs/Program/CreateProgramDTO.php",
+      "summary": "Fichier php pour CreateProgramDTO.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/DTOs/Program/UpdateProgramDTO.php",
+      "type": "file",
+      "name": "UpdateProgramDTO.php",
+      "filePath": "app/DTOs/Program/UpdateProgramDTO.php",
+      "summary": "Fichier php pour UpdateProgramDTO.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Exceptions/BaseBusinessException.php",
+      "type": "file",
+      "name": "BaseBusinessException.php",
+      "filePath": "app/Exceptions/BaseBusinessException.php",
+      "summary": "Fichier php pour BaseBusinessException.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Exceptions/ProgramOwnershipException.php",
+      "type": "file",
+      "name": "ProgramOwnershipException.php",
+      "filePath": "app/Exceptions/ProgramOwnershipException.php",
+      "summary": "Fichier php pour ProgramOwnershipException.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/ProgramController.php",
+      "type": "file",
+      "name": "ProgramController.php",
+      "filePath": "app/Http/Controllers/ProgramController.php",
+      "summary": "Fichier php pour ProgramController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Models/Program.php",
+      "type": "file",
+      "name": "Program.php",
+      "filePath": "app/Models/Program.php",
+      "summary": "Fichier php pour Program.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/DestinationController.php",
+      "type": "file",
+      "name": "DestinationController.php",
+      "filePath": "app/Http/Controllers/DestinationController.php",
+      "summary": "Fichier php pour DestinationController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/HomeController.php",
+      "type": "file",
+      "name": "HomeController.php",
+      "filePath": "app/Http/Controllers/HomeController.php",
+      "summary": "Fichier php pour HomeController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/PageController.php",
+      "type": "file",
+      "name": "PageController.php",
+      "filePath": "app/Http/Controllers/PageController.php",
+      "summary": "Fichier php pour PageController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/ProfileController.php",
+      "type": "file",
+      "name": "ProfileController.php",
+      "filePath": "app/Http/Controllers/ProfileController.php",
+      "summary": "Fichier php pour ProfileController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/SuperAdminDashboardController.php",
+      "type": "file",
+      "name": "SuperAdminDashboardController.php",
+      "filePath": "app/Http/Controllers/SuperAdminDashboardController.php",
+      "summary": "Fichier php pour SuperAdminDashboardController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/UserManagementController.php",
+      "type": "file",
+      "name": "UserManagementController.php",
+      "filePath": "app/Http/Controllers/UserManagementController.php",
+      "summary": "Fichier php pour UserManagementController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "type": "file",
+      "name": "ProfileUpdateRequest.php",
+      "filePath": "app/Http/Requests/ProfileUpdateRequest.php",
+      "summary": "Fichier php pour ProfileUpdateRequest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:routes/web.php",
+      "type": "file",
+      "name": "web.php",
+      "filePath": "routes/web.php",
+      "summary": "Fichier php pour web.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/DashboardController.php",
+      "type": "file",
+      "name": "DashboardController.php",
+      "filePath": "app/Http/Controllers/DashboardController.php",
+      "summary": "Fichier php pour DashboardController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/GuideController.php",
+      "type": "file",
+      "name": "GuideController.php",
+      "filePath": "app/Http/Controllers/GuideController.php",
+      "summary": "Fichier php pour GuideController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Models/Guide.php",
+      "type": "file",
+      "name": "Guide.php",
+      "filePath": "app/Models/Guide.php",
+      "summary": "Fichier php pour Guide.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Models/Visit.php",
+      "type": "file",
+      "name": "Visit.php",
+      "filePath": "app/Models/Visit.php",
+      "summary": "Fichier php pour Visit.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:copy_data.php",
+      "type": "file",
+      "name": "copy_data.php",
+      "filePath": "copy_data.php",
+      "summary": "Fichier php pour copy_data.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/seeders/CsvDataSeeder.php",
+      "type": "file",
+      "name": "CsvDataSeeder.php",
+      "filePath": "database/seeders/CsvDataSeeder.php",
+      "summary": "Fichier php pour CsvDataSeeder.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/seeders/DemoSeeder.php",
+      "type": "file",
+      "name": "DemoSeeder.php",
+      "filePath": "database/seeders/DemoSeeder.php",
+      "summary": "Fichier php pour DemoSeeder.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "resource:.dockerignore",
+      "type": "resource",
+      "name": ".dockerignore",
+      "filePath": ".dockerignore",
+      "summary": "Fichier unknown pour .dockerignore.",
+      "tags": [
+        "unknown",
+        "infra"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "resource:Dockerfile",
+      "type": "resource",
+      "name": "Dockerfile",
+      "filePath": "Dockerfile",
+      "summary": "Fichier dockerfile pour Dockerfile.",
+      "tags": [
+        "dockerfile",
+        "infra"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "config:.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": ".env.example",
+      "summary": "Fichier config pour .env.example.",
+      "tags": [
+        "config",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:ARCHITECTURE_GUIDELINES.md",
+      "type": "document",
+      "name": "ARCHITECTURE_GUIDELINES.md",
+      "filePath": "ARCHITECTURE_GUIDELINES.md",
+      "summary": "Fichier markdown pour ARCHITECTURE_GUIDELINES.md.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Fichier markdown pour README.md.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "config:composer.json",
+      "type": "config",
+      "name": "composer.json",
+      "filePath": "composer.json",
+      "summary": "Fichier json pour composer.json.",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:output.txt",
+      "type": "document",
+      "name": "output.txt",
+      "filePath": "output.txt",
+      "summary": "Fichier txt pour output.txt.",
+      "tags": [
+        "txt",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Fichier json pour package.json.",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "config:phpunit.xml",
+      "type": "config",
+      "name": "phpunit.xml",
+      "filePath": "phpunit.xml",
+      "summary": "Fichier xml pour phpunit.xml.",
+      "tags": [
+        "xml",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:.gitattributes",
+      "type": "file",
+      "name": ".gitattributes",
+      "filePath": ".gitattributes",
+      "summary": "Fichier unknown pour .gitattributes.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "Fichier unknown pour .understandignore.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "config:.understand-anything/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".understand-anything/config.json",
+      "summary": "Fichier json pour config.json.",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:app/AI/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "app/AI/README.md",
+      "summary": "Fichier markdown pour README.md.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Middleware/EnsureUserHasRole.php",
+      "type": "file",
+      "name": "EnsureUserHasRole.php",
+      "filePath": "app/Http/Middleware/EnsureUserHasRole.php",
+      "summary": "Fichier php pour EnsureUserHasRole.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Providers/AppServiceProvider.php",
+      "type": "file",
+      "name": "AppServiceProvider.php",
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "summary": "Fichier php pour AppServiceProvider.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Services/Supabase/SupabaseStorageService.php",
+      "type": "file",
+      "name": "SupabaseStorageService.php",
+      "filePath": "app/Services/Supabase/SupabaseStorageService.php",
+      "summary": "Fichier php pour SupabaseStorageService.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/View/Components/AppLayout.php",
+      "type": "file",
+      "name": "AppLayout.php",
+      "filePath": "app/View/Components/AppLayout.php",
+      "summary": "Fichier php pour AppLayout.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/View/Components/GuestLayout.php",
+      "type": "file",
+      "name": "GuestLayout.php",
+      "filePath": "app/View/Components/GuestLayout.php",
+      "summary": "Fichier php pour GuestLayout.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:artisan",
+      "type": "file",
+      "name": "artisan",
+      "filePath": "artisan",
+      "summary": "Fichier unknown pour artisan.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:bootstrap/app.php",
+      "type": "file",
+      "name": "app.php",
+      "filePath": "bootstrap/app.php",
+      "summary": "Fichier php pour app.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:bootstrap/providers.php",
+      "type": "file",
+      "name": "providers.php",
+      "filePath": "bootstrap/providers.php",
+      "summary": "Fichier php pour providers.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/app.php",
+      "type": "file",
+      "name": "app.php",
+      "filePath": "config/app.php",
+      "summary": "Fichier php pour app.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/cache.php",
+      "type": "file",
+      "name": "cache.php",
+      "filePath": "config/cache.php",
+      "summary": "Fichier php pour cache.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/database.php",
+      "type": "file",
+      "name": "database.php",
+      "filePath": "config/database.php",
+      "summary": "Fichier php pour database.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/filesystems.php",
+      "type": "file",
+      "name": "filesystems.php",
+      "filePath": "config/filesystems.php",
+      "summary": "Fichier php pour filesystems.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/logging.php",
+      "type": "file",
+      "name": "logging.php",
+      "filePath": "config/logging.php",
+      "summary": "Fichier php pour logging.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/mail.php",
+      "type": "file",
+      "name": "mail.php",
+      "filePath": "config/mail.php",
+      "summary": "Fichier php pour mail.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/queue.php",
+      "type": "file",
+      "name": "queue.php",
+      "filePath": "config/queue.php",
+      "summary": "Fichier php pour queue.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/services.php",
+      "type": "file",
+      "name": "services.php",
+      "filePath": "config/services.php",
+      "summary": "Fichier php pour services.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/session.php",
+      "type": "file",
+      "name": "session.php",
+      "filePath": "config/session.php",
+      "summary": "Fichier php pour session.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/ALG_SHRA.jfif",
+      "type": "file",
+      "name": "ALG_SHRA.jfif",
+      "filePath": "DATA/ALG_SHRA.jfif",
+      "summary": "Fichier jfif pour ALG_SHRA.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/ALG.jfif",
+      "type": "file",
+      "name": "ALG.jfif",
+      "filePath": "DATA/ALG.jfif",
+      "summary": "Fichier jfif pour ALG.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif",
+      "type": "file",
+      "name": "Erg-Chech-Aventure-dans-le-desert.jfif",
+      "filePath": "DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif",
+      "summary": "Fichier jfif pour Erg-Chech-Aventure-dans-le-desert.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif",
+      "type": "file",
+      "name": "Ksour-d-Adrar-Architecture-Saharienne.jfif",
+      "filePath": "DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif",
+      "summary": "Fichier jfif pour Ksour-d-Adrar-Architecture-Saharienne.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif",
+      "type": "file",
+      "name": "Marche-d-Adrar-Souks-et-Artisanat.jfif",
+      "filePath": "DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif",
+      "summary": "Fichier jfif pour Marche-d-Adrar-Souks-et-Artisanat.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/adrar/Marché-d-Adrar.jfif",
+      "type": "file",
+      "name": "Marché-d-Adrar.jfif",
+      "filePath": "DATA/IMG/BDD/adrar/Marché-d-Adrar.jfif",
+      "summary": "Fichier jfif pour Marché-d-Adrar.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+      "type": "file",
+      "name": "Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+      "filePath": "DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+      "summary": "Fichier jfif pour Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif",
+      "type": "file",
+      "name": "Racontes-de-Bechar-Soiree-locale.jfif",
+      "filePath": "DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif",
+      "summary": "Fichier jfif pour Racontes-de-Bechar-Soiree-locale.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif",
+      "type": "file",
+      "name": "Taghit-Magie-de-Taghit.jfif",
+      "filePath": "DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif",
+      "summary": "Fichier jfif pour Taghit-Magie-de-Taghit.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif",
+      "type": "file",
+      "name": "centre-ville-tlmcn.jfif",
+      "filePath": "DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif",
+      "summary": "Fichier jfif pour centre-ville-tlmcn.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:data:DATA/lieu.csv",
+      "type": "data",
+      "name": "lieu.csv",
+      "filePath": "DATA/lieu.csv",
+      "summary": "Fichier csv pour lieu.csv.",
+      "tags": [
+        "csv",
+        "data"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:data:DATA/recommandation.csv",
+      "type": "data",
+      "name": "recommandation.csv",
+      "filePath": "DATA/recommandation.csv",
+      "summary": "Fichier csv pour recommandation.csv.",
+      "tags": [
+        "csv",
+        "data"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "type": "file",
+      "name": "0001_01_01_000000_create_users_table.php",
+      "filePath": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "summary": "Fichier php pour 0001_01_01_000000_create_users_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+      "type": "file",
+      "name": "0001_01_01_000001_create_cache_table.php",
+      "filePath": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "summary": "Fichier php pour 0001_01_01_000001_create_cache_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "type": "file",
+      "name": "0001_01_01_000002_create_jobs_table.php",
+      "filePath": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "summary": "Fichier php pour 0001_01_01_000002_create_jobs_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0002_01_01_000000_create_guides_table.php",
+      "type": "file",
+      "name": "0002_01_01_000000_create_guides_table.php",
+      "filePath": "database/migrations/0002_01_01_000000_create_guides_table.php",
+      "summary": "Fichier php pour 0002_01_01_000000_create_guides_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0002_01_01_000001_create_programs_table.php",
+      "type": "file",
+      "name": "0002_01_01_000001_create_programs_table.php",
+      "filePath": "database/migrations/0002_01_01_000001_create_programs_table.php",
+      "summary": "Fichier php pour 0002_01_01_000001_create_programs_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0002_01_01_000002_create_favorites_table.php",
+      "type": "file",
+      "name": "0002_01_01_000002_create_favorites_table.php",
+      "filePath": "database/migrations/0002_01_01_000002_create_favorites_table.php",
+      "summary": "Fichier php pour 0002_01_01_000002_create_favorites_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0002_01_01_000003_create_visits_table.php",
+      "type": "file",
+      "name": "0002_01_01_000003_create_visits_table.php",
+      "filePath": "database/migrations/0002_01_01_000003_create_visits_table.php",
+      "summary": "Fichier php pour 0002_01_01_000003_create_visits_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:postcss.config.js",
+      "type": "file",
+      "name": "postcss.config.js",
+      "filePath": "postcss.config.js",
+      "summary": "Fichier javascript pour postcss.config.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:public/.htaccess",
+      "type": "file",
+      "name": ".htaccess",
+      "filePath": "public/.htaccess",
+      "summary": "Fichier unknown pour .htaccess.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:public/index.php",
+      "type": "file",
+      "name": "index.php",
+      "filePath": "public/index.php",
+      "summary": "Fichier php pour index.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:public/robots.txt",
+      "type": "document",
+      "name": "robots.txt",
+      "filePath": "public/robots.txt",
+      "summary": "Fichier txt pour robots.txt.",
+      "tags": [
+        "txt",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:markup:resources/css/app.css",
+      "type": "markup",
+      "name": "app.css",
+      "filePath": "resources/css/app.css",
+      "summary": "Fichier css pour app.css.",
+      "tags": [
+        "css",
+        "markup"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/js/app.js",
+      "type": "file",
+      "name": "app.js",
+      "filePath": "resources/js/app.js",
+      "summary": "Fichier javascript pour app.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/js/bootstrap.js",
+      "type": "file",
+      "name": "bootstrap.js",
+      "filePath": "resources/js/bootstrap.js",
+      "summary": "Fichier javascript pour bootstrap.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/confirm-password.blade.php",
+      "type": "file",
+      "name": "confirm-password.blade.php",
+      "filePath": "resources/views/auth/confirm-password.blade.php",
+      "summary": "Fichier php pour confirm-password.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/forgot-password.blade.php",
+      "type": "file",
+      "name": "forgot-password.blade.php",
+      "filePath": "resources/views/auth/forgot-password.blade.php",
+      "summary": "Fichier php pour forgot-password.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/login.blade.php",
+      "type": "file",
+      "name": "login.blade.php",
+      "filePath": "resources/views/auth/login.blade.php",
+      "summary": "Fichier php pour login.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/register.blade.php",
+      "type": "file",
+      "name": "register.blade.php",
+      "filePath": "resources/views/auth/register.blade.php",
+      "summary": "Fichier php pour register.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/reset-password.blade.php",
+      "type": "file",
+      "name": "reset-password.blade.php",
+      "filePath": "resources/views/auth/reset-password.blade.php",
+      "summary": "Fichier php pour reset-password.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/verify-email.blade.php",
+      "type": "file",
+      "name": "verify-email.blade.php",
+      "filePath": "resources/views/auth/verify-email.blade.php",
+      "summary": "Fichier php pour verify-email.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/application-logo.blade.php",
+      "type": "file",
+      "name": "application-logo.blade.php",
+      "filePath": "resources/views/components/application-logo.blade.php",
+      "summary": "Fichier php pour application-logo.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/auth-session-status.blade.php",
+      "type": "file",
+      "name": "auth-session-status.blade.php",
+      "filePath": "resources/views/components/auth-session-status.blade.php",
+      "summary": "Fichier php pour auth-session-status.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/danger-button.blade.php",
+      "type": "file",
+      "name": "danger-button.blade.php",
+      "filePath": "resources/views/components/danger-button.blade.php",
+      "summary": "Fichier php pour danger-button.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/dropdown-link.blade.php",
+      "type": "file",
+      "name": "dropdown-link.blade.php",
+      "filePath": "resources/views/components/dropdown-link.blade.php",
+      "summary": "Fichier php pour dropdown-link.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/dropdown.blade.php",
+      "type": "file",
+      "name": "dropdown.blade.php",
+      "filePath": "resources/views/components/dropdown.blade.php",
+      "summary": "Fichier php pour dropdown.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/input-error.blade.php",
+      "type": "file",
+      "name": "input-error.blade.php",
+      "filePath": "resources/views/components/input-error.blade.php",
+      "summary": "Fichier php pour input-error.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/input-label.blade.php",
+      "type": "file",
+      "name": "input-label.blade.php",
+      "filePath": "resources/views/components/input-label.blade.php",
+      "summary": "Fichier php pour input-label.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/modal.blade.php",
+      "type": "file",
+      "name": "modal.blade.php",
+      "filePath": "resources/views/components/modal.blade.php",
+      "summary": "Fichier php pour modal.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/nav-link.blade.php",
+      "type": "file",
+      "name": "nav-link.blade.php",
+      "filePath": "resources/views/components/nav-link.blade.php",
+      "summary": "Fichier php pour nav-link.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/primary-button.blade.php",
+      "type": "file",
+      "name": "primary-button.blade.php",
+      "filePath": "resources/views/components/primary-button.blade.php",
+      "summary": "Fichier php pour primary-button.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/responsive-nav-link.blade.php",
+      "type": "file",
+      "name": "responsive-nav-link.blade.php",
+      "filePath": "resources/views/components/responsive-nav-link.blade.php",
+      "summary": "Fichier php pour responsive-nav-link.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/secondary-button.blade.php",
+      "type": "file",
+      "name": "secondary-button.blade.php",
+      "filePath": "resources/views/components/secondary-button.blade.php",
+      "summary": "Fichier php pour secondary-button.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/text-input.blade.php",
+      "type": "file",
+      "name": "text-input.blade.php",
+      "filePath": "resources/views/components/text-input.blade.php",
+      "summary": "Fichier php pour text-input.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/contact/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/contact/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard.blade.php",
+      "type": "file",
+      "name": "dashboard.blade.php",
+      "filePath": "resources/views/dashboard.blade.php",
+      "summary": "Fichier php pour dashboard.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/dashboard/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/programs/create.blade.php",
+      "type": "file",
+      "name": "create.blade.php",
+      "filePath": "resources/views/dashboard/programs/create.blade.php",
+      "summary": "Fichier php pour create.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/programs/edit.blade.php",
+      "type": "file",
+      "name": "edit.blade.php",
+      "filePath": "resources/views/dashboard/programs/edit.blade.php",
+      "summary": "Fichier php pour edit.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/superadmin/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/dashboard/superadmin/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/users/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/dashboard/users/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/destinations/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/destinations/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/guides/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/guides/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/home.blade.php",
+      "type": "file",
+      "name": "home.blade.php",
+      "filePath": "resources/views/home.blade.php",
+      "summary": "Fichier php pour home.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/layouts/app.blade.php",
+      "type": "file",
+      "name": "app.blade.php",
+      "filePath": "resources/views/layouts/app.blade.php",
+      "summary": "Fichier php pour app.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/layouts/dashboard.blade.php",
+      "type": "file",
+      "name": "dashboard.blade.php",
+      "filePath": "resources/views/layouts/dashboard.blade.php",
+      "summary": "Fichier php pour dashboard.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/layouts/guest.blade.php",
+      "type": "file",
+      "name": "guest.blade.php",
+      "filePath": "resources/views/layouts/guest.blade.php",
+      "summary": "Fichier php pour guest.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/layouts/navigation.blade.php",
+      "type": "file",
+      "name": "navigation.blade.php",
+      "filePath": "resources/views/layouts/navigation.blade.php",
+      "summary": "Fichier php pour navigation.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/profile/edit.blade.php",
+      "type": "file",
+      "name": "edit.blade.php",
+      "filePath": "resources/views/profile/edit.blade.php",
+      "summary": "Fichier php pour edit.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "type": "file",
+      "name": "delete-user-form.blade.php",
+      "filePath": "resources/views/profile/partials/delete-user-form.blade.php",
+      "summary": "Fichier php pour delete-user-form.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/profile/partials/update-password-form.blade.php",
+      "type": "file",
+      "name": "update-password-form.blade.php",
+      "filePath": "resources/views/profile/partials/update-password-form.blade.php",
+      "summary": "Fichier php pour update-password-form.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/profile/partials/update-profile-information-form.blade.php",
+      "type": "file",
+      "name": "update-profile-information-form.blade.php",
+      "filePath": "resources/views/profile/partials/update-profile-information-form.blade.php",
+      "summary": "Fichier php pour update-profile-information-form.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/programs/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/programs/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/programs/show.blade.php",
+      "type": "file",
+      "name": "show.blade.php",
+      "filePath": "resources/views/programs/show.blade.php",
+      "summary": "Fichier php pour show.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/welcome.blade.php",
+      "type": "file",
+      "name": "welcome.blade.php",
+      "filePath": "resources/views/welcome.blade.php",
+      "summary": "Fichier php pour welcome.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:routes/console.php",
+      "type": "file",
+      "name": "console.php",
+      "filePath": "routes/console.php",
+      "summary": "Fichier php pour console.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tailwind.config.js",
+      "type": "file",
+      "name": "tailwind.config.js",
+      "filePath": "tailwind.config.js",
+      "summary": "Fichier javascript pour tailwind.config.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/RegistrationTest.php",
+      "type": "file",
+      "name": "RegistrationTest.php",
+      "filePath": "tests/Feature/Auth/RegistrationTest.php",
+      "summary": "Fichier php pour RegistrationTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/ExampleTest.php",
+      "type": "file",
+      "name": "ExampleTest.php",
+      "filePath": "tests/Feature/ExampleTest.php",
+      "summary": "Fichier php pour ExampleTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/TestCase.php",
+      "type": "file",
+      "name": "TestCase.php",
+      "filePath": "tests/TestCase.php",
+      "summary": "Fichier php pour TestCase.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Unit/ExampleTest.php",
+      "type": "file",
+      "name": "ExampleTest.php",
+      "filePath": "tests/Unit/ExampleTest.php",
+      "summary": "Fichier php pour ExampleTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "vite.config.js",
+      "summary": "Fichier javascript pour vite.config.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "AuthenticatedSessionController.php importe Controller.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "target": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "type": "imports",
+      "description": "AuthenticatedSessionController.php importe LoginRequest.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "ConfirmablePasswordController.php importe Controller.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "EmailVerificationNotificationController.php importe Controller.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "EmailVerificationPromptController.php importe Controller.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/NewPasswordController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "NewPasswordController.php importe Controller.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/NewPasswordController.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "NewPasswordController.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "PasswordController.php importe Controller.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "PasswordResetLinkController.php importe Controller.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "RegisteredUserController.php importe Controller.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "RegisteredUserController.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/VerifyEmailController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "VerifyEmailController.php importe Controller.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "type": "imports",
+      "description": "auth.php importe AuthenticatedSessionController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "type": "imports",
+      "description": "auth.php importe ConfirmablePasswordController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "type": "imports",
+      "description": "auth.php importe EmailVerificationNotificationController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "type": "imports",
+      "description": "auth.php importe EmailVerificationPromptController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/NewPasswordController.php",
+      "type": "imports",
+      "description": "auth.php importe NewPasswordController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "type": "imports",
+      "description": "auth.php importe PasswordController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "type": "imports",
+      "description": "auth.php importe PasswordResetLinkController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+      "type": "imports",
+      "description": "auth.php importe RegisteredUserController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/VerifyEmailController.php",
+      "type": "imports",
+      "description": "auth.php importe VerifyEmailController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:database/factories/UserFactory.php",
+      "type": "imports",
+      "description": "User.php importe UserFactory.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:config/auth.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "auth.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:create_superadmin.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "create_superadmin.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/factories/UserFactory.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "UserFactory.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/seeders/DatabaseSeeder.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "DatabaseSeeder.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tests/Feature/Auth/AuthenticationTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "AuthenticationTest.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tests/Feature/Auth/EmailVerificationTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "EmailVerificationTest.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tests/Feature/Auth/PasswordConfirmationTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "PasswordConfirmationTest.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tests/Feature/Auth/PasswordResetTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "PasswordResetTest.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tests/Feature/Auth/PasswordUpdateTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "PasswordUpdateTest.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:tests/Feature/ProfileTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "ProfileTest.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Actions/Program/CreateProgramAction.php",
+      "target": "file:app/DTOs/Program/CreateProgramDTO.php",
+      "type": "imports",
+      "description": "CreateProgramAction.php importe CreateProgramDTO.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Actions/Program/CreateProgramAction.php",
+      "target": "file:app/Exceptions/BaseBusinessException.php",
+      "type": "imports",
+      "description": "CreateProgramAction.php importe BaseBusinessException.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Actions/Program/CreateProgramAction.php",
+      "target": "file:app/Models/Guide.php",
+      "type": "imports",
+      "description": "CreateProgramAction.php importe Guide.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Actions/Program/CreateProgramAction.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "CreateProgramAction.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Actions/Program/DeleteProgramAction.php",
+      "target": "file:app/Exceptions/BaseBusinessException.php",
+      "type": "imports",
+      "description": "DeleteProgramAction.php importe BaseBusinessException.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Actions/Program/DeleteProgramAction.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "DeleteProgramAction.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Actions/Program/UpdateProgramAction.php",
+      "target": "file:app/DTOs/Program/UpdateProgramDTO.php",
+      "type": "imports",
+      "description": "UpdateProgramAction.php importe UpdateProgramDTO.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Actions/Program/UpdateProgramAction.php",
+      "target": "file:app/Exceptions/BaseBusinessException.php",
+      "type": "imports",
+      "description": "UpdateProgramAction.php importe BaseBusinessException.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Actions/Program/UpdateProgramAction.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "UpdateProgramAction.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/DTOs/Program/UpdateProgramDTO.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "UpdateProgramDTO.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProgramController.php",
+      "target": "file:app/Actions/Program/CreateProgramAction.php",
+      "type": "imports",
+      "description": "ProgramController.php importe CreateProgramAction.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProgramController.php",
+      "target": "file:app/Actions/Program/DeleteProgramAction.php",
+      "type": "imports",
+      "description": "ProgramController.php importe DeleteProgramAction.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProgramController.php",
+      "target": "file:app/Actions/Program/UpdateProgramAction.php",
+      "type": "imports",
+      "description": "ProgramController.php importe UpdateProgramAction.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProgramController.php",
+      "target": "file:app/DTOs/Program/CreateProgramDTO.php",
+      "type": "imports",
+      "description": "ProgramController.php importe CreateProgramDTO.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProgramController.php",
+      "target": "file:app/DTOs/Program/UpdateProgramDTO.php",
+      "type": "imports",
+      "description": "ProgramController.php importe UpdateProgramDTO.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProgramController.php",
+      "target": "file:app/Exceptions/ProgramOwnershipException.php",
+      "type": "imports",
+      "description": "ProgramController.php importe ProgramOwnershipException.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProgramController.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "ProgramController.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProgramController.php",
+      "target": "file:app/Models/Visit.php",
+      "type": "imports",
+      "description": "ProgramController.php importe Visit.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/DestinationController.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "DestinationController.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/HomeController.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "HomeController.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProfileController.php",
+      "target": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "type": "imports",
+      "description": "ProfileController.php importe ProfileUpdateRequest.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/SuperAdminDashboardController.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "SuperAdminDashboardController.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/SuperAdminDashboardController.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "SuperAdminDashboardController.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/UserManagementController.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "UserManagementController.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "ProfileUpdateRequest.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/DashboardController.php",
+      "type": "imports",
+      "description": "web.php importe DashboardController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/DestinationController.php",
+      "type": "imports",
+      "description": "web.php importe DestinationController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/GuideController.php",
+      "type": "imports",
+      "description": "web.php importe GuideController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/HomeController.php",
+      "type": "imports",
+      "description": "web.php importe HomeController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/PageController.php",
+      "type": "imports",
+      "description": "web.php importe PageController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/ProfileController.php",
+      "type": "imports",
+      "description": "web.php importe ProfileController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/ProgramController.php",
+      "type": "imports",
+      "description": "web.php importe ProgramController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/SuperAdminDashboardController.php",
+      "type": "imports",
+      "description": "web.php importe SuperAdminDashboardController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/UserManagementController.php",
+      "type": "imports",
+      "description": "web.php importe UserManagementController.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "DashboardController.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Models/Visit.php",
+      "type": "imports",
+      "description": "DashboardController.php importe Visit.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:app/Http/Controllers/GuideController.php",
+      "target": "file:app/Models/Guide.php",
+      "type": "imports",
+      "description": "GuideController.php importe Guide.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:copy_data.php",
+      "target": "file:app/Models/Guide.php",
+      "type": "imports",
+      "description": "copy_data.php importe Guide.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:copy_data.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "copy_data.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:copy_data.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "copy_data.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/seeders/CsvDataSeeder.php",
+      "target": "file:app/Models/Guide.php",
+      "type": "imports",
+      "description": "CsvDataSeeder.php importe Guide.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/seeders/CsvDataSeeder.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "CsvDataSeeder.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/seeders/CsvDataSeeder.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "CsvDataSeeder.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/seeders/CsvDataSeeder.php",
+      "target": "file:app/Models/Visit.php",
+      "type": "imports",
+      "description": "CsvDataSeeder.php importe Visit.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/seeders/DemoSeeder.php",
+      "target": "file:app/Models/Guide.php",
+      "type": "imports",
+      "description": "DemoSeeder.php importe Guide.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/seeders/DemoSeeder.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "DemoSeeder.php importe Program.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/seeders/DemoSeeder.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "DemoSeeder.php importe User.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:database/seeders/DemoSeeder.php",
+      "target": "file:app/Models/Visit.php",
+      "type": "imports",
+      "description": "DemoSeeder.php importe Visit.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:bootstrap/app.php",
+      "target": "file:app/Http/Middleware/EnsureUserHasRole.php",
+      "type": "imports",
+      "description": "app.php importe EnsureUserHasRole.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:bootstrap/providers.php",
+      "target": "file:app/Providers/AppServiceProvider.php",
+      "type": "imports",
+      "description": "providers.php importe AppServiceProvider.php",
+      "direction": "forward"
+    },
+    {
+      "source": "file:resources/js/app.js",
+      "target": "file:resources/js/bootstrap.js",
+      "type": "imports",
+      "description": "app.js importe bootstrap.js",
+      "direction": "forward"
+    }
+  ],
+  "layers": [
+    {
+      "name": "Controllers",
+      "id": "layer:controllers",
+      "description": "G�re les requ�tes HTTP",
+      "nodeIds": [
+        "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+        "file:app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+        "file:app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+        "file:app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+        "file:app/Http/Controllers/Auth/NewPasswordController.php",
+        "file:app/Http/Controllers/Auth/PasswordController.php",
+        "file:app/Http/Controllers/Auth/PasswordResetLinkController.php",
+        "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+        "file:app/Http/Controllers/Auth/VerifyEmailController.php",
+        "file:app/Http/Controllers/Controller.php",
+        "file:app/Http/Controllers/ProgramController.php",
+        "file:app/Http/Controllers/DestinationController.php",
+        "file:app/Http/Controllers/HomeController.php",
+        "file:app/Http/Controllers/PageController.php",
+        "file:app/Http/Controllers/ProfileController.php",
+        "file:app/Http/Controllers/SuperAdminDashboardController.php",
+        "file:app/Http/Controllers/UserManagementController.php",
+        "file:app/Http/Controllers/DashboardController.php",
+        "file:app/Http/Controllers/GuideController.php"
+      ]
+    },
+    {
+      "name": "Models",
+      "id": "layer:models",
+      "description": "Entit�s de domaine et acc�s base de donn�es",
+      "nodeIds": [
+        "file:app/Models/User.php",
+        "file:app/Models/Program.php",
+        "file:app/Models/Guide.php",
+        "file:app/Models/Visit.php"
+      ]
+    },
+    {
+      "name": "Views",
+      "id": "layer:views",
+      "description": "Composants de pr�sentation",
+      "nodeIds": [
+        "file:app/View/Components/AppLayout.php",
+        "file:app/View/Components/GuestLayout.php",
+        "file:resources/views/auth/confirm-password.blade.php",
+        "file:resources/views/auth/forgot-password.blade.php",
+        "file:resources/views/auth/login.blade.php",
+        "file:resources/views/auth/register.blade.php",
+        "file:resources/views/auth/reset-password.blade.php",
+        "file:resources/views/auth/verify-email.blade.php",
+        "file:resources/views/components/application-logo.blade.php",
+        "file:resources/views/components/auth-session-status.blade.php",
+        "file:resources/views/components/danger-button.blade.php",
+        "file:resources/views/components/dropdown-link.blade.php",
+        "file:resources/views/components/dropdown.blade.php",
+        "file:resources/views/components/input-error.blade.php",
+        "file:resources/views/components/input-label.blade.php",
+        "file:resources/views/components/modal.blade.php",
+        "file:resources/views/components/nav-link.blade.php",
+        "file:resources/views/components/primary-button.blade.php",
+        "file:resources/views/components/responsive-nav-link.blade.php",
+        "file:resources/views/components/secondary-button.blade.php",
+        "file:resources/views/components/text-input.blade.php",
+        "file:resources/views/contact/index.blade.php",
+        "file:resources/views/dashboard.blade.php",
+        "file:resources/views/dashboard/index.blade.php",
+        "file:resources/views/dashboard/programs/create.blade.php",
+        "file:resources/views/dashboard/programs/edit.blade.php",
+        "file:resources/views/dashboard/superadmin/index.blade.php",
+        "file:resources/views/dashboard/users/index.blade.php",
+        "file:resources/views/destinations/index.blade.php",
+        "file:resources/views/guides/index.blade.php",
+        "file:resources/views/home.blade.php",
+        "file:resources/views/layouts/app.blade.php",
+        "file:resources/views/layouts/dashboard.blade.php",
+        "file:resources/views/layouts/guest.blade.php",
+        "file:resources/views/layouts/navigation.blade.php",
+        "file:resources/views/profile/edit.blade.php",
+        "file:resources/views/profile/partials/delete-user-form.blade.php",
+        "file:resources/views/profile/partials/update-password-form.blade.php",
+        "file:resources/views/profile/partials/update-profile-information-form.blade.php",
+        "file:resources/views/programs/index.blade.php",
+        "file:resources/views/programs/show.blade.php",
+        "file:resources/views/welcome.blade.php"
+      ]
+    },
+    {
+      "name": "Routes",
+      "id": "layer:routes",
+      "description": "D�finitions des endpoints",
+      "nodeIds": [
+        "file:routes/auth.php",
+        "file:routes/web.php",
+        "file:routes/console.php"
+      ]
+    },
+    {
+      "name": "Database",
+      "id": "layer:database",
+      "description": "Migrations, seeders et usines",
+      "nodeIds": [
+        "file:database/factories/UserFactory.php",
+        "file:database/seeders/DatabaseSeeder.php",
+        "file:database/seeders/CsvDataSeeder.php",
+        "file:database/seeders/DemoSeeder.php",
+        "file:database/migrations/0001_01_01_000000_create_users_table.php",
+        "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+        "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+        "file:database/migrations/0002_01_01_000000_create_guides_table.php",
+        "file:database/migrations/0002_01_01_000001_create_programs_table.php",
+        "file:database/migrations/0002_01_01_000002_create_favorites_table.php",
+        "file:database/migrations/0002_01_01_000003_create_visits_table.php"
+      ]
+    },
+    {
+      "name": "Config",
+      "id": "layer:config",
+      "description": "Fichiers de configuration",
+      "nodeIds": [
+        "file:config/auth.php",
+        "config:composer.json",
+        "config:package.json",
+        "config:.understand-anything/config.json",
+        "file:config/app.php",
+        "file:config/cache.php",
+        "file:config/database.php",
+        "file:config/filesystems.php",
+        "file:config/logging.php",
+        "file:config/mail.php",
+        "file:config/queue.php",
+        "file:config/services.php",
+        "file:config/session.php"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "id": "layer:frontend",
+      "description": "Assets JS/CSS et ressources publiques",
+      "nodeIds": [
+        "file:postcss.config.js",
+        "file:public/.htaccess",
+        "file:public/index.php",
+        "document:public/robots.txt",
+        "file:markup:resources/css/app.css",
+        "file:resources/js/app.js",
+        "file:resources/js/bootstrap.js",
+        "file:tailwind.config.js",
+        "file:vite.config.js"
+      ]
+    },
+    {
+      "name": "Core",
+      "id": "layer:core",
+      "description": "Logique m�tier, services et fournisseurs",
+      "nodeIds": [
+        "file:app/Http/Requests/Auth/LoginRequest.php",
+        "file:app/Actions/Program/CreateProgramAction.php",
+        "file:app/Actions/Program/DeleteProgramAction.php",
+        "file:app/Actions/Program/UpdateProgramAction.php",
+        "file:app/DTOs/Program/CreateProgramDTO.php",
+        "file:app/DTOs/Program/UpdateProgramDTO.php",
+        "file:app/Exceptions/BaseBusinessException.php",
+        "file:app/Exceptions/ProgramOwnershipException.php",
+        "file:app/Http/Requests/ProfileUpdateRequest.php",
+        "document:app/AI/README.md",
+        "file:app/Http/Middleware/EnsureUserHasRole.php",
+        "file:app/Providers/AppServiceProvider.php",
+        "file:app/Services/Supabase/SupabaseStorageService.php"
+      ]
+    },
+    {
+      "name": "Documentation",
+      "id": "layer:docs",
+      "description": "Fichiers de documentation",
+      "nodeIds": [
+        "document:ARCHITECTURE_GUIDELINES.md",
+        "document:README.md"
+      ]
+    },
+    {
+      "name": "Other",
+      "id": "layer:other",
+      "description": "Autres fichiers",
+      "nodeIds": [
+        "file:create_superadmin.php",
+        "file:tests/Feature/Auth/AuthenticationTest.php",
+        "file:tests/Feature/Auth/EmailVerificationTest.php",
+        "file:tests/Feature/Auth/PasswordConfirmationTest.php",
+        "file:tests/Feature/Auth/PasswordResetTest.php",
+        "file:tests/Feature/Auth/PasswordUpdateTest.php",
+        "file:tests/Feature/ProfileTest.php",
+        "file:copy_data.php",
+        "resource:.dockerignore",
+        "resource:Dockerfile",
+        "config:.env.example",
+        "document:output.txt",
+        "config:phpunit.xml",
+        "file:.gitattributes",
+        "file:.understand-anything/.understandignore",
+        "file:artisan",
+        "file:bootstrap/app.php",
+        "file:bootstrap/providers.php",
+        "file:DATA/ALG_SHRA.jfif",
+        "file:DATA/ALG.jfif",
+        "file:DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif",
+        "file:DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif",
+        "file:DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif",
+        "file:DATA/IMG/BDD/adrar/Marché-d-Adrar.jfif",
+        "file:DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+        "file:DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif",
+        "file:DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif",
+        "file:DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif",
+        "file:data:DATA/lieu.csv",
+        "file:data:DATA/recommandation.csv",
+        "file:tests/Feature/Auth/RegistrationTest.php",
+        "file:tests/Feature/ExampleTest.php",
+        "file:tests/TestCase.php",
+        "file:tests/Unit/ExampleTest.php"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Pr�sentation du projet",
+      "description": "D�marrez par le fichier README pour comprendre le but et l'architecture du projet.",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Configuration et Point d'entr�e",
+      "description": "Fichiers de bootstrap et de configuration de l'application Laravel.",
+      "nodeIds": [
+        "file:bootstrap/app.php",
+        "config:composer.json",
+        "config:package.json"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Routage",
+      "description": "D�finition des endpoints HTTP.",
+      "nodeIds": [
+        "file:routes/web.php",
+        "file:routes/auth.php"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Mod�les de donn�es",
+      "description": "Les entit�s principales et leurs relations avec la base de donn�es.",
+      "nodeIds": [
+        "file:app/Models/User.php",
+        "file:app/Models/Program.php",
+        "file:app/Models/Visit.php"
+      ]
+    }
+  ]
+}

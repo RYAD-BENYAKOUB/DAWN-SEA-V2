@@ -107,7 +107,7 @@
                             </h3>
 
                             <p style="font-size: 0.9rem; color: var(--charcoal-soft); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
-                                {{ Str::limit($program->description, 130) }}
+                                {!! nl2br(e(Str::limit($program->description, 130))) !!}
                             </p>
 
                             <hr style="border: 0; border-top: 1px solid rgba(168, 155, 138, 0.1); margin: 0 0 1.25rem 0;">

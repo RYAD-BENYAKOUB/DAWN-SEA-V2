@@ -1,5 +1,9 @@
 .env
-/vendor
-/node_modules
-/public/storage
+.env.*
+create_superadmin.php
+copy_data.php
+test.jpg
 .git
+node_modules
+/storage/logs
+/tests

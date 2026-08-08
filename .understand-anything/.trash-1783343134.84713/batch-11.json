@@ -1,0 +1,252 @@
+{
+  "nodes": [
+    {
+      "id": "file:resources/views/home.blade.php",
+      "type": "file",
+      "name": "home.blade.php",
+      "filePath": "resources/views/home.blade.php",
+      "summary": "Fichier php pour home.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/layouts/app.blade.php",
+      "type": "file",
+      "name": "app.blade.php",
+      "filePath": "resources/views/layouts/app.blade.php",
+      "summary": "Fichier php pour app.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/layouts/dashboard.blade.php",
+      "type": "file",
+      "name": "dashboard.blade.php",
+      "filePath": "resources/views/layouts/dashboard.blade.php",
+      "summary": "Fichier php pour dashboard.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/layouts/guest.blade.php",
+      "type": "file",
+      "name": "guest.blade.php",
+      "filePath": "resources/views/layouts/guest.blade.php",
+      "summary": "Fichier php pour guest.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/layouts/navigation.blade.php",
+      "type": "file",
+      "name": "navigation.blade.php",
+      "filePath": "resources/views/layouts/navigation.blade.php",
+      "summary": "Fichier php pour navigation.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/profile/edit.blade.php",
+      "type": "file",
+      "name": "edit.blade.php",
+      "filePath": "resources/views/profile/edit.blade.php",
+      "summary": "Fichier php pour edit.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "type": "file",
+      "name": "delete-user-form.blade.php",
+      "filePath": "resources/views/profile/partials/delete-user-form.blade.php",
+      "summary": "Fichier php pour delete-user-form.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/profile/partials/update-password-form.blade.php",
+      "type": "file",
+      "name": "update-password-form.blade.php",
+      "filePath": "resources/views/profile/partials/update-password-form.blade.php",
+      "summary": "Fichier php pour update-password-form.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/profile/partials/update-profile-information-form.blade.php",
+      "type": "file",
+      "name": "update-profile-information-form.blade.php",
+      "filePath": "resources/views/profile/partials/update-profile-information-form.blade.php",
+      "summary": "Fichier php pour update-profile-information-form.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/programs/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/programs/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/programs/show.blade.php",
+      "type": "file",
+      "name": "show.blade.php",
+      "filePath": "resources/views/programs/show.blade.php",
+      "summary": "Fichier php pour show.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/welcome.blade.php",
+      "type": "file",
+      "name": "welcome.blade.php",
+      "filePath": "resources/views/welcome.blade.php",
+      "summary": "Fichier php pour welcome.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:routes/console.php",
+      "type": "file",
+      "name": "console.php",
+      "filePath": "routes/console.php",
+      "summary": "Fichier php pour console.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tailwind.config.js",
+      "type": "file",
+      "name": "tailwind.config.js",
+      "filePath": "tailwind.config.js",
+      "summary": "Fichier javascript pour tailwind.config.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/RegistrationTest.php",
+      "type": "file",
+      "name": "RegistrationTest.php",
+      "filePath": "tests/Feature/Auth/RegistrationTest.php",
+      "summary": "Fichier php pour RegistrationTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/ExampleTest.php",
+      "type": "file",
+      "name": "ExampleTest.php",
+      "filePath": "tests/Feature/ExampleTest.php",
+      "summary": "Fichier php pour ExampleTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/TestCase.php",
+      "type": "file",
+      "name": "TestCase.php",
+      "filePath": "tests/TestCase.php",
+      "summary": "Fichier php pour TestCase.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Unit/ExampleTest.php",
+      "type": "file",
+      "name": "ExampleTest.php",
+      "filePath": "tests/Unit/ExampleTest.php",
+      "summary": "Fichier php pour ExampleTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "vite.config.js",
+      "summary": "Fichier javascript pour vite.config.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,905 @@
+{
+    "projectRoot":  "C:\\dev\\tourisme-algerie",
+    "files":  [
+                  {
+                      "path":  ".dockerignore",
+                      "language":  "unknown",
+                      "sizeLines":  4,
+                      "fileCategory":  "infra"
+                  },
+                  {
+                      "path":  ".env.example",
+                      "language":  "config",
+                      "sizeLines":  65,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  ".gitattributes",
+                      "language":  "unknown",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".understand-anything/.understandignore",
+                      "language":  "unknown",
+                      "sizeLines":  78,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".understand-anything/config.json",
+                      "language":  "json",
+                      "sizeLines":  3,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "app/Actions/Program/CreateProgramAction.php",
+                      "language":  "php",
+                      "sizeLines":  45,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Actions/Program/DeleteProgramAction.php",
+                      "language":  "php",
+                      "sizeLines":  25,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Actions/Program/UpdateProgramAction.php",
+                      "language":  "php",
+                      "sizeLines":  42,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/AI/README.md",
+                      "language":  "markdown",
+                      "sizeLines":  11,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "app/DTOs/Program/CreateProgramDTO.php",
+                      "language":  "php",
+                      "sizeLines":  49,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/DTOs/Program/UpdateProgramDTO.php",
+                      "language":  "php",
+                      "sizeLines":  51,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Exceptions/BaseBusinessException.php",
+                      "language":  "php",
+                      "sizeLines":  53,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Exceptions/ProgramOwnershipException.php",
+                      "language":  "php",
+                      "sizeLines":  13,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+                      "language":  "php",
+                      "sizeLines":  47,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+                      "language":  "php",
+                      "sizeLines":  40,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+                      "language":  "php",
+                      "sizeLines":  24,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+                      "language":  "php",
+                      "sizeLines":  21,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Auth/NewPasswordController.php",
+                      "language":  "php",
+                      "sizeLines":  63,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Auth/PasswordController.php",
+                      "language":  "php",
+                      "sizeLines":  29,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Auth/PasswordResetLinkController.php",
+                      "language":  "php",
+                      "sizeLines":  45,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Auth/RegisteredUserController.php",
+                      "language":  "php",
+                      "sizeLines":  75,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Auth/VerifyEmailController.php",
+                      "language":  "php",
+                      "sizeLines":  27,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/Controller.php",
+                      "language":  "php",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/DashboardController.php",
+                      "language":  "php",
+                      "sizeLines":  89,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/DestinationController.php",
+                      "language":  "php",
+                      "sizeLines":  58,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/GuideController.php",
+                      "language":  "php",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/HomeController.php",
+                      "language":  "php",
+                      "sizeLines":  30,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/PageController.php",
+                      "language":  "php",
+                      "sizeLines":  13,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/ProfileController.php",
+                      "language":  "php",
+                      "sizeLines":  76,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/ProgramController.php",
+                      "language":  "php",
+                      "sizeLines":  178,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/SuperAdminDashboardController.php",
+                      "language":  "php",
+                      "sizeLines":  51,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Controllers/UserManagementController.php",
+                      "language":  "php",
+                      "sizeLines":  31,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Middleware/EnsureUserHasRole.php",
+                      "language":  "php",
+                      "sizeLines":  40,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Requests/Auth/LoginRequest.php",
+                      "language":  "php",
+                      "sizeLines":  86,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Http/Requests/ProfileUpdateRequest.php",
+                      "language":  "php",
+                      "sizeLines":  29,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Models/Guide.php",
+                      "language":  "php",
+                      "sizeLines":  46,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Models/Program.php",
+                      "language":  "php",
+                      "sizeLines":  81,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Models/User.php",
+                      "language":  "php",
+                      "sizeLines":  111,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Models/Visit.php",
+                      "language":  "php",
+                      "sizeLines":  39,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Providers/AppServiceProvider.php",
+                      "language":  "php",
+                      "sizeLines":  24,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/Services/Supabase/SupabaseStorageService.php",
+                      "language":  "php",
+                      "sizeLines":  15,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/View/Components/AppLayout.php",
+                      "language":  "php",
+                      "sizeLines":  17,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "app/View/Components/GuestLayout.php",
+                      "language":  "php",
+                      "sizeLines":  17,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "ARCHITECTURE_GUIDELINES.md",
+                      "language":  "markdown",
+                      "sizeLines":  45,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "artisan",
+                      "language":  "unknown",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "bootstrap/app.php",
+                      "language":  "php",
+                      "sizeLines":  21,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "bootstrap/providers.php",
+                      "language":  "php",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "composer.json",
+                      "language":  "json",
+                      "sizeLines":  88,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "config/app.php",
+                      "language":  "php",
+                      "sizeLines":  126,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "config/auth.php",
+                      "language":  "php",
+                      "sizeLines":  117,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "config/cache.php",
+                      "language":  "php",
+                      "sizeLines":  117,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "config/database.php",
+                      "language":  "php",
+                      "sizeLines":  184,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "config/filesystems.php",
+                      "language":  "php",
+                      "sizeLines":  80,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "config/logging.php",
+                      "language":  "php",
+                      "sizeLines":  132,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "config/mail.php",
+                      "language":  "php",
+                      "sizeLines":  118,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "config/queue.php",
+                      "language":  "php",
+                      "sizeLines":  129,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "config/services.php",
+                      "language":  "php",
+                      "sizeLines":  38,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "config/session.php",
+                      "language":  "php",
+                      "sizeLines":  217,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "copy_data.php",
+                      "language":  "php",
+                      "sizeLines":  78,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "create_superadmin.php",
+                      "language":  "php",
+                      "sizeLines":  21,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/ALG_SHRA.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  458,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/ALG.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  312,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  337,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  649,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  1122,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/IMG/BDD/adrar/Marché-d-Adrar.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  127,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  752,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  727,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  288,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif",
+                      "language":  "jfif",
+                      "sizeLines":  667,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "DATA/lieu.csv",
+                      "language":  "csv",
+                      "sizeLines":  5384,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "DATA/recommandation.csv",
+                      "language":  "csv",
+                      "sizeLines":  25,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "database/factories/UserFactory.php",
+                      "language":  "php",
+                      "sizeLines":  45,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/migrations/0001_01_01_000000_create_users_table.php",
+                      "language":  "php",
+                      "sizeLines":  56,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/migrations/0001_01_01_000001_create_cache_table.php",
+                      "language":  "php",
+                      "sizeLines":  35,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/migrations/0001_01_01_000002_create_jobs_table.php",
+                      "language":  "php",
+                      "sizeLines":  57,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/migrations/0002_01_01_000000_create_guides_table.php",
+                      "language":  "php",
+                      "sizeLines":  29,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/migrations/0002_01_01_000001_create_programs_table.php",
+                      "language":  "php",
+                      "sizeLines":  32,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/migrations/0002_01_01_000002_create_favorites_table.php",
+                      "language":  "php",
+                      "sizeLines":  25,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/migrations/0002_01_01_000003_create_visits_table.php",
+                      "language":  "php",
+                      "sizeLines":  28,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/seeders/CsvDataSeeder.php",
+                      "language":  "php",
+                      "sizeLines":  255,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/seeders/DatabaseSeeder.php",
+                      "language":  "php",
+                      "sizeLines":  25,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "database/seeders/DemoSeeder.php",
+                      "language":  "php",
+                      "sizeLines":  165,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "Dockerfile",
+                      "language":  "dockerfile",
+                      "sizeLines":  29,
+                      "fileCategory":  "infra"
+                  },
+                  {
+                      "path":  "output.txt",
+                      "language":  "txt",
+                      "sizeLines":  613,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "package.json",
+                      "language":  "json",
+                      "sizeLines":  21,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "phpunit.xml",
+                      "language":  "xml",
+                      "sizeLines":  36,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "postcss.config.js",
+                      "language":  "javascript",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "public/.htaccess",
+                      "language":  "unknown",
+                      "sizeLines":  25,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "public/index.php",
+                      "language":  "php",
+                      "sizeLines":  20,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "public/robots.txt",
+                      "language":  "txt",
+                      "sizeLines":  2,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "README.md",
+                      "language":  "markdown",
+                      "sizeLines":  104,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "resources/css/app.css",
+                      "language":  "css",
+                      "sizeLines":  1316,
+                      "fileCategory":  "markup"
+                  },
+                  {
+                      "path":  "resources/js/app.js",
+                      "language":  "javascript",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/js/bootstrap.js",
+                      "language":  "javascript",
+                      "sizeLines":  4,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/auth/confirm-password.blade.php",
+                      "language":  "php",
+                      "sizeLines":  27,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/auth/forgot-password.blade.php",
+                      "language":  "php",
+                      "sizeLines":  25,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/auth/login.blade.php",
+                      "language":  "php",
+                      "sizeLines":  53,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/auth/register.blade.php",
+                      "language":  "php",
+                      "sizeLines":  108,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/auth/reset-password.blade.php",
+                      "language":  "php",
+                      "sizeLines":  39,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/auth/verify-email.blade.php",
+                      "language":  "php",
+                      "sizeLines":  31,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/application-logo.blade.php",
+                      "language":  "php",
+                      "sizeLines":  3,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/auth-session-status.blade.php",
+                      "language":  "php",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/danger-button.blade.php",
+                      "language":  "php",
+                      "sizeLines":  3,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/dropdown-link.blade.php",
+                      "language":  "php",
+                      "sizeLines":  1,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/dropdown.blade.php",
+                      "language":  "php",
+                      "sizeLines":  35,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/input-error.blade.php",
+                      "language":  "php",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/input-label.blade.php",
+                      "language":  "php",
+                      "sizeLines":  5,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/modal.blade.php",
+                      "language":  "php",
+                      "sizeLines":  78,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/nav-link.blade.php",
+                      "language":  "php",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/primary-button.blade.php",
+                      "language":  "php",
+                      "sizeLines":  3,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/responsive-nav-link.blade.php",
+                      "language":  "php",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/secondary-button.blade.php",
+                      "language":  "php",
+                      "sizeLines":  3,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/components/text-input.blade.php",
+                      "language":  "php",
+                      "sizeLines":  3,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/contact/index.blade.php",
+                      "language":  "php",
+                      "sizeLines":  77,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/dashboard.blade.php",
+                      "language":  "php",
+                      "sizeLines":  17,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/dashboard/index.blade.php",
+                      "language":  "php",
+                      "sizeLines":  230,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/dashboard/programs/create.blade.php",
+                      "language":  "php",
+                      "sizeLines":  100,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/dashboard/programs/edit.blade.php",
+                      "language":  "php",
+                      "sizeLines":  120,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/dashboard/superadmin/index.blade.php",
+                      "language":  "php",
+                      "sizeLines":  501,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/dashboard/users/index.blade.php",
+                      "language":  "php",
+                      "sizeLines":  78,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/destinations/index.blade.php",
+                      "language":  "php",
+                      "sizeLines":  45,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/guides/index.blade.php",
+                      "language":  "php",
+                      "sizeLines":  56,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/home.blade.php",
+                      "language":  "php",
+                      "sizeLines":  213,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/layouts/app.blade.php",
+                      "language":  "php",
+                      "sizeLines":  203,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/layouts/dashboard.blade.php",
+                      "language":  "php",
+                      "sizeLines":  60,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/layouts/guest.blade.php",
+                      "language":  "php",
+                      "sizeLines":  33,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/layouts/navigation.blade.php",
+                      "language":  "php",
+                      "sizeLines":  100,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/profile/edit.blade.php",
+                      "language":  "php",
+                      "sizeLines":  158,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/profile/partials/delete-user-form.blade.php",
+                      "language":  "php",
+                      "sizeLines":  44,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/profile/partials/update-password-form.blade.php",
+                      "language":  "php",
+                      "sizeLines":  38,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/profile/partials/update-profile-information-form.blade.php",
+                      "language":  "php",
+                      "sizeLines":  86,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/programs/index.blade.php",
+                      "language":  "php",
+                      "sizeLines":  148,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/programs/show.blade.php",
+                      "language":  "php",
+                      "sizeLines":  214,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "resources/views/welcome.blade.php",
+                      "language":  "php",
+                      "sizeLines":  277,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "routes/auth.php",
+                      "language":  "php",
+                      "sizeLines":  59,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "routes/console.php",
+                      "language":  "php",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "routes/web.php",
+                      "language":  "php",
+                      "sizeLines":  71,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tailwind.config.js",
+                      "language":  "javascript",
+                      "sizeLines":  21,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/Feature/Auth/AuthenticationTest.php",
+                      "language":  "php",
+                      "sizeLines":  54,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/Feature/Auth/EmailVerificationTest.php",
+                      "language":  "php",
+                      "sizeLines":  58,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/Feature/Auth/PasswordConfirmationTest.php",
+                      "language":  "php",
+                      "sizeLines":  44,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/Feature/Auth/PasswordResetTest.php",
+                      "language":  "php",
+                      "sizeLines":  73,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/Feature/Auth/PasswordUpdateTest.php",
+                      "language":  "php",
+                      "sizeLines":  51,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/Feature/Auth/RegistrationTest.php",
+                      "language":  "php",
+                      "sizeLines":  31,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/Feature/ExampleTest.php",
+                      "language":  "php",
+                      "sizeLines":  19,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/Feature/ProfileTest.php",
+                      "language":  "php",
+                      "sizeLines":  99,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/TestCase.php",
+                      "language":  "php",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/Unit/ExampleTest.php",
+                      "language":  "php",
+                      "sizeLines":  16,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "vite.config.js",
+                      "language":  "javascript",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  }
+              ]
+}

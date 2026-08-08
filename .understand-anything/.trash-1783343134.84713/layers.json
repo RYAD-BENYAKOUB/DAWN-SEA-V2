@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Controllers",
+    "id": "layer:controllers",
+    "description": "G�re les requ�tes HTTP",
+    "nodeIds": [
+      "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "file:app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "file:app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "file:app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "file:app/Http/Controllers/Auth/NewPasswordController.php",
+      "file:app/Http/Controllers/Auth/PasswordController.php",
+      "file:app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+      "file:app/Http/Controllers/Auth/VerifyEmailController.php",
+      "file:app/Http/Controllers/Controller.php",
+      "file:app/Http/Controllers/ProgramController.php",
+      "file:app/Http/Controllers/DestinationController.php",
+      "file:app/Http/Controllers/HomeController.php",
+      "file:app/Http/Controllers/PageController.php",
+      "file:app/Http/Controllers/ProfileController.php",
+      "file:app/Http/Controllers/SuperAdminDashboardController.php",
+      "file:app/Http/Controllers/UserManagementController.php",
+      "file:app/Http/Controllers/DashboardController.php",
+      "file:app/Http/Controllers/GuideController.php"
+    ]
+  },
+  {
+    "name": "Models",
+    "id": "layer:models",
+    "description": "Entit�s de domaine et acc�s base de donn�es",
+    "nodeIds": [
+      "file:app/Models/User.php",
+      "file:app/Models/Program.php",
+      "file:app/Models/Guide.php",
+      "file:app/Models/Visit.php"
+    ]
+  },
+  {
+    "name": "Views",
+    "id": "layer:views",
+    "description": "Composants de pr�sentation",
+    "nodeIds": [
+      "file:app/View/Components/AppLayout.php",
+      "file:app/View/Components/GuestLayout.php",
+      "file:resources/views/auth/confirm-password.blade.php",
+      "file:resources/views/auth/forgot-password.blade.php",
+      "file:resources/views/auth/login.blade.php",
+      "file:resources/views/auth/register.blade.php",
+      "file:resources/views/auth/reset-password.blade.php",
+      "file:resources/views/auth/verify-email.blade.php",
+      "file:resources/views/components/application-logo.blade.php",
+      "file:resources/views/components/auth-session-status.blade.php",
+      "file:resources/views/components/danger-button.blade.php",
+      "file:resources/views/components/dropdown-link.blade.php",
+      "file:resources/views/components/dropdown.blade.php",
+      "file:resources/views/components/input-error.blade.php",
+      "file:resources/views/components/input-label.blade.php",
+      "file:resources/views/components/modal.blade.php",
+      "file:resources/views/components/nav-link.blade.php",
+      "file:resources/views/components/primary-button.blade.php",
+      "file:resources/views/components/responsive-nav-link.blade.php",
+      "file:resources/views/components/secondary-button.blade.php",
+      "file:resources/views/components/text-input.blade.php",
+      "file:resources/views/contact/index.blade.php",
+      "file:resources/views/dashboard.blade.php",
+      "file:resources/views/dashboard/index.blade.php",
+      "file:resources/views/dashboard/programs/create.blade.php",
+      "file:resources/views/dashboard/programs/edit.blade.php",
+      "file:resources/views/dashboard/superadmin/index.blade.php",
+      "file:resources/views/dashboard/users/index.blade.php",
+      "file:resources/views/destinations/index.blade.php",
+      "file:resources/views/guides/index.blade.php",
+      "file:resources/views/home.blade.php",
+      "file:resources/views/layouts/app.blade.php",
+      "file:resources/views/layouts/dashboard.blade.php",
+      "file:resources/views/layouts/guest.blade.php",
+      "file:resources/views/layouts/navigation.blade.php",
+      "file:resources/views/profile/edit.blade.php",
+      "file:resources/views/profile/partials/delete-user-form.blade.php",
+      "file:resources/views/profile/partials/update-password-form.blade.php",
+      "file:resources/views/profile/partials/update-profile-information-form.blade.php",
+      "file:resources/views/programs/index.blade.php",
+      "file:resources/views/programs/show.blade.php",
+      "file:resources/views/welcome.blade.php"
+    ]
+  },
+  {
+    "name": "Routes",
+    "id": "layer:routes",
+    "description": "D�finitions des endpoints",
+    "nodeIds": [
+      "file:routes/auth.php",
+      "file:routes/web.php",
+      "file:routes/console.php"
+    ]
+  },
+  {
+    "name": "Database",
+    "id": "layer:database",
+    "description": "Migrations, seeders et usines",
+    "nodeIds": [
+      "file:database/factories/UserFactory.php",
+      "file:database/seeders/DatabaseSeeder.php",
+      "file:database/seeders/CsvDataSeeder.php",
+      "file:database/seeders/DemoSeeder.php",
+      "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+      "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "file:database/migrations/0002_01_01_000000_create_guides_table.php",
+      "file:database/migrations/0002_01_01_000001_create_programs_table.php",
+      "file:database/migrations/0002_01_01_000002_create_favorites_table.php",
+      "file:database/migrations/0002_01_01_000003_create_visits_table.php"
+    ]
+  },
+  {
+    "name": "Config",
+    "id": "layer:config",
+    "description": "Fichiers de configuration",
+    "nodeIds": [
+      "file:config/auth.php",
+      "config:composer.json",
+      "config:package.json",
+      "config:.understand-anything/config.json",
+      "file:config/app.php",
+      "file:config/cache.php",
+      "file:config/database.php",
+      "file:config/filesystems.php",
+      "file:config/logging.php",
+      "file:config/mail.php",
+      "file:config/queue.php",
+      "file:config/services.php",
+      "file:config/session.php"
+    ]
+  },
+  {
+    "name": "Frontend",
+    "id": "layer:frontend",
+    "description": "Assets JS/CSS et ressources publiques",
+    "nodeIds": [
+      "file:postcss.config.js",
+      "file:public/.htaccess",
+      "file:public/index.php",
+      "document:public/robots.txt",
+      "file:markup:resources/css/app.css",
+      "file:resources/js/app.js",
+      "file:resources/js/bootstrap.js",
+      "file:tailwind.config.js",
+      "file:vite.config.js"
+    ]
+  },
+  {
+    "name": "Core",
+    "id": "layer:core",
+    "description": "Logique m�tier, services et fournisseurs",
+    "nodeIds": [
+      "file:app/Http/Requests/Auth/LoginRequest.php",
+      "file:app/Actions/Program/CreateProgramAction.php",
+      "file:app/Actions/Program/DeleteProgramAction.php",
+      "file:app/Actions/Program/UpdateProgramAction.php",
+      "file:app/DTOs/Program/CreateProgramDTO.php",
+      "file:app/DTOs/Program/UpdateProgramDTO.php",
+      "file:app/Exceptions/BaseBusinessException.php",
+      "file:app/Exceptions/ProgramOwnershipException.php",
+      "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "document:app/AI/README.md",
+      "file:app/Http/Middleware/EnsureUserHasRole.php",
+      "file:app/Providers/AppServiceProvider.php",
+      "file:app/Services/Supabase/SupabaseStorageService.php"
+    ]
+  },
+  {
+    "name": "Documentation",
+    "id": "layer:docs",
+    "description": "Fichiers de documentation",
+    "nodeIds": [
+      "document:ARCHITECTURE_GUIDELINES.md",
+      "document:README.md"
+    ]
+  },
+  {
+    "name": "Other",
+    "id": "layer:other",
+    "description": "Autres fichiers",
+    "nodeIds": [
+      "file:create_superadmin.php",
+      "file:tests/Feature/Auth/AuthenticationTest.php",
+      "file:tests/Feature/Auth/EmailVerificationTest.php",
+      "file:tests/Feature/Auth/PasswordConfirmationTest.php",
+      "file:tests/Feature/Auth/PasswordResetTest.php",
+      "file:tests/Feature/Auth/PasswordUpdateTest.php",
+      "file:tests/Feature/ProfileTest.php",
+      "file:copy_data.php",
+      "resource:.dockerignore",
+      "resource:Dockerfile",
+      "config:.env.example",
+      "document:output.txt",
+      "config:phpunit.xml",
+      "file:.gitattributes",
+      "file:.understand-anything/.understandignore",
+      "file:artisan",
+      "file:bootstrap/app.php",
+      "file:bootstrap/providers.php",
+      "file:DATA/ALG_SHRA.jfif",
+      "file:DATA/ALG.jfif",
+      "file:DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif",
+      "file:DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif",
+      "file:DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif",
+      "file:DATA/IMG/BDD/adrar/Marché-d-Adrar.jfif",
+      "file:DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+      "file:DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif",
+      "file:DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif",
+      "file:DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif",
+      "file:data:DATA/lieu.csv",
+      "file:data:DATA/recommandation.csv",
+      "file:tests/Feature/Auth/RegistrationTest.php",
+      "file:tests/Feature/ExampleTest.php",
+      "file:tests/TestCase.php",
+      "file:tests/Unit/ExampleTest.php"
+    ]
+  }
+]

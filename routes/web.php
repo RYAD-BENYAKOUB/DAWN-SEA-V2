@@ -47,17 +47,18 @@ Route::get('/dashboard', function () {
     $user = auth()->user();
     if (!$user) return redirect()->route('login');
 
-    if ($user->isAdmin() || $user->role === 'superadmin') {
+    if ($user->hasRole('SuperAdmin')) {
         return redirect()->route('dashboard.superadmin');
     }
-    if ($user->isGuide()) {
-        return app(DashboardController::class)->index();
+    if ($user->hasRole('Organisateur')) {
+        return redirect()->route('dashboard.guide');
     }
     return redirect()->route('profile.edit');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 // Guide Dashboard Routes (requires auth + guide role)
-Route::middleware(['auth', 'verified', 'role:guide'])->prefix('dashboard')->group(function () {
+Route::middleware(['auth', 'verified', 'role:Organisateur'])->prefix('dashboard')->group(function () {
+    Route::get('/guide', [DashboardController::class, 'index'])->name('dashboard.guide');
     Route::get('/stats', [DashboardController::class, 'stats'])->name('dashboard.stats');
     Route::resource('programs', ProgramController::class)->except(['index', 'show'])->names([
         'create' => 'dashboard.programs.create',
@@ -69,7 +70,7 @@ Route::middleware(['auth', 'verified', 'role:guide'])->prefix('dashboard')->grou
 });
 
 // Superadmin Dashboard Routes
-Route::middleware(['auth', 'verified', 'role:superadmin'])->prefix('dashboard/superadmin')->group(function () {
+Route::middleware(['auth', 'verified', 'role:SuperAdmin'])->prefix('dashboard/superadmin')->group(function () {
     Route::get('/', [SuperAdminDashboardController::class, 'index'])->name('dashboard.superadmin');
     Route::get('/users', [UserManagementController::class, 'index'])->name('dashboard.users.index');
     Route::patch('/users/{user}/role', [UserManagementController::class, 'updateRole'])->name('dashboard.users.updateRole');

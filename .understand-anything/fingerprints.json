@@ -1,0 +1,4608 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "13ab49e64a20d47cda0a422dd0db7476ca332505",
+  "generatedAt": "2026-07-06T12:05:20.950Z",
+  "files": {
+    ".dockerignore": {
+      "filePath": ".dockerignore",
+      "contentHash": "75ee13248c8a12b58911a8e52eba96b048badf7696c976bd63e08b66a94548ec",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": false
+    },
+    ".env.example": {
+      "filePath": ".env.example",
+      "contentHash": "a527dd22cebd532f74bdca8352dc2e624bdf0655a8c85be88edd35ac44bd13c3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 66,
+      "hasStructuralAnalysis": true
+    },
+    ".gitattributes": {
+      "filePath": ".gitattributes",
+      "contentHash": "a40eb27ee0b545ca5b5542daaf99fec51f84f23b3766a6353864ef2a115bc51c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": false
+    },
+    ".understand-anything/.understandignore": {
+      "filePath": ".understand-anything/.understandignore",
+      "contentHash": "bfc93c92e08c85cc58f98068f505c504bcc52b5719a9a15db2164e74facb1a89",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 79,
+      "hasStructuralAnalysis": false
+    },
+    ".understand-anything/config.json": {
+      "filePath": ".understand-anything/config.json",
+      "contentHash": "f30b027fbab26ad53a269738d7e79891e2697b7ddf7b29e9ec4db5007087e026",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "app/Actions/Program/CreateProgramAction.php": {
+      "filePath": "app/Actions/Program/CreateProgramAction.php",
+      "contentHash": "4b84cc4bd3cc3e0a5a80156cd5f440d047747d2bce5b8a32d57054b931acfc0d",
+      "functions": [
+        {
+          "name": "execute",
+          "params": [
+            "$dto",
+            "$guide"
+          ],
+          "returnType": "Program",
+          "exported": false,
+          "lineCount": 25
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateProgramAction",
+          "methods": [
+            "execute"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 36
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\DTOs\\Program\\CreateProgramDTO",
+          "specifiers": [
+            "CreateProgramDTO"
+          ]
+        },
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "App\\Models\\Guide",
+          "specifiers": [
+            "Guide"
+          ]
+        },
+        {
+          "source": "App\\Exceptions\\BaseBusinessException",
+          "specifiers": [
+            "BaseBusinessException"
+          ]
+        }
+      ],
+      "exports": [
+        "CreateProgramAction"
+      ],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    "app/Actions/Program/DeleteProgramAction.php": {
+      "filePath": "app/Actions/Program/DeleteProgramAction.php",
+      "contentHash": "138e9bd004099e313b83fec4d1fe241eeb5ddc697c92023b61d025dca67b090b",
+      "functions": [
+        {
+          "name": "execute",
+          "params": [
+            "$program"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 8
+        }
+      ],
+      "classes": [
+        {
+          "name": "DeleteProgramAction",
+          "methods": [
+            "execute"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "App\\Exceptions\\BaseBusinessException",
+          "specifiers": [
+            "BaseBusinessException"
+          ]
+        }
+      ],
+      "exports": [
+        "DeleteProgramAction"
+      ],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "app/Actions/Program/UpdateProgramAction.php": {
+      "filePath": "app/Actions/Program/UpdateProgramAction.php",
+      "contentHash": "42e2ba1649aa3a87c845bc99c0412be6bbc582adfd0f5f9bd04b708037cfba74",
+      "functions": [
+        {
+          "name": "execute",
+          "params": [
+            "$dto",
+            "$program"
+          ],
+          "returnType": "Program",
+          "exported": false,
+          "lineCount": 23
+        }
+      ],
+      "classes": [
+        {
+          "name": "UpdateProgramAction",
+          "methods": [
+            "execute"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 34
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\DTOs\\Program\\UpdateProgramDTO",
+          "specifiers": [
+            "UpdateProgramDTO"
+          ]
+        },
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "App\\Exceptions\\BaseBusinessException",
+          "specifiers": [
+            "BaseBusinessException"
+          ]
+        }
+      ],
+      "exports": [
+        "UpdateProgramAction"
+      ],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "app/AI/README.md": {
+      "filePath": "app/AI/README.md",
+      "contentHash": "53bca6fac2f219cd171349d74290987799e52b4ff68a49e4731e8dbca72b7213",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "app/DTOs/Program/CreateProgramDTO.php": {
+      "filePath": "app/DTOs/Program/CreateProgramDTO.php",
+      "contentHash": "e0aed74a408694abbc8aa8dc46cee97fd77f70d8bc6d85f0b4fe9971d25a0a62",
+      "functions": [
+        {
+          "name": "__construct",
+          "params": [],
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "fromRequest",
+          "params": [
+            "$request"
+          ],
+          "returnType": "self",
+          "exported": false,
+          "lineCount": 25
+        }
+      ],
+      "classes": [
+        {
+          "name": "CreateProgramDTO",
+          "methods": [
+            "__construct",
+            "fromRequest"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 43
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        }
+      ],
+      "exports": [
+        "CreateProgramDTO"
+      ],
+      "totalLines": 50,
+      "hasStructuralAnalysis": true
+    },
+    "app/DTOs/Program/UpdateProgramDTO.php": {
+      "filePath": "app/DTOs/Program/UpdateProgramDTO.php",
+      "contentHash": "d815225c034cc296d8f77ece814eb683afd882a0e9cdfd65955ee31cb0692b42",
+      "functions": [
+        {
+          "name": "__construct",
+          "params": [],
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "fromRequest",
+          "params": [
+            "$request",
+            "$program"
+          ],
+          "returnType": "self",
+          "exported": false,
+          "lineCount": 26
+        }
+      ],
+      "classes": [
+        {
+          "name": "UpdateProgramDTO",
+          "methods": [
+            "__construct",
+            "fromRequest"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 44
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        }
+      ],
+      "exports": [
+        "UpdateProgramDTO"
+      ],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "app/Exceptions/BaseBusinessException.php": {
+      "filePath": "app/Exceptions/BaseBusinessException.php",
+      "contentHash": "4e2ecec9faf4454c38296d06693761f8e46475d15216b1911342acd7a80ef538",
+      "functions": [
+        {
+          "name": "getHttpStatusCode",
+          "params": [],
+          "returnType": "int",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "report",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "render",
+          "params": [
+            "$request"
+          ],
+          "exported": false,
+          "lineCount": 11
+        }
+      ],
+      "classes": [
+        {
+          "name": "BaseBusinessException",
+          "methods": [
+            "getHttpStatusCode",
+            "report",
+            "render"
+          ],
+          "properties": [
+            "httpStatusCode"
+          ],
+          "exported": true,
+          "lineCount": 41
+        }
+      ],
+      "imports": [
+        {
+          "source": "Exception",
+          "specifiers": [
+            "Exception"
+          ]
+        }
+      ],
+      "exports": [
+        "BaseBusinessException"
+      ],
+      "totalLines": 54,
+      "hasStructuralAnalysis": true
+    },
+    "app/Exceptions/ProgramOwnershipException.php": {
+      "filePath": "app/Exceptions/ProgramOwnershipException.php",
+      "contentHash": "e6514add219a4fdb70cc0e4df0673531ab3f56350a230304769709db07ef870e",
+      "functions": [
+        {
+          "name": "__construct",
+          "params": [
+            "$message"
+          ],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProgramOwnershipException",
+          "methods": [
+            "__construct"
+          ],
+          "properties": [
+            "httpStatusCode"
+          ],
+          "exported": true,
+          "lineCount": 9
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "ProgramOwnershipException"
+      ],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/AuthenticatedSessionController.php": {
+      "filePath": "app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "contentHash": "d60184c19487c130004a4313ca5c04a47bc2e13ad82249fee885b990d93a4283",
+      "functions": [
+        {
+          "name": "create",
+          "params": [],
+          "returnType": "View",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "store",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "destroy",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 10
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthenticatedSessionController",
+          "methods": [
+            "create",
+            "store",
+            "destroy"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 36
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "App\\Http\\Requests\\Auth\\LoginRequest",
+          "specifiers": [
+            "LoginRequest"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Auth",
+          "specifiers": [
+            "Auth"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "AuthenticatedSessionController"
+      ],
+      "totalLines": 48,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/ConfirmablePasswordController.php": {
+      "filePath": "app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "contentHash": "6d2c2722e151fed6d5c963a90510e310c8a8e6c507ff9abb2f6ff3a87ba60fd1",
+      "functions": [
+        {
+          "name": "show",
+          "params": [],
+          "returnType": "View",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "store",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 15
+        }
+      ],
+      "classes": [
+        {
+          "name": "ConfirmablePasswordController",
+          "methods": [
+            "show",
+            "store"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 29
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Auth",
+          "specifiers": [
+            "Auth"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\ValidationException",
+          "specifiers": [
+            "ValidationException"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "ConfirmablePasswordController"
+      ],
+      "totalLines": 41,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/EmailVerificationNotificationController.php": {
+      "filePath": "app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "contentHash": "43540fd5eb62b8a47e6428362bec1a475ccfa46d4db409415c8d44c23719a1a8",
+      "functions": [
+        {
+          "name": "store",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 10
+        }
+      ],
+      "classes": [
+        {
+          "name": "EmailVerificationNotificationController",
+          "methods": [
+            "store"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 16
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        }
+      ],
+      "exports": [
+        "EmailVerificationNotificationController"
+      ],
+      "totalLines": 25,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/EmailVerificationPromptController.php": {
+      "filePath": "app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "contentHash": "df156e3bfa7bff3868a5261f0587ceb59c2afb81e2e75fd3d8ccb6ded899e60f",
+      "functions": [
+        {
+          "name": "__invoke",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse|View",
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "classes": [
+        {
+          "name": "EmailVerificationPromptController",
+          "methods": [
+            "__invoke"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "EmailVerificationPromptController"
+      ],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/NewPasswordController.php": {
+      "filePath": "app/Http/Controllers/Auth/NewPasswordController.php",
+      "contentHash": "1549a1d054b3724288f37a9a8f11bbf9c8ffad46c0080345e1aee9b02afe0d7c",
+      "functions": [
+        {
+          "name": "create",
+          "params": [
+            "$request"
+          ],
+          "returnType": "View",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "store",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 31
+        }
+      ],
+      "classes": [
+        {
+          "name": "NewPasswordController",
+          "methods": [
+            "create",
+            "store"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 47
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Auth\\Events\\PasswordReset",
+          "specifiers": [
+            "PasswordReset"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Password",
+          "specifiers": [
+            "Password"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\Rules",
+          "specifiers": [
+            "Rules"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\ValidationException",
+          "specifiers": [
+            "ValidationException"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "NewPasswordController"
+      ],
+      "totalLines": 64,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/PasswordController.php": {
+      "filePath": "app/Http/Controllers/Auth/PasswordController.php",
+      "contentHash": "b8d0b9fd5c6fa62b2793af339158836d2f368ce072b9390b8ee367f285903df6",
+      "functions": [
+        {
+          "name": "update",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 13
+        }
+      ],
+      "classes": [
+        {
+          "name": "PasswordController",
+          "methods": [
+            "update"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 19
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\Rules\\Password",
+          "specifiers": [
+            "Password"
+          ]
+        }
+      ],
+      "exports": [
+        "PasswordController"
+      ],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/PasswordResetLinkController.php": {
+      "filePath": "app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "contentHash": "be2a369f5de2f9694fec6c02f22587be64747e37e319de74a4dca3cb3d3020a1",
+      "functions": [
+        {
+          "name": "create",
+          "params": [],
+          "returnType": "View",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "store",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 18
+        }
+      ],
+      "classes": [
+        {
+          "name": "PasswordResetLinkController",
+          "methods": [
+            "create",
+            "store"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 34
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Password",
+          "specifiers": [
+            "Password"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\ValidationException",
+          "specifiers": [
+            "ValidationException"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "PasswordResetLinkController"
+      ],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/RegisteredUserController.php": {
+      "filePath": "app/Http/Controllers/Auth/RegisteredUserController.php",
+      "contentHash": "606a98f3f91438da3aa24c192dfd2ed64e189c6d2842857db8b99860654d4c1c",
+      "functions": [
+        {
+          "name": "create",
+          "params": [],
+          "returnType": "View",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "store",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 44
+        }
+      ],
+      "classes": [
+        {
+          "name": "RegisteredUserController",
+          "methods": [
+            "create",
+            "store"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 60
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Auth\\Events\\Registered",
+          "specifiers": [
+            "Registered"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Auth",
+          "specifiers": [
+            "Auth"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\Rules",
+          "specifiers": [
+            "Rules"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\ValidationException",
+          "specifiers": [
+            "ValidationException"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "RegisteredUserController"
+      ],
+      "totalLines": 76,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Auth/VerifyEmailController.php": {
+      "filePath": "app/Http/Controllers/Auth/VerifyEmailController.php",
+      "contentHash": "7b41137002a44a6ef133192de12dede3943ae67e12d3f86a10d28a599a9a2a56",
+      "functions": [
+        {
+          "name": "__invoke",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 12
+        }
+      ],
+      "classes": [
+        {
+          "name": "VerifyEmailController",
+          "methods": [
+            "__invoke"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "Illuminate\\Auth\\Events\\Verified",
+          "specifiers": [
+            "Verified"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Auth\\EmailVerificationRequest",
+          "specifiers": [
+            "EmailVerificationRequest"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        }
+      ],
+      "exports": [
+        "VerifyEmailController"
+      ],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/Controller.php": {
+      "filePath": "app/Http/Controllers/Controller.php",
+      "contentHash": "25d1c1ef8e6cc8a376553faacfba2b07d9dfaee9bdbb84f14f77517580e9deb1",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Controller",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "Controller"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/DashboardController.php": {
+      "filePath": "app/Http/Controllers/DashboardController.php",
+      "contentHash": "854bd488d9f47965d9be5d3a198971ba6d9dd432c7f684cc36d70374f73f1c9e",
+      "functions": [
+        {
+          "name": "index",
+          "params": [],
+          "exported": false,
+          "lineCount": 36
+        },
+        {
+          "name": "stats",
+          "params": [
+            "$request"
+          ],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "getMonthlyVisitChart",
+          "params": [
+            "$guideId"
+          ],
+          "exported": false,
+          "lineCount": 21
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardController",
+          "methods": [
+            "index",
+            "stats",
+            "getMonthlyVisitChart"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 79
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "App\\Models\\Visit",
+          "specifiers": [
+            "Visit"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Auth",
+          "specifiers": [
+            "Auth"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\DB",
+          "specifiers": [
+            "DB"
+          ]
+        }
+      ],
+      "exports": [
+        "DashboardController"
+      ],
+      "totalLines": 90,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/DestinationController.php": {
+      "filePath": "app/Http/Controllers/DestinationController.php",
+      "contentHash": "4dfbf5428adb0f151975255381bbe22913b98dabf0a5bfcbeb0492fd4cd4102a",
+      "functions": [
+        {
+          "name": "index",
+          "params": [],
+          "exported": false,
+          "lineCount": 48
+        }
+      ],
+      "classes": [
+        {
+          "name": "DestinationController",
+          "methods": [
+            "index"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 51
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        }
+      ],
+      "exports": [
+        "DestinationController"
+      ],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/GuideController.php": {
+      "filePath": "app/Http/Controllers/GuideController.php",
+      "contentHash": "288ef07bef3cdd54a56df4289997c64adfdc394adf2687bd9611c2fb56b4f16d",
+      "functions": [
+        {
+          "name": "index",
+          "params": [],
+          "exported": false,
+          "lineCount": 12
+        }
+      ],
+      "classes": [
+        {
+          "name": "GuideController",
+          "methods": [
+            "index"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 15
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Guide",
+          "specifiers": [
+            "Guide"
+          ]
+        }
+      ],
+      "exports": [
+        "GuideController"
+      ],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/HomeController.php": {
+      "filePath": "app/Http/Controllers/HomeController.php",
+      "contentHash": "f5068a784a74e25c7eef9ce3f969eb22f36370e56f7e8c9a177827a5a3e76010",
+      "functions": [
+        {
+          "name": "index",
+          "params": [],
+          "exported": false,
+          "lineCount": 17
+        }
+      ],
+      "classes": [
+        {
+          "name": "HomeController",
+          "methods": [
+            "index"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 23
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        }
+      ],
+      "exports": [
+        "HomeController"
+      ],
+      "totalLines": 31,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/PageController.php": {
+      "filePath": "app/Http/Controllers/PageController.php",
+      "contentHash": "9d645fb182ed055561e62b9c4b4b877a13a2c9ca1c3a3d76bc5fed369601a218",
+      "functions": [
+        {
+          "name": "contact",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "PageController",
+          "methods": [
+            "contact"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "PageController"
+      ],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/ProfileController.php": {
+      "filePath": "app/Http/Controllers/ProfileController.php",
+      "contentHash": "ba1df0d86fbc1c028977531b62fad6d063b68fe4984a8a48d5c361668cdc5554",
+      "functions": [
+        {
+          "name": "edit",
+          "params": [
+            "$request"
+          ],
+          "returnType": "View",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "update",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 28
+        },
+        {
+          "name": "destroy",
+          "params": [
+            "$request"
+          ],
+          "returnType": "RedirectResponse",
+          "exported": false,
+          "lineCount": 17
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProfileController",
+          "methods": [
+            "edit",
+            "update",
+            "destroy"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 65
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Http\\Requests\\ProfileUpdateRequest",
+          "specifiers": [
+            "ProfileUpdateRequest"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\RedirectResponse",
+          "specifiers": [
+            "RedirectResponse"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Auth",
+          "specifiers": [
+            "Auth"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Redirect",
+          "specifiers": [
+            "Redirect"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "ProfileController"
+      ],
+      "totalLines": 77,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/ProgramController.php": {
+      "filePath": "app/Http/Controllers/ProgramController.php",
+      "contentHash": "b806019332819d2649071626a991e9903c9976a684c6b80c87a72eb0a0e2ac2a",
+      "functions": [
+        {
+          "name": "__construct",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "index",
+          "params": [
+            "$request"
+          ],
+          "exported": false,
+          "lineCount": 33
+        },
+        {
+          "name": "show",
+          "params": [
+            "$slug",
+            "$request"
+          ],
+          "exported": false,
+          "lineCount": 28
+        },
+        {
+          "name": "create",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "store",
+          "params": [
+            "$request"
+          ],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "edit",
+          "params": [
+            "$program"
+          ],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "update",
+          "params": [
+            "$request",
+            "$program"
+          ],
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "destroy",
+          "params": [
+            "$program"
+          ],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "authorizeGuideOwnership",
+          "params": [
+            "$program"
+          ],
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "toggleFavorite",
+          "params": [
+            "$program"
+          ],
+          "exported": false,
+          "lineCount": 10
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProgramController",
+          "methods": [
+            "__construct",
+            "index",
+            "show",
+            "create",
+            "store",
+            "edit",
+            "update",
+            "destroy",
+            "authorizeGuideOwnership",
+            "toggleFavorite"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 163
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "App\\Models\\Visit",
+          "specifiers": [
+            "Visit"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Auth",
+          "specifiers": [
+            "Auth"
+          ]
+        },
+        {
+          "source": "App\\DTOs\\Program\\CreateProgramDTO",
+          "specifiers": [
+            "CreateProgramDTO"
+          ]
+        },
+        {
+          "source": "App\\DTOs\\Program\\UpdateProgramDTO",
+          "specifiers": [
+            "UpdateProgramDTO"
+          ]
+        },
+        {
+          "source": "App\\Actions\\Program\\CreateProgramAction",
+          "specifiers": [
+            "CreateProgramAction"
+          ]
+        },
+        {
+          "source": "App\\Actions\\Program\\UpdateProgramAction",
+          "specifiers": [
+            "UpdateProgramAction"
+          ]
+        },
+        {
+          "source": "App\\Actions\\Program\\DeleteProgramAction",
+          "specifiers": [
+            "DeleteProgramAction"
+          ]
+        },
+        {
+          "source": "App\\Exceptions\\ProgramOwnershipException",
+          "specifiers": [
+            "ProgramOwnershipException"
+          ]
+        }
+      ],
+      "exports": [
+        "ProgramController"
+      ],
+      "totalLines": 179,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/SuperAdminDashboardController.php": {
+      "filePath": "app/Http/Controllers/SuperAdminDashboardController.php",
+      "contentHash": "0099547587974b3d0b461d389aec543d657b4281232a0e38dcf44b1fffbaca5b",
+      "functions": [
+        {
+          "name": "index",
+          "params": [],
+          "exported": false,
+          "lineCount": 39
+        }
+      ],
+      "classes": [
+        {
+          "name": "SuperAdminDashboardController",
+          "methods": [
+            "index"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 42
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\DB",
+          "specifiers": [
+            "DB"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        }
+      ],
+      "exports": [
+        "SuperAdminDashboardController"
+      ],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Controllers/UserManagementController.php": {
+      "filePath": "app/Http/Controllers/UserManagementController.php",
+      "contentHash": "e24c726cc363506d42d78235de936eb3174e4eccea8fe8c14f67d08b6f590177",
+      "functions": [
+        {
+          "name": "index",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "updateRole",
+          "params": [
+            "$request",
+            "$user"
+          ],
+          "exported": false,
+          "lineCount": 15
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserManagementController",
+          "methods": [
+            "index",
+            "updateRole"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 24
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        }
+      ],
+      "exports": [
+        "UserManagementController"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Middleware/EnsureUserHasRole.php": {
+      "filePath": "app/Http/Middleware/EnsureUserHasRole.php",
+      "contentHash": "21150fb2e42554901fa2ec81e6fddb7965cf026e56f0076b06184f42c0da4adc",
+      "functions": [
+        {
+          "name": "handle",
+          "params": [
+            "$request",
+            "$next"
+          ],
+          "returnType": "Response",
+          "exported": false,
+          "lineCount": 24
+        }
+      ],
+      "classes": [
+        {
+          "name": "EnsureUserHasRole",
+          "methods": [
+            "handle"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 32
+        }
+      ],
+      "imports": [
+        {
+          "source": "Closure",
+          "specifiers": [
+            "Closure"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        },
+        {
+          "source": "Symfony\\Component\\HttpFoundation\\Response",
+          "specifiers": [
+            "Response"
+          ]
+        }
+      ],
+      "exports": [
+        "EnsureUserHasRole"
+      ],
+      "totalLines": 41,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Requests/Auth/LoginRequest.php": {
+      "filePath": "app/Http/Requests/Auth/LoginRequest.php",
+      "contentHash": "1bedb35fc41d3dadf845fdb03c0f9f5e1bc0b769f054e54830e48b4f4c5ea961",
+      "functions": [
+        {
+          "name": "authorize",
+          "params": [],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "rules",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "authenticate",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "ensureIsNotRateLimited",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "throttleKey",
+          "params": [],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "LoginRequest",
+          "methods": [
+            "authorize",
+            "rules",
+            "authenticate",
+            "ensureIsNotRateLimited",
+            "throttleKey"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 74
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Auth\\Events\\Lockout",
+          "specifiers": [
+            "Lockout"
+          ]
+        },
+        {
+          "source": "Illuminate\\Contracts\\Validation\\ValidationRule",
+          "specifiers": [
+            "ValidationRule"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Http\\FormRequest",
+          "specifiers": [
+            "FormRequest"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Auth",
+          "specifiers": [
+            "Auth"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\RateLimiter",
+          "specifiers": [
+            "RateLimiter"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\ValidationException",
+          "specifiers": [
+            "ValidationException"
+          ]
+        }
+      ],
+      "exports": [
+        "LoginRequest"
+      ],
+      "totalLines": 87,
+      "hasStructuralAnalysis": true
+    },
+    "app/Http/Requests/ProfileUpdateRequest.php": {
+      "filePath": "app/Http/Requests/ProfileUpdateRequest.php",
+      "contentHash": "3175ee5ac5226b13878dc32ea53be2c67d3a99705bfd46d5aa908177624d26cf",
+      "functions": [
+        {
+          "name": "rules",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 12
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProfileUpdateRequest",
+          "methods": [
+            "rules"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 20
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Contracts\\Validation\\ValidationRule",
+          "specifiers": [
+            "ValidationRule"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Http\\FormRequest",
+          "specifiers": [
+            "FormRequest"
+          ]
+        },
+        {
+          "source": "Illuminate\\Validation\\Rule",
+          "specifiers": [
+            "Rule"
+          ]
+        }
+      ],
+      "exports": [
+        "ProfileUpdateRequest"
+      ],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "app/Models/Guide.php": {
+      "filePath": "app/Models/Guide.php",
+      "contentHash": "307e933694fb17759394cbab67b1e023b9cd50301d4729f09317dfcc619491d5",
+      "functions": [
+        {
+          "name": "casts",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "user",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "programs",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "Guide",
+          "methods": [
+            "casts",
+            "user",
+            "programs"
+          ],
+          "properties": [
+            "fillable"
+          ],
+          "exported": true,
+          "lineCount": 39
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+          "specifiers": [
+            "HasFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Model",
+          "specifiers": [
+            "Model"
+          ]
+        }
+      ],
+      "exports": [
+        "Guide"
+      ],
+      "totalLines": 47,
+      "hasStructuralAnalysis": true
+    },
+    "app/Models/Program.php": {
+      "filePath": "app/Models/Program.php",
+      "contentHash": "9492fc225b30b575b7eeaf2d0a80dafe238cbdef640e2eea0291470df9b0cc4b",
+      "functions": [
+        {
+          "name": "casts",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "boot",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "guide",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "favoritedBy",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "visits",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "getRouteKeyName",
+          "params": [],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "Program",
+          "methods": [
+            "casts",
+            "boot",
+            "guide",
+            "favoritedBy",
+            "visits",
+            "getRouteKeyName"
+          ],
+          "properties": [
+            "fillable"
+          ],
+          "exported": true,
+          "lineCount": 73
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+          "specifiers": [
+            "HasFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Model",
+          "specifiers": [
+            "Model"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [
+        "Program"
+      ],
+      "totalLines": 82,
+      "hasStructuralAnalysis": true
+    },
+    "app/Models/User.php": {
+      "filePath": "app/Models/User.php",
+      "contentHash": "b0efd2c918661b456faf6498ec3b8b446dd3f6993df2726e93f510ae64e56128",
+      "functions": [
+        {
+          "name": "casts",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "isGuide",
+          "params": [],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "isUser",
+          "params": [],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "isSuperadmin",
+          "params": [],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "isAdmin",
+          "params": [],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "guide",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "favoritePrograms",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "hasFavorited",
+          "params": [
+            "$program"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "User",
+          "methods": [
+            "casts",
+            "isGuide",
+            "isUser",
+            "isSuperadmin",
+            "isAdmin",
+            "guide",
+            "favoritePrograms",
+            "hasFavorited"
+          ],
+          "properties": [
+            "fillable",
+            "hidden"
+          ],
+          "exported": true,
+          "lineCount": 101
+        }
+      ],
+      "imports": [
+        {
+          "source": "Database\\Factories\\UserFactory",
+          "specifiers": [
+            "UserFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+          "specifiers": [
+            "HasFactory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Auth\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Notifications\\Notifiable",
+          "specifiers": [
+            "Notifiable"
+          ]
+        }
+      ],
+      "exports": [
+        "User"
+      ],
+      "totalLines": 112,
+      "hasStructuralAnalysis": true
+    },
+    "app/Models/Visit.php": {
+      "filePath": "app/Models/Visit.php",
+      "contentHash": "c1be34a8f4df86c77212ba5a24a769d4bc41a2ce13a71a201733ed713cf691f6",
+      "functions": [
+        {
+          "name": "casts",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "program",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "user",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "Visit",
+          "methods": [
+            "casts",
+            "program",
+            "user"
+          ],
+          "properties": [
+            "fillable"
+          ],
+          "exported": true,
+          "lineCount": 33
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Model",
+          "specifiers": [
+            "Model"
+          ]
+        }
+      ],
+      "exports": [
+        "Visit"
+      ],
+      "totalLines": 40,
+      "hasStructuralAnalysis": true
+    },
+    "app/Providers/AppServiceProvider.php": {
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "contentHash": "caf306ef6a25a547bbb7edd5508a39b51c365083eb6dd58378cf2242018e94c7",
+      "functions": [
+        {
+          "name": "register",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "boot",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "AppServiceProvider",
+          "methods": [
+            "register",
+            "boot"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Support\\ServiceProvider",
+          "specifiers": [
+            "ServiceProvider"
+          ]
+        }
+      ],
+      "exports": [
+        "AppServiceProvider"
+      ],
+      "totalLines": 25,
+      "hasStructuralAnalysis": true
+    },
+    "app/Services/Supabase/SupabaseStorageService.php": {
+      "filePath": "app/Services/Supabase/SupabaseStorageService.php",
+      "contentHash": "2b724a5f39c7cd9e0690a6a82fca5e4107c3d4afec1fa245541b69913f2dd1d4",
+      "functions": [],
+      "classes": [
+        {
+          "name": "SupabaseStorageService",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "SupabaseStorageService"
+      ],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "app/View/Components/AppLayout.php": {
+      "filePath": "app/View/Components/AppLayout.php",
+      "contentHash": "866d368f424b522010fb9558fe8c112fe334eca8c6739434ffb5b3c9a9cd0737",
+      "functions": [
+        {
+          "name": "render",
+          "params": [],
+          "returnType": "View",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "AppLayout",
+          "methods": [
+            "render"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\View\\Component",
+          "specifiers": [
+            "Component"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "AppLayout"
+      ],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "app/View/Components/GuestLayout.php": {
+      "filePath": "app/View/Components/GuestLayout.php",
+      "contentHash": "5baf425a55c8a20eb59b5358545dd778b1a45663f2983b1cb883a44fd2bc24f8",
+      "functions": [
+        {
+          "name": "render",
+          "params": [],
+          "returnType": "View",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "GuestLayout",
+          "methods": [
+            "render"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\View\\Component",
+          "specifiers": [
+            "Component"
+          ]
+        },
+        {
+          "source": "Illuminate\\View\\View",
+          "specifiers": [
+            "View"
+          ]
+        }
+      ],
+      "exports": [
+        "GuestLayout"
+      ],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "ARCHITECTURE_GUIDELINES.md": {
+      "filePath": "ARCHITECTURE_GUIDELINES.md",
+      "contentHash": "2c9792c1ecdeecffc1bbd13321e650cdabbfd53b5c328bb45e90419434868738",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    "artisan": {
+      "filePath": "artisan",
+      "contentHash": "f91a517c0c5d3a904c3f390933964a5e08ec1fc68146882730daac4aca4ffcec",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 19,
+      "hasStructuralAnalysis": false
+    },
+    "bootstrap/app.php": {
+      "filePath": "bootstrap/app.php",
+      "contentHash": "196f59cbef3f58f45c4f9353586ed99567c52b1f0427dfbe6176b1fed0273c37",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Http\\Middleware\\EnsureUserHasRole",
+          "specifiers": [
+            "EnsureUserHasRole"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Application",
+          "specifiers": [
+            "Application"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Configuration\\Exceptions",
+          "specifiers": [
+            "Exceptions"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Configuration\\Middleware",
+          "specifiers": [
+            "Middleware"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "bootstrap/providers.php": {
+      "filePath": "bootstrap/providers.php",
+      "contentHash": "f720e185207a343d4c19fc99dbb317a4187efbcd7d38a303a695bbdd77ffb943",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Providers\\AppServiceProvider",
+          "specifiers": [
+            "AppServiceProvider"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "composer.json": {
+      "filePath": "composer.json",
+      "contentHash": "b51819540d6b0dcd397b8b5376309dc05b62328c867ec9775e77c23c1b13bd42",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 89,
+      "hasStructuralAnalysis": true
+    },
+    "config/app.php": {
+      "filePath": "config/app.php",
+      "contentHash": "78dcd36b226fd7b24057cb95f567cb6e96561c2406653892d8aef6dcea8461e4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 127,
+      "hasStructuralAnalysis": true
+    },
+    "config/auth.php": {
+      "filePath": "config/auth.php",
+      "contentHash": "c7e204e9785c9f596d66fb884b493f658f2327f157646bdb4088efd6b3a7773f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 118,
+      "hasStructuralAnalysis": true
+    },
+    "config/cache.php": {
+      "filePath": "config/cache.php",
+      "contentHash": "b8bcf382283330b94c0a602ff06452de819041ea709e28eea5065d51d1d7d085",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 118,
+      "hasStructuralAnalysis": true
+    },
+    "config/database.php": {
+      "filePath": "config/database.php",
+      "contentHash": "06759b7b36b8641e9025fe03dd728970c4cb02d5b58ff709cbb0649987b4bfc2",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        },
+        {
+          "source": "Pdo\\Mysql",
+          "specifiers": [
+            "Mysql"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 185,
+      "hasStructuralAnalysis": true
+    },
+    "config/filesystems.php": {
+      "filePath": "config/filesystems.php",
+      "contentHash": "ba7060d7a23e490c3ce830656f6d24ad3ccf5b868e3293f2a12e411959dc5635",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": true
+    },
+    "config/logging.php": {
+      "filePath": "config/logging.php",
+      "contentHash": "299ec1ba5b5a803c8e20f666ae7628e442e856cc2ff7ac9e2adb17b97e8ad63b",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Monolog\\Handler\\NullHandler",
+          "specifiers": [
+            "NullHandler"
+          ]
+        },
+        {
+          "source": "Monolog\\Handler\\StreamHandler",
+          "specifiers": [
+            "StreamHandler"
+          ]
+        },
+        {
+          "source": "Monolog\\Handler\\SyslogUdpHandler",
+          "specifiers": [
+            "SyslogUdpHandler"
+          ]
+        },
+        {
+          "source": "Monolog\\Processor\\PsrLogMessageProcessor",
+          "specifiers": [
+            "PsrLogMessageProcessor"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 133,
+      "hasStructuralAnalysis": true
+    },
+    "config/mail.php": {
+      "filePath": "config/mail.php",
+      "contentHash": "c43ff49a31c5f32ce21eb7159f2a4b3cd2f4074eaed5838d265646dbfedd3474",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 119,
+      "hasStructuralAnalysis": true
+    },
+    "config/queue.php": {
+      "filePath": "config/queue.php",
+      "contentHash": "6101774da7c8b79af46d0028f2b8b31a484c3f7eda10b76e5b27b6093ad364a4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 130,
+      "hasStructuralAnalysis": true
+    },
+    "config/services.php": {
+      "filePath": "config/services.php",
+      "contentHash": "8258c4487eb1d73a97e569eb0e411e3f25368044812df4cba807860432be1d92",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 39,
+      "hasStructuralAnalysis": true
+    },
+    "config/session.php": {
+      "filePath": "config/session.php",
+      "contentHash": "f2e75e189021597e29940c0859c00c3088ec591e403768fff5143c5687a80f59",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 218,
+      "hasStructuralAnalysis": true
+    },
+    "copy_data.php": {
+      "filePath": "copy_data.php",
+      "contentHash": "41a970d19d689ac13a5d1e10f9fd015e4268b6524c2362593ba0584543dd29ca",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Support\\Facades\\DB",
+          "specifiers": [
+            "DB"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "App\\Models\\Guide",
+          "specifiers": [
+            "Guide"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 79,
+      "hasStructuralAnalysis": true
+    },
+    "create_superadmin.php": {
+      "filePath": "create_superadmin.php",
+      "contentHash": "11fbdae17c7f7c762a466b4a6ab5c934d32de71a451e1b9e572dccf3816ba2b4",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "DATA/ALG_SHRA.jfif": {
+      "filePath": "DATA/ALG_SHRA.jfif",
+      "contentHash": "32c69e6cd1c2674a3fef62d622734947a555d1628d2de897c5dde366101d008b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 459,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/ALG.jfif": {
+      "filePath": "DATA/ALG.jfif",
+      "contentHash": "d20e0e45605ec4ed8183d4ebf379bb4eeb7497fe1c49d5aba8ebbb77f7ffc5df",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 313,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif": {
+      "filePath": "DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif",
+      "contentHash": "8e284e7e4520cd96d5a4869558ae67e8b8500efe0fb99c6f49ea9045407ce482",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 338,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif": {
+      "filePath": "DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif",
+      "contentHash": "64b01fbfd8d4eb7e3a6591c3ad16f5b14dcafbbdc7c5133065daa778ff4d5163",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 650,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif": {
+      "filePath": "DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif",
+      "contentHash": "f18c6c32945c67c586121fdf63b91ccd49ef2af1c2e6e020be308b86e6bcedec",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1123,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif": {
+      "filePath": "DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+      "contentHash": "45949e7a6a90b0f28ccc9d1213bdbbceb3d6c3cb5c30af482471cf1c526f3024",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 753,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif": {
+      "filePath": "DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif",
+      "contentHash": "300c659994b1ffb01559d4abea4b811e76d1482c53165a64bc148fa21a216881",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 728,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif": {
+      "filePath": "DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif",
+      "contentHash": "fffbb49cf96e8703a0a32921ca15a2c0a978125cc7358ffdc3a81b469b167199",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 289,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif": {
+      "filePath": "DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif",
+      "contentHash": "cb193dd45950e5d973d79f8c5d6ebe60d53e5193460497fefb7af160c813a072",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 668,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/lieu.csv": {
+      "filePath": "DATA/lieu.csv",
+      "contentHash": "631de652f1139ccad0db45ed45975b8a66746b6ff662f68aad888f83725858aa",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5385,
+      "hasStructuralAnalysis": false
+    },
+    "DATA/recommandation.csv": {
+      "filePath": "DATA/recommandation.csv",
+      "contentHash": "b8a70de388bc887c556e6aafbcd438f36e0ac589403c17154294bce48d240b66",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": false
+    },
+    "database/factories/UserFactory.php": {
+      "filePath": "database/factories/UserFactory.php",
+      "contentHash": "50bdc543f1b09d1a57260be55ad0e1a68aee4b34f63e1109dc94d9bcd3080526",
+      "functions": [
+        {
+          "name": "definition",
+          "params": [],
+          "returnType": "array",
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "unverified",
+          "params": [],
+          "returnType": "static",
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserFactory",
+          "methods": [
+            "definition",
+            "unverified"
+          ],
+          "properties": [
+            "password"
+          ],
+          "exported": true,
+          "lineCount": 33
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
+          "specifiers": [
+            "Factory"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [
+        "UserFactory"
+      ],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0001_01_01_000000_create_users_table.php": {
+      "filePath": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "contentHash": "715dc8a0eda21b6b7e623cb458b58c65b754ffad142bda037d7bec40bdaeb8ab",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 57,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0001_01_01_000001_create_cache_table.php": {
+      "filePath": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "contentHash": "2ca8398390ecef8eaf72aeac7fefce67f7de631b6f2ec7b7081c8db8953215dc",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 36,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0001_01_01_000002_create_jobs_table.php": {
+      "filePath": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "contentHash": "7c9c712adf4091c87bf2612f4d0dccdfa1df4501553e4ac068b83d7bd5462fa5",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 58,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0002_01_01_000000_create_guides_table.php": {
+      "filePath": "database/migrations/0002_01_01_000000_create_guides_table.php",
+      "contentHash": "30412ef485ec2d13777e2ba22fd3570e9e486f826de5695b669914df67ba99ed",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0002_01_01_000001_create_programs_table.php": {
+      "filePath": "database/migrations/0002_01_01_000001_create_programs_table.php",
+      "contentHash": "5bea96e8aa41298da854adc5dbfb2244274defc415dded2d15cef453696f64de",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 33,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0002_01_01_000002_create_favorites_table.php": {
+      "filePath": "database/migrations/0002_01_01_000002_create_favorites_table.php",
+      "contentHash": "49347faecc143997bc29bf2d478ae032c780c01698b013e4254671e835b0de0a",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "database/migrations/0002_01_01_000003_create_visits_table.php": {
+      "filePath": "database/migrations/0002_01_01_000003_create_visits_table.php",
+      "contentHash": "294dc7cc787cb47bde57c63530ac1d67d04cb039a861ec195a73b46bae0bc391",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Database\\Migrations\\Migration",
+          "specifiers": [
+            "Migration"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Schema\\Blueprint",
+          "specifiers": [
+            "Blueprint"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Schema",
+          "specifiers": [
+            "Schema"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 29,
+      "hasStructuralAnalysis": true
+    },
+    "database/seeders/CsvDataSeeder.php": {
+      "filePath": "database/seeders/CsvDataSeeder.php",
+      "contentHash": "8d2ae9f870c2b0d48a74c284c2dae3c7b4bf2bde6a118e712c5b5bb08079d78d",
+      "functions": [
+        {
+          "name": "run",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 237
+        }
+      ],
+      "classes": [
+        {
+          "name": "CsvDataSeeder",
+          "methods": [
+            "run"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 243
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Guide",
+          "specifiers": [
+            "Guide"
+          ]
+        },
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\Visit",
+          "specifiers": [
+            "Visit"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Seeder",
+          "specifiers": [
+            "Seeder"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Str",
+          "specifiers": [
+            "Str"
+          ]
+        }
+      ],
+      "exports": [
+        "CsvDataSeeder"
+      ],
+      "totalLines": 256,
+      "hasStructuralAnalysis": true
+    },
+    "database/seeders/DatabaseSeeder.php": {
+      "filePath": "database/seeders/DatabaseSeeder.php",
+      "contentHash": "cf8e4b6e48360218bb5534f66419c955288f78338eb8a3dba9d8ac3394ec3dbc",
+      "functions": [
+        {
+          "name": "run",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [
+        {
+          "name": "DatabaseSeeder",
+          "methods": [
+            "run"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 17
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents",
+          "specifiers": [
+            "WithoutModelEvents"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Seeder",
+          "specifiers": [
+            "Seeder"
+          ]
+        }
+      ],
+      "exports": [
+        "DatabaseSeeder"
+      ],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "database/seeders/DemoSeeder.php": {
+      "filePath": "database/seeders/DemoSeeder.php",
+      "contentHash": "527771d25531e9b31b40cef2ac21dc05973a078cd71efb73a5c39a516681eae3",
+      "functions": [
+        {
+          "name": "run",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 148
+        }
+      ],
+      "classes": [
+        {
+          "name": "DemoSeeder",
+          "methods": [
+            "run"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 154
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\Guide",
+          "specifiers": [
+            "Guide"
+          ]
+        },
+        {
+          "source": "App\\Models\\Program",
+          "specifiers": [
+            "Program"
+          ]
+        },
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "App\\Models\\Visit",
+          "specifiers": [
+            "Visit"
+          ]
+        },
+        {
+          "source": "Illuminate\\Database\\Seeder",
+          "specifiers": [
+            "Seeder"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        }
+      ],
+      "exports": [
+        "DemoSeeder"
+      ],
+      "totalLines": 166,
+      "hasStructuralAnalysis": true
+    },
+    "Dockerfile": {
+      "filePath": "Dockerfile",
+      "contentHash": "43618411bef79b44445bad7fcb2542fa35576f18a3d51d903a9be5a00496822c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "output.txt": {
+      "filePath": "output.txt",
+      "contentHash": "0304c5d51676b2a48f5c4a782a801105f608c6a7376a4ea47772be968babea12",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 614,
+      "hasStructuralAnalysis": false
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "2386e35078069b91ce53b65829f6e63265cc99452cc6c9a70c2957585c8fe584",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "phpunit.xml": {
+      "filePath": "phpunit.xml",
+      "contentHash": "493369cfb7feea104da4bec214c2cc6526ca2f1b9d937c50a2961fc59cb61aaf",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 37,
+      "hasStructuralAnalysis": false
+    },
+    "postcss.config.js": {
+      "filePath": "postcss.config.js",
+      "contentHash": "218def8d8635601327c5c7c2084d958f316e71e55bc2daece2a627b34ed87b72",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "public/.htaccess": {
+      "filePath": "public/.htaccess",
+      "contentHash": "b7e379c77639fd56144947dbae84c84eb466d9c686ea81f2f013ae85421da923",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": false
+    },
+    "public/index.php": {
+      "filePath": "public/index.php",
+      "contentHash": "eba77cba39695b6bd091fe5211d481f7ebb2ce2d8d26230b5a609465d0a4aff9",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Application",
+          "specifiers": [
+            "Application"
+          ]
+        },
+        {
+          "source": "Illuminate\\Http\\Request",
+          "specifiers": [
+            "Request"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 21,
+      "hasStructuralAnalysis": true
+    },
+    "public/robots.txt": {
+      "filePath": "public/robots.txt",
+      "contentHash": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 3,
+      "hasStructuralAnalysis": false
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "835969a2603e4799be3ac711ec308f48a8ddb60267bcdfce65d1a75c347c5083",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 105,
+      "hasStructuralAnalysis": true
+    },
+    "resources/css/app.css": {
+      "filePath": "resources/css/app.css",
+      "contentHash": "abf8a2b2af8ded0777061b93a42f7b15f5dbef6f36a5a6333242ae1e25f672c4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1317,
+      "hasStructuralAnalysis": false
+    },
+    "resources/js/app.js": {
+      "filePath": "resources/js/app.js",
+      "contentHash": "caf527d7630e84d3999974d60631b6c0c1f5b058db392fa4a8218a107163fb06",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./bootstrap",
+          "specifiers": []
+        },
+        {
+          "source": "alpinejs",
+          "specifiers": [
+            "Alpine"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "resources/js/bootstrap.js": {
+      "filePath": "resources/js/bootstrap.js",
+      "contentHash": "6fd9fc82e68fa915a882f4e227b9faacbe7bfd66cb953c628840e83bda6b72f4",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "axios",
+          "specifiers": [
+            "axios"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/auth/confirm-password.blade.php": {
+      "filePath": "resources/views/auth/confirm-password.blade.php",
+      "contentHash": "6b8db3a25d2f2d9bea3745e578ae46121207f66b19957600a03f81d7751be3be",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/auth/forgot-password.blade.php": {
+      "filePath": "resources/views/auth/forgot-password.blade.php",
+      "contentHash": "e3656a62b0ce569c7c2af1517220d3ad3f2c105d4bf82705da6efc62142f0de3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/auth/login.blade.php": {
+      "filePath": "resources/views/auth/login.blade.php",
+      "contentHash": "8f5760d28cd84bc2e12fe0f12c59ba03cd9a404fd8388422314decbb6c149f6d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 54,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/auth/register.blade.php": {
+      "filePath": "resources/views/auth/register.blade.php",
+      "contentHash": "a41cda3db391797604b63cec22b7eef4262a406e2e4844158919fa0d7358b12f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 109,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/auth/reset-password.blade.php": {
+      "filePath": "resources/views/auth/reset-password.blade.php",
+      "contentHash": "0e8d3b11372224ce6bfd29dc4c5e378e7cd5e8eb020f53fe36d403730c319102",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 40,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/auth/verify-email.blade.php": {
+      "filePath": "resources/views/auth/verify-email.blade.php",
+      "contentHash": "f01e25167acace7b66b8d9fbfefeb4d446f8e93e367a2f73037d65ebebcc6737",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/application-logo.blade.php": {
+      "filePath": "resources/views/components/application-logo.blade.php",
+      "contentHash": "e7777b0616c9b915ddc93d57309cac0bf0ec62fe178e0e1b94d727e3cf3dfe4e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/auth-session-status.blade.php": {
+      "filePath": "resources/views/components/auth-session-status.blade.php",
+      "contentHash": "d3e8f90900e65edf9d6689e9519475d5a8bdcc878138ea6f93a0465c452a1c7a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/danger-button.blade.php": {
+      "filePath": "resources/views/components/danger-button.blade.php",
+      "contentHash": "170500f8abf07d73aa0d16731011d45f12b7e067a8359e96a58d65c2c5320d9c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/dropdown-link.blade.php": {
+      "filePath": "resources/views/components/dropdown-link.blade.php",
+      "contentHash": "3b928afd090f9c254ddf9a905a8462fa26e47f027156ca6fdd849104bb0b50f4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/dropdown.blade.php": {
+      "filePath": "resources/views/components/dropdown.blade.php",
+      "contentHash": "2d71cfe224678381444f089f77b1c5c3a360325f2a2b523deaceaa2d5f1ecc88",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 36,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/input-error.blade.php": {
+      "filePath": "resources/views/components/input-error.blade.php",
+      "contentHash": "1458ab2053984900e07ec6c2a4bbd64470bf2512fee23091f64ae2985c8f4b99",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/input-label.blade.php": {
+      "filePath": "resources/views/components/input-label.blade.php",
+      "contentHash": "6ec0d699a4334f8bc61b801c7f7a12c0d911dc2b2391c918d0111f6b19d43f45",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/modal.blade.php": {
+      "filePath": "resources/views/components/modal.blade.php",
+      "contentHash": "e9095abb18e34d009b182464922ef829ae482321255ea2074d8d2bbd99941272",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 79,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/nav-link.blade.php": {
+      "filePath": "resources/views/components/nav-link.blade.php",
+      "contentHash": "a27387f4a3a80732d6022ea647ef5c490d7a39bc03ebf4b2cde6cb87e97ce64d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/primary-button.blade.php": {
+      "filePath": "resources/views/components/primary-button.blade.php",
+      "contentHash": "196162fd574d904479702429591539a0122905d3790bb9ac2fb325864210f735",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/responsive-nav-link.blade.php": {
+      "filePath": "resources/views/components/responsive-nav-link.blade.php",
+      "contentHash": "19091709dbbf3dbbc05f9a2db47f47672b4345d559653fdf0bf8d5e01116ed62",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/secondary-button.blade.php": {
+      "filePath": "resources/views/components/secondary-button.blade.php",
+      "contentHash": "e5ba63f856280440e6d7237d69847a345b824153efdff7b855871ae289ea3b1c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/components/text-input.blade.php": {
+      "filePath": "resources/views/components/text-input.blade.php",
+      "contentHash": "4d319fe693ae38675ef17dde0cf59a404630b620e47feaef448ae8fb347fc1ac",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/contact/index.blade.php": {
+      "filePath": "resources/views/contact/index.blade.php",
+      "contentHash": "ceb102655e51e15cd02e073970f26a77dedd5de9533bab982cb0b24bde73bd0f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 78,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/dashboard.blade.php": {
+      "filePath": "resources/views/dashboard.blade.php",
+      "contentHash": "a255ef18ac8a6c164b8a48751bc03cac7397363d7f4a124b911f9b52b884d07e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/dashboard/index.blade.php": {
+      "filePath": "resources/views/dashboard/index.blade.php",
+      "contentHash": "2133d3b457323afc26cba03bd2c95717f9ab211edd55712a6a8a82c596cba104",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 231,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/dashboard/programs/create.blade.php": {
+      "filePath": "resources/views/dashboard/programs/create.blade.php",
+      "contentHash": "d62498238e4f0fca2678396e7bbada6b8dffbd1a3a5e7448ef8dcacb161c3353",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 101,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/dashboard/programs/edit.blade.php": {
+      "filePath": "resources/views/dashboard/programs/edit.blade.php",
+      "contentHash": "8b6aebeb119884539ebab27332c746112b9a867a1994a5749b5abd4b74c3c4e6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 121,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/dashboard/superadmin/index.blade.php": {
+      "filePath": "resources/views/dashboard/superadmin/index.blade.php",
+      "contentHash": "7c73c5e5e92030dccf36990707cc9e668a957d90a37a48b5ebc6c6422f936fa5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 502,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/dashboard/users/index.blade.php": {
+      "filePath": "resources/views/dashboard/users/index.blade.php",
+      "contentHash": "c376f2b0e311a84d6f96e0b1927275714df81ee908257235fa0c8145bc415590",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 79,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/destinations/index.blade.php": {
+      "filePath": "resources/views/destinations/index.blade.php",
+      "contentHash": "b070896557769b9fbd858abcd7ac810f549cb5e8acc17316cdd2fdb142f4175f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/guides/index.blade.php": {
+      "filePath": "resources/views/guides/index.blade.php",
+      "contentHash": "3d7d18a80c478eacf819e981684aa041756da2033e93716bf86710b91aa4d65f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 57,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/home.blade.php": {
+      "filePath": "resources/views/home.blade.php",
+      "contentHash": "ced213b8f386eec6f42e31ad34490fcd6630f49a6bb783c71f93552ae7242650",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 214,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/layouts/app.blade.php": {
+      "filePath": "resources/views/layouts/app.blade.php",
+      "contentHash": "168c9b54d4dbb6aafef353b7155a9362991bdc1426829af3f43e89011068cf21",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 204,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/layouts/dashboard.blade.php": {
+      "filePath": "resources/views/layouts/dashboard.blade.php",
+      "contentHash": "8cd19d462e09f39f87da84ddad629f514ed6b9af5bf500d13f7fc58a5b5f6c49",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 61,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/layouts/guest.blade.php": {
+      "filePath": "resources/views/layouts/guest.blade.php",
+      "contentHash": "2f0119ca44ed413a0e8f04088f5fe7cc5fc39cd1ecd43cd058effc07097f1fc8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/layouts/navigation.blade.php": {
+      "filePath": "resources/views/layouts/navigation.blade.php",
+      "contentHash": "fd5da7a207db893d49fb313b6373dca9cb8963d99aa7aa9d28e53c4a5b4ca3c2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 101,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/profile/edit.blade.php": {
+      "filePath": "resources/views/profile/edit.blade.php",
+      "contentHash": "ba36dc27c3bd187e14750c1ba05d3cc5ec175d277d482d5d87a1580de275a39d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 159,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/profile/partials/delete-user-form.blade.php": {
+      "filePath": "resources/views/profile/partials/delete-user-form.blade.php",
+      "contentHash": "cb6ba9d3ad0dedd24b80aa1dbdffcf4154a3922a9624e19ea19f51932b727817",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 45,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/profile/partials/update-password-form.blade.php": {
+      "filePath": "resources/views/profile/partials/update-password-form.blade.php",
+      "contentHash": "dfcd3a8e8aa29309fb6d56a60468d0b72983a79bf753833c656073a3368f6ea9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 39,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/profile/partials/update-profile-information-form.blade.php": {
+      "filePath": "resources/views/profile/partials/update-profile-information-form.blade.php",
+      "contentHash": "4ac3b302cc2baf0b056d107513c823ba7c8e9d169e702d21454cb3ee0257f31b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 87,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/programs/index.blade.php": {
+      "filePath": "resources/views/programs/index.blade.php",
+      "contentHash": "77fb7c5f107a8df654323ea5bfb90dd5906764e5d394a19e481a0285e50d15ae",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 149,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/programs/show.blade.php": {
+      "filePath": "resources/views/programs/show.blade.php",
+      "contentHash": "7e4d7ba12af5333cd9f778c72157cce2fd4618ed447d11b2a5bc98ee499804b0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 215,
+      "hasStructuralAnalysis": true
+    },
+    "resources/views/welcome.blade.php": {
+      "filePath": "resources/views/welcome.blade.php",
+      "contentHash": "e50e41602994840b788471625fec54a4db6138ec971be05cfdfba40daf906c22",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 278,
+      "hasStructuralAnalysis": true
+    },
+    "routes/auth.php": {
+      "filePath": "routes/auth.php",
+      "contentHash": "023ebf87640b759a150779fe97a2f4e68e8bc48281ac85c26a3acb92f35e6f6a",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\Auth\\AuthenticatedSessionController",
+          "specifiers": [
+            "AuthenticatedSessionController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\Auth\\ConfirmablePasswordController",
+          "specifiers": [
+            "ConfirmablePasswordController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController",
+          "specifiers": [
+            "EmailVerificationNotificationController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\Auth\\EmailVerificationPromptController",
+          "specifiers": [
+            "EmailVerificationPromptController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\Auth\\NewPasswordController",
+          "specifiers": [
+            "NewPasswordController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\Auth\\PasswordController",
+          "specifiers": [
+            "PasswordController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\Auth\\PasswordResetLinkController",
+          "specifiers": [
+            "PasswordResetLinkController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\Auth\\RegisteredUserController",
+          "specifiers": [
+            "RegisteredUserController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\Auth\\VerifyEmailController",
+          "specifiers": [
+            "VerifyEmailController"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Route",
+          "specifiers": [
+            "Route"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 60,
+      "hasStructuralAnalysis": true
+    },
+    "routes/console.php": {
+      "filePath": "routes/console.php",
+      "contentHash": "9adccc33e7dd400683e434774077c7fdb2f299c5712cedf16a43fdf56f2850fa",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Inspiring",
+          "specifiers": [
+            "Inspiring"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Artisan",
+          "specifiers": [
+            "Artisan"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "routes/web.php": {
+      "filePath": "routes/web.php",
+      "contentHash": "ff653484d8f8644e80558361d2c09e38136b4bb5a9d409014a3df7b1e86d21cc",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "App\\Http\\Controllers\\DashboardController",
+          "specifiers": [
+            "DashboardController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\HomeController",
+          "specifiers": [
+            "HomeController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\ProfileController",
+          "specifiers": [
+            "ProfileController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\ProgramController",
+          "specifiers": [
+            "ProgramController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\GuideController",
+          "specifiers": [
+            "GuideController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\DestinationController",
+          "specifiers": [
+            "DestinationController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\SuperAdminDashboardController",
+          "specifiers": [
+            "SuperAdminDashboardController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\UserManagementController",
+          "specifiers": [
+            "UserManagementController"
+          ]
+        },
+        {
+          "source": "App\\Http\\Controllers\\PageController",
+          "specifiers": [
+            "PageController"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Route",
+          "specifiers": [
+            "Route"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 72,
+      "hasStructuralAnalysis": true
+    },
+    "tailwind.config.js": {
+      "filePath": "tailwind.config.js",
+      "contentHash": "a7f13b2e34cc4ad688db4ff3eb617ed4183d650ddf92cd87bbc90b44737df778",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "tailwindcss/defaultTheme",
+          "specifiers": [
+            "defaultTheme"
+          ]
+        },
+        {
+          "source": "@tailwindcss/forms",
+          "specifiers": [
+            "forms"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Auth/AuthenticationTest.php": {
+      "filePath": "tests/Feature/Auth/AuthenticationTest.php",
+      "contentHash": "5a507ad5e4284456041d455cbf2a1f161ba43015ffe16e558a0ecbdee8202d6d",
+      "functions": [
+        {
+          "name": "test_login_screen_can_be_rendered",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "test_users_can_authenticate_using_the_login_screen",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "test_users_can_not_authenticate_with_invalid_password",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "test_users_can_logout",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthenticationTest",
+          "methods": [
+            "test_login_screen_can_be_rendered",
+            "test_users_can_authenticate_using_the_login_screen",
+            "test_users_can_not_authenticate_with_invalid_password",
+            "test_users_can_logout"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 46
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Testing\\RefreshDatabase",
+          "specifiers": [
+            "RefreshDatabase"
+          ]
+        },
+        {
+          "source": "Tests\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "AuthenticationTest"
+      ],
+      "totalLines": 55,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Auth/EmailVerificationTest.php": {
+      "filePath": "tests/Feature/Auth/EmailVerificationTest.php",
+      "contentHash": "443f23c03bf50a9dc190d9b521e48582b8cd7dd4a72d133370926ada776d187e",
+      "functions": [
+        {
+          "name": "test_email_verification_screen_can_be_rendered",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "test_email_can_be_verified",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 18
+        },
+        {
+          "name": "test_email_is_not_verified_with_invalid_hash",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 14
+        }
+      ],
+      "classes": [
+        {
+          "name": "EmailVerificationTest",
+          "methods": [
+            "test_email_verification_screen_can_be_rendered",
+            "test_email_can_be_verified",
+            "test_email_is_not_verified_with_invalid_hash"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 47
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Auth\\Events\\Verified",
+          "specifiers": [
+            "Verified"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Testing\\RefreshDatabase",
+          "specifiers": [
+            "RefreshDatabase"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Event",
+          "specifiers": [
+            "Event"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\URL",
+          "specifiers": [
+            "URL"
+          ]
+        },
+        {
+          "source": "Tests\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "EmailVerificationTest"
+      ],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Auth/PasswordConfirmationTest.php": {
+      "filePath": "tests/Feature/Auth/PasswordConfirmationTest.php",
+      "contentHash": "6e11f31155ceab5b3ec80d61e565bdef3cfcf48305dc74d8334e6ec4ed59a3f0",
+      "functions": [
+        {
+          "name": "test_confirm_password_screen_can_be_rendered",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "test_password_can_be_confirmed",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "test_password_is_not_confirmed_with_invalid_password",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 10
+        }
+      ],
+      "classes": [
+        {
+          "name": "PasswordConfirmationTest",
+          "methods": [
+            "test_confirm_password_screen_can_be_rendered",
+            "test_password_can_be_confirmed",
+            "test_password_is_not_confirmed_with_invalid_password"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 36
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Testing\\RefreshDatabase",
+          "specifiers": [
+            "RefreshDatabase"
+          ]
+        },
+        {
+          "source": "Tests\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "PasswordConfirmationTest"
+      ],
+      "totalLines": 45,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Auth/PasswordResetTest.php": {
+      "filePath": "tests/Feature/Auth/PasswordResetTest.php",
+      "contentHash": "4fcd3082b737cc2a095f7bb0b2bc8ba7979f613b3f753cd96fff71c8576fa34c",
+      "functions": [
+        {
+          "name": "test_reset_password_link_screen_can_be_rendered",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "test_reset_password_link_can_be_requested",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "test_reset_password_screen_can_be_rendered",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 16
+        },
+        {
+          "name": "test_password_can_be_reset_with_valid_token",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 23
+        }
+      ],
+      "classes": [
+        {
+          "name": "PasswordResetTest",
+          "methods": [
+            "test_reset_password_link_screen_can_be_rendered",
+            "test_reset_password_link_can_be_requested",
+            "test_reset_password_screen_can_be_rendered",
+            "test_password_can_be_reset_with_valid_token"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 63
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Auth\\Notifications\\ResetPassword",
+          "specifiers": [
+            "ResetPassword"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Testing\\RefreshDatabase",
+          "specifiers": [
+            "RefreshDatabase"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Notification",
+          "specifiers": [
+            "Notification"
+          ]
+        },
+        {
+          "source": "Tests\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "PasswordResetTest"
+      ],
+      "totalLines": 74,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Auth/PasswordUpdateTest.php": {
+      "filePath": "tests/Feature/Auth/PasswordUpdateTest.php",
+      "contentHash": "f61c963157cfac94d1179c4d35feb82dbea525332b16c022c2b926f7f78c7630",
+      "functions": [
+        {
+          "name": "test_password_can_be_updated",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "test_correct_password_must_be_provided_to_update_password",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 17
+        }
+      ],
+      "classes": [
+        {
+          "name": "PasswordUpdateTest",
+          "methods": [
+            "test_password_can_be_updated",
+            "test_correct_password_must_be_provided_to_update_password"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 42
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Testing\\RefreshDatabase",
+          "specifiers": [
+            "RefreshDatabase"
+          ]
+        },
+        {
+          "source": "Illuminate\\Support\\Facades\\Hash",
+          "specifiers": [
+            "Hash"
+          ]
+        },
+        {
+          "source": "Tests\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "PasswordUpdateTest"
+      ],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/Auth/RegistrationTest.php": {
+      "filePath": "tests/Feature/Auth/RegistrationTest.php",
+      "contentHash": "ed907c65c1eafb30701591b448b39a85ec0019681a724561e65c9d399b8e59f4",
+      "functions": [
+        {
+          "name": "test_registration_screen_can_be_rendered",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "test_new_users_can_register",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 12
+        }
+      ],
+      "classes": [
+        {
+          "name": "RegistrationTest",
+          "methods": [
+            "test_registration_screen_can_be_rendered",
+            "test_new_users_can_register"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 24
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Testing\\RefreshDatabase",
+          "specifiers": [
+            "RefreshDatabase"
+          ]
+        },
+        {
+          "source": "Tests\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "RegistrationTest"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/ExampleTest.php": {
+      "filePath": "tests/Feature/ExampleTest.php",
+      "contentHash": "aaa4a192fb4aa96d4e81eda06a29968da3d9a73b71026b87a67297e66dd985b8",
+      "functions": [
+        {
+          "name": "test_the_application_returns_a_successful_response",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExampleTest",
+          "methods": [
+            "test_the_application_returns_a_successful_response"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "imports": [
+        {
+          "source": "Tests\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "ExampleTest"
+      ],
+      "totalLines": 20,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Feature/ProfileTest.php": {
+      "filePath": "tests/Feature/ProfileTest.php",
+      "contentHash": "cc6376759c0028a187e0623117eabaf98109f9ab288647bca6ce8c6b9019f240",
+      "functions": [
+        {
+          "name": "test_profile_page_is_displayed",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "test_profile_information_can_be_updated",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 21
+        },
+        {
+          "name": "test_email_verification_status_is_unchanged_when_the_email_address_is_unchanged",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "test_user_can_delete_their_account",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "test_correct_password_must_be_provided_to_delete_account",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 17
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProfileTest",
+          "methods": [
+            "test_profile_page_is_displayed",
+            "test_profile_information_can_be_updated",
+            "test_email_verification_status_is_unchanged_when_the_email_address_is_unchanged",
+            "test_user_can_delete_their_account",
+            "test_correct_password_must_be_provided_to_delete_account"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 91
+        }
+      ],
+      "imports": [
+        {
+          "source": "App\\Models\\User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "Illuminate\\Foundation\\Testing\\RefreshDatabase",
+          "specifiers": [
+            "RefreshDatabase"
+          ]
+        },
+        {
+          "source": "Tests\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "ProfileTest"
+      ],
+      "totalLines": 100,
+      "hasStructuralAnalysis": true
+    },
+    "tests/TestCase.php": {
+      "filePath": "tests/TestCase.php",
+      "contentHash": "c7c209f5579c42647c1f7b2a79ac828e8b54ac62a98442045a6e94fa2c0d0ebc",
+      "functions": [],
+      "classes": [
+        {
+          "name": "TestCase",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "Illuminate\\Foundation\\Testing\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "TestCase"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "tests/Unit/ExampleTest.php": {
+      "filePath": "tests/Unit/ExampleTest.php",
+      "contentHash": "ffacae5c1a2a44c809420af5b3b404910da1b12167d58764dac6d10b8ba8cfaf",
+      "functions": [
+        {
+          "name": "test_that_true_is_true",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExampleTest",
+          "methods": [
+            "test_that_true_is_true"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [
+        {
+          "source": "PHPUnit\\Framework\\TestCase",
+          "specifiers": [
+            "TestCase"
+          ]
+        }
+      ],
+      "exports": [
+        "ExampleTest"
+      ],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "vite.config.js": {
+      "filePath": "vite.config.js",
+      "contentHash": "44046b73b2b60e791050a3cc88bf70e2d7958524b82cb46ff4f96f87bd1daa0c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "vite",
+          "specifiers": [
+            "defineConfig"
+          ]
+        },
+        {
+          "source": "laravel-vite-plugin",
+          "specifiers": [
+            "laravel"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

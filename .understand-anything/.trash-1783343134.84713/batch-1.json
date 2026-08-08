@@ -1,0 +1,288 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "type": "file",
+      "name": "AuthenticatedSessionController.php",
+      "filePath": "app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "summary": "Fichier php pour AuthenticatedSessionController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "type": "file",
+      "name": "ConfirmablePasswordController.php",
+      "filePath": "app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "summary": "Fichier php pour ConfirmablePasswordController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "type": "file",
+      "name": "EmailVerificationNotificationController.php",
+      "filePath": "app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "summary": "Fichier php pour EmailVerificationNotificationController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "type": "file",
+      "name": "EmailVerificationPromptController.php",
+      "filePath": "app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "summary": "Fichier php pour EmailVerificationPromptController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/NewPasswordController.php",
+      "type": "file",
+      "name": "NewPasswordController.php",
+      "filePath": "app/Http/Controllers/Auth/NewPasswordController.php",
+      "summary": "Fichier php pour NewPasswordController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "type": "file",
+      "name": "PasswordController.php",
+      "filePath": "app/Http/Controllers/Auth/PasswordController.php",
+      "summary": "Fichier php pour PasswordController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "type": "file",
+      "name": "PasswordResetLinkController.php",
+      "filePath": "app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "summary": "Fichier php pour PasswordResetLinkController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+      "type": "file",
+      "name": "RegisteredUserController.php",
+      "filePath": "app/Http/Controllers/Auth/RegisteredUserController.php",
+      "summary": "Fichier php pour RegisteredUserController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Auth/VerifyEmailController.php",
+      "type": "file",
+      "name": "VerifyEmailController.php",
+      "filePath": "app/Http/Controllers/Auth/VerifyEmailController.php",
+      "summary": "Fichier php pour VerifyEmailController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/Controller.php",
+      "type": "file",
+      "name": "Controller.php",
+      "filePath": "app/Http/Controllers/Controller.php",
+      "summary": "Fichier php pour Controller.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "type": "file",
+      "name": "LoginRequest.php",
+      "filePath": "app/Http/Requests/Auth/LoginRequest.php",
+      "summary": "Fichier php pour LoginRequest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:routes/auth.php",
+      "type": "file",
+      "name": "auth.php",
+      "filePath": "routes/auth.php",
+      "summary": "Fichier php pour auth.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "AuthenticatedSessionController.php importe Controller.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "target": "file:app/Http/Requests/Auth/LoginRequest.php",
+      "type": "imports",
+      "description": "AuthenticatedSessionController.php importe LoginRequest.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "ConfirmablePasswordController.php importe Controller.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "EmailVerificationNotificationController.php importe Controller.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "EmailVerificationPromptController.php importe Controller.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/NewPasswordController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "NewPasswordController.php importe Controller.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/NewPasswordController.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "NewPasswordController.php importe User.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "PasswordController.php importe Controller.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "PasswordResetLinkController.php importe Controller.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "RegisteredUserController.php importe Controller.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "RegisteredUserController.php importe User.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/Auth/VerifyEmailController.php",
+      "target": "file:app/Http/Controllers/Controller.php",
+      "type": "imports",
+      "description": "VerifyEmailController.php importe Controller.php"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "type": "imports",
+      "description": "auth.php importe AuthenticatedSessionController.php"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "type": "imports",
+      "description": "auth.php importe ConfirmablePasswordController.php"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "type": "imports",
+      "description": "auth.php importe EmailVerificationNotificationController.php"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "type": "imports",
+      "description": "auth.php importe EmailVerificationPromptController.php"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/NewPasswordController.php",
+      "type": "imports",
+      "description": "auth.php importe NewPasswordController.php"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/PasswordController.php",
+      "type": "imports",
+      "description": "auth.php importe PasswordController.php"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "type": "imports",
+      "description": "auth.php importe PasswordResetLinkController.php"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/RegisteredUserController.php",
+      "type": "imports",
+      "description": "auth.php importe RegisteredUserController.php"
+    },
+    {
+      "source": "file:routes/auth.php",
+      "target": "file:app/Http/Controllers/Auth/VerifyEmailController.php",
+      "type": "imports",
+      "description": "auth.php importe VerifyEmailController.php"
+    }
+  ]
+}

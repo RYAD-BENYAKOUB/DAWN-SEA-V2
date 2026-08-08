@@ -1,0 +1,343 @@
+{
+  "nodes": [
+    {
+      "id": "file:.gitattributes",
+      "type": "file",
+      "name": ".gitattributes",
+      "filePath": ".gitattributes",
+      "summary": "Fichier unknown pour .gitattributes.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "Fichier unknown pour .understandignore.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "config:.understand-anything/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".understand-anything/config.json",
+      "summary": "Fichier json pour config.json.",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:app/AI/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "app/AI/README.md",
+      "summary": "Fichier markdown pour README.md.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Middleware/EnsureUserHasRole.php",
+      "type": "file",
+      "name": "EnsureUserHasRole.php",
+      "filePath": "app/Http/Middleware/EnsureUserHasRole.php",
+      "summary": "Fichier php pour EnsureUserHasRole.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Providers/AppServiceProvider.php",
+      "type": "file",
+      "name": "AppServiceProvider.php",
+      "filePath": "app/Providers/AppServiceProvider.php",
+      "summary": "Fichier php pour AppServiceProvider.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Services/Supabase/SupabaseStorageService.php",
+      "type": "file",
+      "name": "SupabaseStorageService.php",
+      "filePath": "app/Services/Supabase/SupabaseStorageService.php",
+      "summary": "Fichier php pour SupabaseStorageService.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/View/Components/AppLayout.php",
+      "type": "file",
+      "name": "AppLayout.php",
+      "filePath": "app/View/Components/AppLayout.php",
+      "summary": "Fichier php pour AppLayout.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/View/Components/GuestLayout.php",
+      "type": "file",
+      "name": "GuestLayout.php",
+      "filePath": "app/View/Components/GuestLayout.php",
+      "summary": "Fichier php pour GuestLayout.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:artisan",
+      "type": "file",
+      "name": "artisan",
+      "filePath": "artisan",
+      "summary": "Fichier unknown pour artisan.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:bootstrap/app.php",
+      "type": "file",
+      "name": "app.php",
+      "filePath": "bootstrap/app.php",
+      "summary": "Fichier php pour app.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:bootstrap/providers.php",
+      "type": "file",
+      "name": "providers.php",
+      "filePath": "bootstrap/providers.php",
+      "summary": "Fichier php pour providers.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/app.php",
+      "type": "file",
+      "name": "app.php",
+      "filePath": "config/app.php",
+      "summary": "Fichier php pour app.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/cache.php",
+      "type": "file",
+      "name": "cache.php",
+      "filePath": "config/cache.php",
+      "summary": "Fichier php pour cache.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/database.php",
+      "type": "file",
+      "name": "database.php",
+      "filePath": "config/database.php",
+      "summary": "Fichier php pour database.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/filesystems.php",
+      "type": "file",
+      "name": "filesystems.php",
+      "filePath": "config/filesystems.php",
+      "summary": "Fichier php pour filesystems.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/logging.php",
+      "type": "file",
+      "name": "logging.php",
+      "filePath": "config/logging.php",
+      "summary": "Fichier php pour logging.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/mail.php",
+      "type": "file",
+      "name": "mail.php",
+      "filePath": "config/mail.php",
+      "summary": "Fichier php pour mail.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/queue.php",
+      "type": "file",
+      "name": "queue.php",
+      "filePath": "config/queue.php",
+      "summary": "Fichier php pour queue.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/services.php",
+      "type": "file",
+      "name": "services.php",
+      "filePath": "config/services.php",
+      "summary": "Fichier php pour services.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/session.php",
+      "type": "file",
+      "name": "session.php",
+      "filePath": "config/session.php",
+      "summary": "Fichier php pour session.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/ALG_SHRA.jfif",
+      "type": "file",
+      "name": "ALG_SHRA.jfif",
+      "filePath": "DATA/ALG_SHRA.jfif",
+      "summary": "Fichier jfif pour ALG_SHRA.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/ALG.jfif",
+      "type": "file",
+      "name": "ALG.jfif",
+      "filePath": "DATA/ALG.jfif",
+      "summary": "Fichier jfif pour ALG.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif",
+      "type": "file",
+      "name": "Erg-Chech-Aventure-dans-le-desert.jfif",
+      "filePath": "DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif",
+      "summary": "Fichier jfif pour Erg-Chech-Aventure-dans-le-desert.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif",
+      "type": "file",
+      "name": "Ksour-d-Adrar-Architecture-Saharienne.jfif",
+      "filePath": "DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif",
+      "summary": "Fichier jfif pour Ksour-d-Adrar-Architecture-Saharienne.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:bootstrap/app.php",
+      "target": "file:app/Http/Middleware/EnsureUserHasRole.php",
+      "type": "imports",
+      "description": "app.php importe EnsureUserHasRole.php"
+    },
+    {
+      "source": "file:bootstrap/providers.php",
+      "target": "file:app/Providers/AppServiceProvider.php",
+      "type": "imports",
+      "description": "providers.php importe AppServiceProvider.php"
+    }
+  ]
+}

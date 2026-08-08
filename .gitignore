@@ -3,6 +3,7 @@
 .env
 .env.backup
 .env.production
+.env.*.local
 .phpactor.json
 .phpunit.result.cache
 /.fleet
@@ -11,6 +12,7 @@
 /.phpunit.cache
 /.vscode
 /.zed
+/bootstrap/cache/*.php
 /auth.json
 /node_modules
 /public/build

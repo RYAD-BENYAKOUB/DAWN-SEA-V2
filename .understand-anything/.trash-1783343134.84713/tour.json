@@ -1,0 +1,39 @@
+[
+  {
+    "order": 1,
+    "title": "Pr�sentation du projet",
+    "description": "D�marrez par le fichier README pour comprendre le but et l'architecture du projet.",
+    "nodeIds": [
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Configuration et Point d'entr�e",
+    "description": "Fichiers de bootstrap et de configuration de l'application Laravel.",
+    "nodeIds": [
+      "file:bootstrap/app.php",
+      "config:composer.json",
+      "config:package.json"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "Routage",
+    "description": "D�finition des endpoints HTTP.",
+    "nodeIds": [
+      "file:routes/web.php",
+      "file:routes/auth.php"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "Mod�les de donn�es",
+    "description": "Les entit�s principales et leurs relations avec la base de donn�es.",
+    "nodeIds": [
+      "file:app/Models/User.php",
+      "file:app/Models/Program.php",
+      "file:app/Models/Visit.php"
+    ]
+  }
+]

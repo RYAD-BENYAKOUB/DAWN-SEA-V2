@@ -20,11 +20,19 @@ class UserManagementController extends Controller
         ]);
 
         // Prevent modifying superadmins
-        if ($user->role === 'superadmin') {
+        if ($user->hasRole('SuperAdmin') || $user->role === 'superadmin') {
             return back()->with('error', __('Vous ne pouvez pas modifier le rôle d\'un superadmin.'));
         }
 
-        $user->update(['role' => $request->role]);
+        $user->role = $request->role;
+        $user->save();
+
+        $spatieRole = match($request->role) {
+            'admin' => 'SuperAdmin',
+            'user' => 'Participant',
+            default => 'Participant'
+        };
+        $user->syncRoles([$spatieRole]);
 
         return back()->with('success', __('Le rôle de l\'utilisateur a été mis à jour avec succès.'));
     }

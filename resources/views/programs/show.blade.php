@@ -73,8 +73,8 @@
                     <h2 style="font-family: var(--font-serif); font-size: 1.85rem; margin-bottom: 1.5rem; color: var(--charcoal);">
                         {{ __('Description de l\'expérience') }}
                     </h2>
-                    <div style="line-height: 1.8; color: var(--charcoal-soft); font-size: 1.05rem; white-space: pre-line;">
-                        {{ $program->description }}
+                    <div style="line-height: 1.8; color: var(--charcoal-soft); font-size: 1.05rem;">
+                        {!! nl2br(e($program->description)) !!}
                     </div>
                 </div>
 

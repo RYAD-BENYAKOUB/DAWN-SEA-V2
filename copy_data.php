@@ -67,12 +67,12 @@ DB::statement('SET session_replication_role = DEFAULT;');
 
 // Update sequences in Postgres so we can insert new records later
 $maxUserId = DB::table('users')->max('id');
-if ($maxUserId) DB::statement("SELECT setval('users_id_seq', $maxUserId)");
+if ($maxUserId) DB::statement("SELECT setval('users_id_seq', ?)", [$maxUserId]);
 
 $maxGuideId = DB::table('guides')->max('id');
-if ($maxGuideId) DB::statement("SELECT setval('guides_id_seq', $maxGuideId)");
+if ($maxGuideId) DB::statement("SELECT setval('guides_id_seq', ?)", [$maxGuideId]);
 
 $maxProgId = DB::table('programs')->max('id');
-if ($maxProgId) DB::statement("SELECT setval('programs_id_seq', $maxProgId)");
+if ($maxProgId) DB::statement("SELECT setval('programs_id_seq', ?)", [$maxProgId]);
 
 echo "Migration Complete!\n";

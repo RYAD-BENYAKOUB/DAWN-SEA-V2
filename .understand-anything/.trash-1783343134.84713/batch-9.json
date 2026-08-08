@@ -1,0 +1,337 @@
+{
+  "nodes": [
+    {
+      "id": "file:DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif",
+      "type": "file",
+      "name": "Marche-d-Adrar-Souks-et-Artisanat.jfif",
+      "filePath": "DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif",
+      "summary": "Fichier jfif pour Marche-d-Adrar-Souks-et-Artisanat.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/adrar/Marché-d-Adrar.jfif",
+      "type": "file",
+      "name": "Marché-d-Adrar.jfif",
+      "filePath": "DATA/IMG/BDD/adrar/Marché-d-Adrar.jfif",
+      "summary": "Fichier jfif pour Marché-d-Adrar.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+      "type": "file",
+      "name": "Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+      "filePath": "DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif",
+      "summary": "Fichier jfif pour Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif",
+      "type": "file",
+      "name": "Racontes-de-Bechar-Soiree-locale.jfif",
+      "filePath": "DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif",
+      "summary": "Fichier jfif pour Racontes-de-Bechar-Soiree-locale.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif",
+      "type": "file",
+      "name": "Taghit-Magie-de-Taghit.jfif",
+      "filePath": "DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif",
+      "summary": "Fichier jfif pour Taghit-Magie-de-Taghit.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif",
+      "type": "file",
+      "name": "centre-ville-tlmcn.jfif",
+      "filePath": "DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif",
+      "summary": "Fichier jfif pour centre-ville-tlmcn.jfif.",
+      "tags": [
+        "jfif",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "data:DATA/lieu.csv",
+      "type": "data",
+      "name": "lieu.csv",
+      "filePath": "DATA/lieu.csv",
+      "summary": "Fichier csv pour lieu.csv.",
+      "tags": [
+        "csv",
+        "data"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "data:DATA/recommandation.csv",
+      "type": "data",
+      "name": "recommandation.csv",
+      "filePath": "DATA/recommandation.csv",
+      "summary": "Fichier csv pour recommandation.csv.",
+      "tags": [
+        "csv",
+        "data"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000000_create_users_table.php",
+      "type": "file",
+      "name": "0001_01_01_000000_create_users_table.php",
+      "filePath": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "summary": "Fichier php pour 0001_01_01_000000_create_users_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000001_create_cache_table.php",
+      "type": "file",
+      "name": "0001_01_01_000001_create_cache_table.php",
+      "filePath": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "summary": "Fichier php pour 0001_01_01_000001_create_cache_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "type": "file",
+      "name": "0001_01_01_000002_create_jobs_table.php",
+      "filePath": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "summary": "Fichier php pour 0001_01_01_000002_create_jobs_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0002_01_01_000000_create_guides_table.php",
+      "type": "file",
+      "name": "0002_01_01_000000_create_guides_table.php",
+      "filePath": "database/migrations/0002_01_01_000000_create_guides_table.php",
+      "summary": "Fichier php pour 0002_01_01_000000_create_guides_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0002_01_01_000001_create_programs_table.php",
+      "type": "file",
+      "name": "0002_01_01_000001_create_programs_table.php",
+      "filePath": "database/migrations/0002_01_01_000001_create_programs_table.php",
+      "summary": "Fichier php pour 0002_01_01_000001_create_programs_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0002_01_01_000002_create_favorites_table.php",
+      "type": "file",
+      "name": "0002_01_01_000002_create_favorites_table.php",
+      "filePath": "database/migrations/0002_01_01_000002_create_favorites_table.php",
+      "summary": "Fichier php pour 0002_01_01_000002_create_favorites_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/migrations/0002_01_01_000003_create_visits_table.php",
+      "type": "file",
+      "name": "0002_01_01_000003_create_visits_table.php",
+      "filePath": "database/migrations/0002_01_01_000003_create_visits_table.php",
+      "summary": "Fichier php pour 0002_01_01_000003_create_visits_table.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:postcss.config.js",
+      "type": "file",
+      "name": "postcss.config.js",
+      "filePath": "postcss.config.js",
+      "summary": "Fichier javascript pour postcss.config.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:public/.htaccess",
+      "type": "file",
+      "name": ".htaccess",
+      "filePath": "public/.htaccess",
+      "summary": "Fichier unknown pour .htaccess.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:public/index.php",
+      "type": "file",
+      "name": "index.php",
+      "filePath": "public/index.php",
+      "summary": "Fichier php pour index.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:public/robots.txt",
+      "type": "document",
+      "name": "robots.txt",
+      "filePath": "public/robots.txt",
+      "summary": "Fichier txt pour robots.txt.",
+      "tags": [
+        "txt",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "markup:resources/css/app.css",
+      "type": "markup",
+      "name": "app.css",
+      "filePath": "resources/css/app.css",
+      "summary": "Fichier css pour app.css.",
+      "tags": [
+        "css",
+        "markup"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/js/app.js",
+      "type": "file",
+      "name": "app.js",
+      "filePath": "resources/js/app.js",
+      "summary": "Fichier javascript pour app.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/js/bootstrap.js",
+      "type": "file",
+      "name": "bootstrap.js",
+      "filePath": "resources/js/bootstrap.js",
+      "summary": "Fichier javascript pour bootstrap.js.",
+      "tags": [
+        "javascript",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/confirm-password.blade.php",
+      "type": "file",
+      "name": "confirm-password.blade.php",
+      "filePath": "resources/views/auth/confirm-password.blade.php",
+      "summary": "Fichier php pour confirm-password.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/forgot-password.blade.php",
+      "type": "file",
+      "name": "forgot-password.blade.php",
+      "filePath": "resources/views/auth/forgot-password.blade.php",
+      "summary": "Fichier php pour forgot-password.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/login.blade.php",
+      "type": "file",
+      "name": "login.blade.php",
+      "filePath": "resources/views/auth/login.blade.php",
+      "summary": "Fichier php pour login.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:resources/js/app.js",
+      "target": "file:resources/js/bootstrap.js",
+      "type": "imports",
+      "description": "app.js importe bootstrap.js"
+    }
+  ]
+}

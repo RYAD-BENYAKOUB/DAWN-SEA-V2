@@ -434,14 +434,14 @@
                         <td style="color: var(--taupe);">{{ $user->email }}</td>
                         <td>
                             @php
-                                $badgeClass = match($user->role) {
-                                    'superadmin' => 'badge-superadmin',
-                                    'admin' => 'badge-admin',
-                                    'guide' => 'badge-guide',
+                                $badgeClass = match(true) {
+                                    $user->hasRole('SuperAdmin') => 'badge-superadmin',
+                                    $user->hasRole('Organisateur') => 'badge-guide',
+                                    $user->hasRole('Participant') => 'badge-user',
                                     default => 'badge-user',
                                 };
                             @endphp
-                            <span class="admin-role-badge {{ $badgeClass }}">{{ ucfirst($user->role) }}</span>
+                            <span class="admin-role-badge {{ $badgeClass }}">{{ $user->roles->first()?->name ?? 'Participant' }}</span>
                         </td>
                         <td style="color: var(--taupe);">{{ $user->created_at->format('d/m/Y') }}</td>
                     </tr>

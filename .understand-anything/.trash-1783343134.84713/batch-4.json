@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/DestinationController.php",
+      "type": "file",
+      "name": "DestinationController.php",
+      "filePath": "app/Http/Controllers/DestinationController.php",
+      "summary": "Fichier php pour DestinationController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/HomeController.php",
+      "type": "file",
+      "name": "HomeController.php",
+      "filePath": "app/Http/Controllers/HomeController.php",
+      "summary": "Fichier php pour HomeController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/PageController.php",
+      "type": "file",
+      "name": "PageController.php",
+      "filePath": "app/Http/Controllers/PageController.php",
+      "summary": "Fichier php pour PageController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/ProfileController.php",
+      "type": "file",
+      "name": "ProfileController.php",
+      "filePath": "app/Http/Controllers/ProfileController.php",
+      "summary": "Fichier php pour ProfileController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/SuperAdminDashboardController.php",
+      "type": "file",
+      "name": "SuperAdminDashboardController.php",
+      "filePath": "app/Http/Controllers/SuperAdminDashboardController.php",
+      "summary": "Fichier php pour SuperAdminDashboardController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/UserManagementController.php",
+      "type": "file",
+      "name": "UserManagementController.php",
+      "filePath": "app/Http/Controllers/UserManagementController.php",
+      "summary": "Fichier php pour UserManagementController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "type": "file",
+      "name": "ProfileUpdateRequest.php",
+      "filePath": "app/Http/Requests/ProfileUpdateRequest.php",
+      "summary": "Fichier php pour ProfileUpdateRequest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:routes/web.php",
+      "type": "file",
+      "name": "web.php",
+      "filePath": "routes/web.php",
+      "summary": "Fichier php pour web.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Http/Controllers/DestinationController.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "DestinationController.php importe Program.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/HomeController.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "HomeController.php importe Program.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/ProfileController.php",
+      "target": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "type": "imports",
+      "description": "ProfileController.php importe ProfileUpdateRequest.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/SuperAdminDashboardController.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "SuperAdminDashboardController.php importe Program.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/SuperAdminDashboardController.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "SuperAdminDashboardController.php importe User.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/UserManagementController.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "UserManagementController.php importe User.php"
+    },
+    {
+      "source": "file:app/Http/Requests/ProfileUpdateRequest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "ProfileUpdateRequest.php importe User.php"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/DashboardController.php",
+      "type": "imports",
+      "description": "web.php importe DashboardController.php"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/DestinationController.php",
+      "type": "imports",
+      "description": "web.php importe DestinationController.php"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/GuideController.php",
+      "type": "imports",
+      "description": "web.php importe GuideController.php"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/HomeController.php",
+      "type": "imports",
+      "description": "web.php importe HomeController.php"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/PageController.php",
+      "type": "imports",
+      "description": "web.php importe PageController.php"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/ProfileController.php",
+      "type": "imports",
+      "description": "web.php importe ProfileController.php"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/ProgramController.php",
+      "type": "imports",
+      "description": "web.php importe ProgramController.php"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/SuperAdminDashboardController.php",
+      "type": "imports",
+      "description": "web.php importe SuperAdminDashboardController.php"
+    },
+    {
+      "source": "file:routes/web.php",
+      "target": "file:app/Http/Controllers/UserManagementController.php",
+      "type": "imports",
+      "description": "web.php importe UserManagementController.php"
+    }
+  ]
+}
