@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "resource:.dockerignore",
+      "type": "resource",
+      "name": ".dockerignore",
+      "filePath": ".dockerignore",
+      "summary": "Fichier unknown pour .dockerignore.",
+      "tags": [
+        "unknown",
+        "infra"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "resource:Dockerfile",
+      "type": "resource",
+      "name": "Dockerfile",
+      "filePath": "Dockerfile",
+      "summary": "Fichier dockerfile pour Dockerfile.",
+      "tags": [
+        "dockerfile",
+        "infra"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": []
+}

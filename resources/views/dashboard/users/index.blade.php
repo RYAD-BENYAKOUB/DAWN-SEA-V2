@@ -44,8 +44,8 @@
                     </td>
                     <td style="padding: 1rem 0.5rem; color: var(--charcoal-soft);">{{ $user->email }}</td>
                     <td style="padding: 1rem 0.5rem;">
-                        <span class="ds-badge {{ $user->role === 'superadmin' ? 'ds-badge-gold' : ($user->role === 'admin' ? 'ds-badge-success' : '') }}" style="background: var(--cream-dark); color: var(--charcoal);">
-                            {{ ucfirst($user->role) }}
+                        <span class="ds-badge {{ $user->hasRole('SuperAdmin') ? 'ds-badge-gold' : ($user->hasRole('Organisateur') ? 'ds-badge-success' : '') }}" style="background: var(--cream-dark); color: var(--charcoal);">
+                            {{ $user->roles->first()?->name ?? 'Participant' }}
                         </span>
                     </td>
                     <td style="padding: 1rem 0.5rem;">

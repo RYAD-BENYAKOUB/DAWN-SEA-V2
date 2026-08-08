@@ -1,0 +1,330 @@
+{
+  "nodes": [
+    {
+      "id": "file:resources/views/auth/register.blade.php",
+      "type": "file",
+      "name": "register.blade.php",
+      "filePath": "resources/views/auth/register.blade.php",
+      "summary": "Fichier php pour register.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/reset-password.blade.php",
+      "type": "file",
+      "name": "reset-password.blade.php",
+      "filePath": "resources/views/auth/reset-password.blade.php",
+      "summary": "Fichier php pour reset-password.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/auth/verify-email.blade.php",
+      "type": "file",
+      "name": "verify-email.blade.php",
+      "filePath": "resources/views/auth/verify-email.blade.php",
+      "summary": "Fichier php pour verify-email.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/application-logo.blade.php",
+      "type": "file",
+      "name": "application-logo.blade.php",
+      "filePath": "resources/views/components/application-logo.blade.php",
+      "summary": "Fichier php pour application-logo.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/auth-session-status.blade.php",
+      "type": "file",
+      "name": "auth-session-status.blade.php",
+      "filePath": "resources/views/components/auth-session-status.blade.php",
+      "summary": "Fichier php pour auth-session-status.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/danger-button.blade.php",
+      "type": "file",
+      "name": "danger-button.blade.php",
+      "filePath": "resources/views/components/danger-button.blade.php",
+      "summary": "Fichier php pour danger-button.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/dropdown-link.blade.php",
+      "type": "file",
+      "name": "dropdown-link.blade.php",
+      "filePath": "resources/views/components/dropdown-link.blade.php",
+      "summary": "Fichier php pour dropdown-link.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/dropdown.blade.php",
+      "type": "file",
+      "name": "dropdown.blade.php",
+      "filePath": "resources/views/components/dropdown.blade.php",
+      "summary": "Fichier php pour dropdown.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/input-error.blade.php",
+      "type": "file",
+      "name": "input-error.blade.php",
+      "filePath": "resources/views/components/input-error.blade.php",
+      "summary": "Fichier php pour input-error.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/input-label.blade.php",
+      "type": "file",
+      "name": "input-label.blade.php",
+      "filePath": "resources/views/components/input-label.blade.php",
+      "summary": "Fichier php pour input-label.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/modal.blade.php",
+      "type": "file",
+      "name": "modal.blade.php",
+      "filePath": "resources/views/components/modal.blade.php",
+      "summary": "Fichier php pour modal.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/nav-link.blade.php",
+      "type": "file",
+      "name": "nav-link.blade.php",
+      "filePath": "resources/views/components/nav-link.blade.php",
+      "summary": "Fichier php pour nav-link.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/primary-button.blade.php",
+      "type": "file",
+      "name": "primary-button.blade.php",
+      "filePath": "resources/views/components/primary-button.blade.php",
+      "summary": "Fichier php pour primary-button.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/responsive-nav-link.blade.php",
+      "type": "file",
+      "name": "responsive-nav-link.blade.php",
+      "filePath": "resources/views/components/responsive-nav-link.blade.php",
+      "summary": "Fichier php pour responsive-nav-link.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/secondary-button.blade.php",
+      "type": "file",
+      "name": "secondary-button.blade.php",
+      "filePath": "resources/views/components/secondary-button.blade.php",
+      "summary": "Fichier php pour secondary-button.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/components/text-input.blade.php",
+      "type": "file",
+      "name": "text-input.blade.php",
+      "filePath": "resources/views/components/text-input.blade.php",
+      "summary": "Fichier php pour text-input.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/contact/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/contact/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard.blade.php",
+      "type": "file",
+      "name": "dashboard.blade.php",
+      "filePath": "resources/views/dashboard.blade.php",
+      "summary": "Fichier php pour dashboard.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/dashboard/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/programs/create.blade.php",
+      "type": "file",
+      "name": "create.blade.php",
+      "filePath": "resources/views/dashboard/programs/create.blade.php",
+      "summary": "Fichier php pour create.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/programs/edit.blade.php",
+      "type": "file",
+      "name": "edit.blade.php",
+      "filePath": "resources/views/dashboard/programs/edit.blade.php",
+      "summary": "Fichier php pour edit.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/superadmin/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/dashboard/superadmin/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/dashboard/users/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/dashboard/users/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/destinations/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/destinations/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:resources/views/guides/index.blade.php",
+      "type": "file",
+      "name": "index.blade.php",
+      "filePath": "resources/views/guides/index.blade.php",
+      "summary": "Fichier php pour index.blade.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": []
+}

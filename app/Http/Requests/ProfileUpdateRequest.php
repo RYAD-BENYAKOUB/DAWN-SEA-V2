@@ -23,7 +23,7 @@ class ProfileUpdateRequest extends FormRequest
             'phone' => ['nullable', 'string', 'max:50'],
             'country_of_birth' => ['nullable', 'string', 'max:255'],
             'birth_date' => ['nullable', 'date'],
-            'avatar' => ['nullable', 'image', 'max:2048'],
+            'avatar' => ['nullable', 'image', 'max:2048', 'dimensions:max_width=4000,max_height=4000'],
         ];
     }
 }

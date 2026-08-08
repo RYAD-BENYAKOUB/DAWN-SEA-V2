@@ -1,0 +1,284 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 150,
+    "filesWithImports": 41,
+    "totalEdges": 83
+  },
+  "importMap": {
+    ".dockerignore": [],
+    ".env.example": [],
+    ".gitattributes": [],
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/config.json": [],
+    "app/Actions/Program/CreateProgramAction.php": [
+      "app/DTOs/Program/CreateProgramDTO.php",
+      "app/Exceptions/BaseBusinessException.php",
+      "app/Models/Guide.php",
+      "app/Models/Program.php"
+    ],
+    "app/Actions/Program/DeleteProgramAction.php": [
+      "app/Exceptions/BaseBusinessException.php",
+      "app/Models/Program.php"
+    ],
+    "app/Actions/Program/UpdateProgramAction.php": [
+      "app/DTOs/Program/UpdateProgramDTO.php",
+      "app/Exceptions/BaseBusinessException.php",
+      "app/Models/Program.php"
+    ],
+    "app/AI/README.md": [],
+    "app/DTOs/Program/CreateProgramDTO.php": [],
+    "app/DTOs/Program/UpdateProgramDTO.php": [
+      "app/Models/Program.php"
+    ],
+    "app/Exceptions/BaseBusinessException.php": [],
+    "app/Exceptions/ProgramOwnershipException.php": [],
+    "app/Http/Controllers/Auth/AuthenticatedSessionController.php": [
+      "app/Http/Controllers/Controller.php",
+      "app/Http/Requests/Auth/LoginRequest.php"
+    ],
+    "app/Http/Controllers/Auth/ConfirmablePasswordController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Auth/EmailVerificationNotificationController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Auth/EmailVerificationPromptController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Auth/NewPasswordController.php": [
+      "app/Http/Controllers/Controller.php",
+      "app/Models/User.php"
+    ],
+    "app/Http/Controllers/Auth/PasswordController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Auth/PasswordResetLinkController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Auth/RegisteredUserController.php": [
+      "app/Http/Controllers/Controller.php",
+      "app/Models/User.php"
+    ],
+    "app/Http/Controllers/Auth/VerifyEmailController.php": [
+      "app/Http/Controllers/Controller.php"
+    ],
+    "app/Http/Controllers/Controller.php": [],
+    "app/Http/Controllers/DashboardController.php": [
+      "app/Models/Program.php",
+      "app/Models/Visit.php"
+    ],
+    "app/Http/Controllers/DestinationController.php": [
+      "app/Models/Program.php"
+    ],
+    "app/Http/Controllers/GuideController.php": [
+      "app/Models/Guide.php"
+    ],
+    "app/Http/Controllers/HomeController.php": [
+      "app/Models/Program.php"
+    ],
+    "app/Http/Controllers/PageController.php": [],
+    "app/Http/Controllers/ProfileController.php": [
+      "app/Http/Requests/ProfileUpdateRequest.php"
+    ],
+    "app/Http/Controllers/ProgramController.php": [
+      "app/Actions/Program/CreateProgramAction.php",
+      "app/Actions/Program/DeleteProgramAction.php",
+      "app/Actions/Program/UpdateProgramAction.php",
+      "app/DTOs/Program/CreateProgramDTO.php",
+      "app/DTOs/Program/UpdateProgramDTO.php",
+      "app/Exceptions/ProgramOwnershipException.php",
+      "app/Models/Program.php",
+      "app/Models/Visit.php"
+    ],
+    "app/Http/Controllers/SuperAdminDashboardController.php": [
+      "app/Models/Program.php",
+      "app/Models/User.php"
+    ],
+    "app/Http/Controllers/UserManagementController.php": [
+      "app/Models/User.php"
+    ],
+    "app/Http/Middleware/EnsureUserHasRole.php": [],
+    "app/Http/Requests/Auth/LoginRequest.php": [],
+    "app/Http/Requests/ProfileUpdateRequest.php": [
+      "app/Models/User.php"
+    ],
+    "app/Models/Guide.php": [],
+    "app/Models/Program.php": [],
+    "app/Models/User.php": [
+      "database/factories/UserFactory.php"
+    ],
+    "app/Models/Visit.php": [],
+    "app/Providers/AppServiceProvider.php": [],
+    "app/Services/Supabase/SupabaseStorageService.php": [],
+    "app/View/Components/AppLayout.php": [],
+    "app/View/Components/GuestLayout.php": [],
+    "ARCHITECTURE_GUIDELINES.md": [],
+    "artisan": [],
+    "bootstrap/app.php": [
+      "app/Http/Middleware/EnsureUserHasRole.php"
+    ],
+    "bootstrap/providers.php": [
+      "app/Providers/AppServiceProvider.php"
+    ],
+    "composer.json": [],
+    "config/app.php": [],
+    "config/auth.php": [
+      "app/Models/User.php"
+    ],
+    "config/cache.php": [],
+    "config/database.php": [],
+    "config/filesystems.php": [],
+    "config/logging.php": [],
+    "config/mail.php": [],
+    "config/queue.php": [],
+    "config/services.php": [],
+    "config/session.php": [],
+    "copy_data.php": [
+      "app/Models/Guide.php",
+      "app/Models/Program.php",
+      "app/Models/User.php"
+    ],
+    "create_superadmin.php": [
+      "app/Models/User.php"
+    ],
+    "DATA/ALG_SHRA.jfif": [],
+    "DATA/ALG.jfif": [],
+    "DATA/IMG/BDD/adrar/Erg-Chech-Aventure-dans-le-desert.jfif": [],
+    "DATA/IMG/BDD/adrar/Ksour-d-Adrar-Architecture-Saharienne.jfif": [],
+    "DATA/IMG/BDD/adrar/Marche-d-Adrar-Souks-et-Artisanat.jfif": [],
+    "DATA/IMG/BDD/adrar/Marché-d-Adrar.jfif": [],
+    "DATA/IMG/BDD/bechar/Palmeraie-de-Bechar-Palmeraie-Relaxante.jfif": [],
+    "DATA/IMG/BDD/bechar/Racontes-de-Bechar-Soiree-locale.jfif": [],
+    "DATA/IMG/BDD/bechar/Taghit-Magie-de-Taghit.jfif": [],
+    "DATA/IMG/BDD/tlemcen/centre-ville-tlmcn.jfif": [],
+    "DATA/lieu.csv": [],
+    "DATA/recommandation.csv": [],
+    "database/factories/UserFactory.php": [
+      "app/Models/User.php"
+    ],
+    "database/migrations/0001_01_01_000000_create_users_table.php": [],
+    "database/migrations/0001_01_01_000001_create_cache_table.php": [],
+    "database/migrations/0001_01_01_000002_create_jobs_table.php": [],
+    "database/migrations/0002_01_01_000000_create_guides_table.php": [],
+    "database/migrations/0002_01_01_000001_create_programs_table.php": [],
+    "database/migrations/0002_01_01_000002_create_favorites_table.php": [],
+    "database/migrations/0002_01_01_000003_create_visits_table.php": [],
+    "database/seeders/CsvDataSeeder.php": [
+      "app/Models/Guide.php",
+      "app/Models/Program.php",
+      "app/Models/User.php",
+      "app/Models/Visit.php"
+    ],
+    "database/seeders/DatabaseSeeder.php": [
+      "app/Models/User.php"
+    ],
+    "database/seeders/DemoSeeder.php": [
+      "app/Models/Guide.php",
+      "app/Models/Program.php",
+      "app/Models/User.php",
+      "app/Models/Visit.php"
+    ],
+    "Dockerfile": [],
+    "output.txt": [],
+    "package.json": [],
+    "phpunit.xml": [],
+    "postcss.config.js": [],
+    "public/.htaccess": [],
+    "public/index.php": [],
+    "public/robots.txt": [],
+    "README.md": [],
+    "resources/css/app.css": [],
+    "resources/js/app.js": [
+      "resources/js/bootstrap.js"
+    ],
+    "resources/js/bootstrap.js": [],
+    "resources/views/auth/confirm-password.blade.php": [],
+    "resources/views/auth/forgot-password.blade.php": [],
+    "resources/views/auth/login.blade.php": [],
+    "resources/views/auth/register.blade.php": [],
+    "resources/views/auth/reset-password.blade.php": [],
+    "resources/views/auth/verify-email.blade.php": [],
+    "resources/views/components/application-logo.blade.php": [],
+    "resources/views/components/auth-session-status.blade.php": [],
+    "resources/views/components/danger-button.blade.php": [],
+    "resources/views/components/dropdown-link.blade.php": [],
+    "resources/views/components/dropdown.blade.php": [],
+    "resources/views/components/input-error.blade.php": [],
+    "resources/views/components/input-label.blade.php": [],
+    "resources/views/components/modal.blade.php": [],
+    "resources/views/components/nav-link.blade.php": [],
+    "resources/views/components/primary-button.blade.php": [],
+    "resources/views/components/responsive-nav-link.blade.php": [],
+    "resources/views/components/secondary-button.blade.php": [],
+    "resources/views/components/text-input.blade.php": [],
+    "resources/views/contact/index.blade.php": [],
+    "resources/views/dashboard.blade.php": [],
+    "resources/views/dashboard/index.blade.php": [],
+    "resources/views/dashboard/programs/create.blade.php": [],
+    "resources/views/dashboard/programs/edit.blade.php": [],
+    "resources/views/dashboard/superadmin/index.blade.php": [],
+    "resources/views/dashboard/users/index.blade.php": [],
+    "resources/views/destinations/index.blade.php": [],
+    "resources/views/guides/index.blade.php": [],
+    "resources/views/home.blade.php": [],
+    "resources/views/layouts/app.blade.php": [],
+    "resources/views/layouts/dashboard.blade.php": [],
+    "resources/views/layouts/guest.blade.php": [],
+    "resources/views/layouts/navigation.blade.php": [],
+    "resources/views/profile/edit.blade.php": [],
+    "resources/views/profile/partials/delete-user-form.blade.php": [],
+    "resources/views/profile/partials/update-password-form.blade.php": [],
+    "resources/views/profile/partials/update-profile-information-form.blade.php": [],
+    "resources/views/programs/index.blade.php": [],
+    "resources/views/programs/show.blade.php": [],
+    "resources/views/welcome.blade.php": [],
+    "routes/auth.php": [
+      "app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+      "app/Http/Controllers/Auth/ConfirmablePasswordController.php",
+      "app/Http/Controllers/Auth/EmailVerificationNotificationController.php",
+      "app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+      "app/Http/Controllers/Auth/NewPasswordController.php",
+      "app/Http/Controllers/Auth/PasswordController.php",
+      "app/Http/Controllers/Auth/PasswordResetLinkController.php",
+      "app/Http/Controllers/Auth/RegisteredUserController.php",
+      "app/Http/Controllers/Auth/VerifyEmailController.php"
+    ],
+    "routes/console.php": [],
+    "routes/web.php": [
+      "app/Http/Controllers/DashboardController.php",
+      "app/Http/Controllers/DestinationController.php",
+      "app/Http/Controllers/GuideController.php",
+      "app/Http/Controllers/HomeController.php",
+      "app/Http/Controllers/PageController.php",
+      "app/Http/Controllers/ProfileController.php",
+      "app/Http/Controllers/ProgramController.php",
+      "app/Http/Controllers/SuperAdminDashboardController.php",
+      "app/Http/Controllers/UserManagementController.php"
+    ],
+    "tailwind.config.js": [],
+    "tests/Feature/Auth/AuthenticationTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Auth/EmailVerificationTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Auth/PasswordConfirmationTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Auth/PasswordResetTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Auth/PasswordUpdateTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/Feature/Auth/RegistrationTest.php": [],
+    "tests/Feature/ExampleTest.php": [],
+    "tests/Feature/ProfileTest.php": [
+      "app/Models/User.php"
+    ],
+    "tests/TestCase.php": [],
+    "tests/Unit/ExampleTest.php": [],
+    "vite.config.js": []
+  }
+}

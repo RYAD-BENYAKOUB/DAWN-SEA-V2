@@ -32,7 +32,7 @@
                         </a>
                     </h3>
                     <p style="color: var(--charcoal-soft); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
-                        {{ $destination['description'] }}
+                        {!! nl2br(e($destination['description'])) !!}
                     </p>
                     <a href="{{ url('/programs?location=' . urlencode($destination['name'])) }}" class="ds-btn ds-btn-primary ds-btn-sm" style="width: 100%;">
                         {{ __('Explorer cette destination') }}

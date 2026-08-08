@@ -37,10 +37,10 @@ class ProfileController extends Controller
 
         if ($request->hasFile('avatar')) {
             // Supprimer l'ancien avatar s'il existe (vérifier que c'est un chemin texte, pas du binaire hérité)
-            if ($user->avatar && is_string($user->avatar) && !str_starts_with($user->avatar, "\xFF") && \Illuminate\Support\Facades\Storage::disk('public')->exists($user->avatar)) {
-                \Illuminate\Support\Facades\Storage::disk('public')->delete($user->avatar);
+            if ($user->avatar && is_string($user->avatar) && !str_starts_with($user->avatar, "\xFF") && \Illuminate\Support\Facades\Storage::disk('s3')->exists($user->avatar)) {
+                \Illuminate\Support\Facades\Storage::disk('s3')->delete($user->avatar);
             }
-            $path = $request->file('avatar')->store('avatars', 'public');
+            $path = $request->file('avatar')->store('avatars', 's3');
             $user->avatar = $path;
         }
 

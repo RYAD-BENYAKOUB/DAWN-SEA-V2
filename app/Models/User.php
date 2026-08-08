@@ -7,11 +7,12 @@ use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -54,11 +55,11 @@ class User extends Authenticatable
     }
 
     /**
-     * Check if the user is a guide.
+     * Check if the user is a guide/organisateur.
      */
     public function isGuide(): bool
     {
-        return $this->role === 'guide';
+        return $this->hasRole('Organisateur') || $this->role === 'guide';
     }
 
     /**
@@ -66,7 +67,7 @@ class User extends Authenticatable
      */
     public function isUser(): bool
     {
-        return $this->role === 'user';
+        return $this->hasRole('Participant') || $this->role === 'user';
     }
 
     /**
@@ -74,7 +75,7 @@ class User extends Authenticatable
      */
     public function isSuperadmin(): bool
     {
-        return $this->role === 'superadmin';
+        return $this->hasRole('SuperAdmin') || $this->role === 'superadmin';
     }
 
     /**
@@ -82,7 +83,7 @@ class User extends Authenticatable
      */
     public function isAdmin(): bool
     {
-        return in_array($this->role, ['admin', 'superadmin']);
+        return $this->hasRole('SuperAdmin') || in_array($this->role, ['admin', 'superadmin']);
     }
 
     /**

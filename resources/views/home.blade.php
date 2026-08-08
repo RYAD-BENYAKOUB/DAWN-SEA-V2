@@ -104,7 +104,7 @@
                             <span class="ds-badge ds-badge-gold">{{ $program->difficulty ?? 'Modéré' }}</span>
                         </div>
                         <h3 class="ds-card-title">{{ $program->title }}</h3>
-                        <p class="ds-card-text" style="margin-bottom:1rem; flex-grow: 1;">{{ Str::limit($program->description, 100) }}</p>
+                        <p class="ds-card-text" style="margin-bottom:1rem; flex-grow: 1;">{!! nl2br(e(Str::limit($program->description, 100))) !!}</p>
                         <div style="display:flex; justify-content:space-between; align-items:center;">
                             <div>
                                 <span style="font-size: 0.75rem; color: var(--taupe); display: block;">{{ __('À partir de') }}</span>

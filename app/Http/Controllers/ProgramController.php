@@ -69,6 +69,9 @@ class ProgramController extends Controller
             ->firstOrFail();
 
         // Record visit statistics
+        // TODO (RGPD) : La collecte de l'adresse IP et du User-Agent constitue un traitement de données
+        // à caractère personnel. S'assurer que cela est explicitement couvert par la politique de
+        // confidentialité et soumis au consentement (si requis) avant le lancement public.
         Visit::create([
             'program_id' => $program->id,
             'user_id' => Auth::id(),

@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Http/Controllers/DashboardController.php",
+      "type": "file",
+      "name": "DashboardController.php",
+      "filePath": "app/Http/Controllers/DashboardController.php",
+      "summary": "Fichier php pour DashboardController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Http/Controllers/GuideController.php",
+      "type": "file",
+      "name": "GuideController.php",
+      "filePath": "app/Http/Controllers/GuideController.php",
+      "summary": "Fichier php pour GuideController.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Models/Guide.php",
+      "type": "file",
+      "name": "Guide.php",
+      "filePath": "app/Models/Guide.php",
+      "summary": "Fichier php pour Guide.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:app/Models/Visit.php",
+      "type": "file",
+      "name": "Visit.php",
+      "filePath": "app/Models/Visit.php",
+      "summary": "Fichier php pour Visit.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:copy_data.php",
+      "type": "file",
+      "name": "copy_data.php",
+      "filePath": "copy_data.php",
+      "summary": "Fichier php pour copy_data.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/seeders/CsvDataSeeder.php",
+      "type": "file",
+      "name": "CsvDataSeeder.php",
+      "filePath": "database/seeders/CsvDataSeeder.php",
+      "summary": "Fichier php pour CsvDataSeeder.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/seeders/DemoSeeder.php",
+      "type": "file",
+      "name": "DemoSeeder.php",
+      "filePath": "database/seeders/DemoSeeder.php",
+      "summary": "Fichier php pour DemoSeeder.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "DashboardController.php importe Program.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/DashboardController.php",
+      "target": "file:app/Models/Visit.php",
+      "type": "imports",
+      "description": "DashboardController.php importe Visit.php"
+    },
+    {
+      "source": "file:app/Http/Controllers/GuideController.php",
+      "target": "file:app/Models/Guide.php",
+      "type": "imports",
+      "description": "GuideController.php importe Guide.php"
+    },
+    {
+      "source": "file:copy_data.php",
+      "target": "file:app/Models/Guide.php",
+      "type": "imports",
+      "description": "copy_data.php importe Guide.php"
+    },
+    {
+      "source": "file:copy_data.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "copy_data.php importe Program.php"
+    },
+    {
+      "source": "file:copy_data.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "copy_data.php importe User.php"
+    },
+    {
+      "source": "file:database/seeders/CsvDataSeeder.php",
+      "target": "file:app/Models/Guide.php",
+      "type": "imports",
+      "description": "CsvDataSeeder.php importe Guide.php"
+    },
+    {
+      "source": "file:database/seeders/CsvDataSeeder.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "CsvDataSeeder.php importe Program.php"
+    },
+    {
+      "source": "file:database/seeders/CsvDataSeeder.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "CsvDataSeeder.php importe User.php"
+    },
+    {
+      "source": "file:database/seeders/CsvDataSeeder.php",
+      "target": "file:app/Models/Visit.php",
+      "type": "imports",
+      "description": "CsvDataSeeder.php importe Visit.php"
+    },
+    {
+      "source": "file:database/seeders/DemoSeeder.php",
+      "target": "file:app/Models/Guide.php",
+      "type": "imports",
+      "description": "DemoSeeder.php importe Guide.php"
+    },
+    {
+      "source": "file:database/seeders/DemoSeeder.php",
+      "target": "file:app/Models/Program.php",
+      "type": "imports",
+      "description": "DemoSeeder.php importe Program.php"
+    },
+    {
+      "source": "file:database/seeders/DemoSeeder.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "DemoSeeder.php importe User.php"
+    },
+    {
+      "source": "file:database/seeders/DemoSeeder.php",
+      "target": "file:app/Models/Visit.php",
+      "type": "imports",
+      "description": "DemoSeeder.php importe Visit.php"
+    }
+  ]
+}

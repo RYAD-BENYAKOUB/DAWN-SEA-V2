@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/Models/User.php",
+      "type": "file",
+      "name": "User.php",
+      "filePath": "app/Models/User.php",
+      "summary": "Fichier php pour User.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:config/auth.php",
+      "type": "file",
+      "name": "auth.php",
+      "filePath": "config/auth.php",
+      "summary": "Fichier php pour auth.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:create_superadmin.php",
+      "type": "file",
+      "name": "create_superadmin.php",
+      "filePath": "create_superadmin.php",
+      "summary": "Fichier php pour create_superadmin.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/factories/UserFactory.php",
+      "type": "file",
+      "name": "UserFactory.php",
+      "filePath": "database/factories/UserFactory.php",
+      "summary": "Fichier php pour UserFactory.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:database/seeders/DatabaseSeeder.php",
+      "type": "file",
+      "name": "DatabaseSeeder.php",
+      "filePath": "database/seeders/DatabaseSeeder.php",
+      "summary": "Fichier php pour DatabaseSeeder.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/AuthenticationTest.php",
+      "type": "file",
+      "name": "AuthenticationTest.php",
+      "filePath": "tests/Feature/Auth/AuthenticationTest.php",
+      "summary": "Fichier php pour AuthenticationTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/EmailVerificationTest.php",
+      "type": "file",
+      "name": "EmailVerificationTest.php",
+      "filePath": "tests/Feature/Auth/EmailVerificationTest.php",
+      "summary": "Fichier php pour EmailVerificationTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/PasswordConfirmationTest.php",
+      "type": "file",
+      "name": "PasswordConfirmationTest.php",
+      "filePath": "tests/Feature/Auth/PasswordConfirmationTest.php",
+      "summary": "Fichier php pour PasswordConfirmationTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/PasswordResetTest.php",
+      "type": "file",
+      "name": "PasswordResetTest.php",
+      "filePath": "tests/Feature/Auth/PasswordResetTest.php",
+      "summary": "Fichier php pour PasswordResetTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/Auth/PasswordUpdateTest.php",
+      "type": "file",
+      "name": "PasswordUpdateTest.php",
+      "filePath": "tests/Feature/Auth/PasswordUpdateTest.php",
+      "summary": "Fichier php pour PasswordUpdateTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "file:tests/Feature/ProfileTest.php",
+      "type": "file",
+      "name": "ProfileTest.php",
+      "filePath": "tests/Feature/ProfileTest.php",
+      "summary": "Fichier php pour ProfileTest.php.",
+      "tags": [
+        "php",
+        "code"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/Models/User.php",
+      "target": "file:database/factories/UserFactory.php",
+      "type": "imports",
+      "description": "User.php importe UserFactory.php"
+    },
+    {
+      "source": "file:config/auth.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "auth.php importe User.php"
+    },
+    {
+      "source": "file:create_superadmin.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "create_superadmin.php importe User.php"
+    },
+    {
+      "source": "file:database/factories/UserFactory.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "UserFactory.php importe User.php"
+    },
+    {
+      "source": "file:database/seeders/DatabaseSeeder.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "DatabaseSeeder.php importe User.php"
+    },
+    {
+      "source": "file:tests/Feature/Auth/AuthenticationTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "AuthenticationTest.php importe User.php"
+    },
+    {
+      "source": "file:tests/Feature/Auth/EmailVerificationTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "EmailVerificationTest.php importe User.php"
+    },
+    {
+      "source": "file:tests/Feature/Auth/PasswordConfirmationTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "PasswordConfirmationTest.php importe User.php"
+    },
+    {
+      "source": "file:tests/Feature/Auth/PasswordResetTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "PasswordResetTest.php importe User.php"
+    },
+    {
+      "source": "file:tests/Feature/Auth/PasswordUpdateTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "PasswordUpdateTest.php importe User.php"
+    },
+    {
+      "source": "file:tests/Feature/ProfileTest.php",
+      "target": "file:app/Models/User.php",
+      "type": "imports",
+      "description": "ProfileTest.php importe User.php"
+    }
+  ]
+}

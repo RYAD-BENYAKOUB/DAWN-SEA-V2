@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "id": "config:.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": ".env.example",
+      "summary": "Fichier config pour .env.example.",
+      "tags": [
+        "config",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:ARCHITECTURE_GUIDELINES.md",
+      "type": "document",
+      "name": "ARCHITECTURE_GUIDELINES.md",
+      "filePath": "ARCHITECTURE_GUIDELINES.md",
+      "summary": "Fichier markdown pour ARCHITECTURE_GUIDELINES.md.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Fichier markdown pour README.md.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "config:composer.json",
+      "type": "config",
+      "name": "composer.json",
+      "filePath": "composer.json",
+      "summary": "Fichier json pour composer.json.",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "document:output.txt",
+      "type": "document",
+      "name": "output.txt",
+      "filePath": "output.txt",
+      "summary": "Fichier txt pour output.txt.",
+      "tags": [
+        "txt",
+        "docs"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Fichier json pour package.json.",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    },
+    {
+      "id": "config:phpunit.xml",
+      "type": "config",
+      "name": "phpunit.xml",
+      "filePath": "phpunit.xml",
+      "summary": "Fichier xml pour phpunit.xml.",
+      "tags": [
+        "xml",
+        "config"
+      ],
+      "complexity": "simple",
+      "languageNotes": ""
+    }
+  ],
+  "edges": []
+}
