@@ -6,8 +6,8 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Étape 2 : Image finale avec PHP 8.3 et Apache
-FROM php:8.3-apache
+# Étape 2 : Image finale avec PHP 8.4 et Apache
+FROM php:8.4-apache
 
 # 1. Installation des dépendances système requises (PostgreSQL, zip, etc.)
 RUN apt-get update && apt-get install -y \
