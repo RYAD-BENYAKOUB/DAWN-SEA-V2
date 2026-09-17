@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('duration')->nullable();
             $table->decimal('price', 10, 2);
             $table->integer('max_participants')->nullable();
-            $table->enum('difficulty', ['facile', 'modéré', 'difficile'])->default('modéré');
+            $table->string('difficulty')->default('modéré');
             $table->string('image')->nullable();
             $table->boolean('is_active')->default(true);
             $table->timestamps();

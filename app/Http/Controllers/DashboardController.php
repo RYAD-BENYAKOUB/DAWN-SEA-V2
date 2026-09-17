@@ -11,6 +11,23 @@ use Illuminate\Support\Facades\DB;
 class DashboardController extends Controller
 {
     /**
+     * Redirect users based on their role.
+     */
+    public function redirectDashboard()
+    {
+        $user = Auth::user();
+        if (!$user) return redirect()->route('login');
+
+        if ($user->hasRole('SuperAdmin')) {
+            return redirect()->route('dashboard.superadmin');
+        }
+        if ($user->hasRole('Organisateur')) {
+            return redirect()->route('dashboard.guide');
+        }
+        return redirect()->route('profile.edit');
+    }
+
+    /**
      * Display the guide dashboard.
      */
     public function index()
