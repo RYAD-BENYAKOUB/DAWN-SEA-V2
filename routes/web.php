@@ -43,18 +43,9 @@ Route::middleware('auth')->group(function () {
 });
 
 // Dashboard — redirects based on user role
-Route::get('/dashboard', function () {
-    $user = auth()->user();
-    if (!$user) return redirect()->route('login');
-
-    if ($user->hasRole('SuperAdmin')) {
-        return redirect()->route('dashboard.superadmin');
-    }
-    if ($user->hasRole('Organisateur')) {
-        return redirect()->route('dashboard.guide');
-    }
-    return redirect()->route('profile.edit');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'redirectDashboard'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
 // Guide Dashboard Routes (requires auth + guide role)
 Route::middleware(['auth', 'verified', 'role:Organisateur'])->prefix('dashboard')->group(function () {
