@@ -93,7 +93,7 @@
             <!-- Description -->
             <div class="ds-input-group">
                 <x-input-label for="description" :value="__('Description détaillée')" />
-                <textarea id="description" name="description" class="ds-input" style="margin-top: 0.25rem; min-height: 180px; resize: vertical;" required>{{ old('description', $program->description) }}</textarea>
+                <textarea id="description" name="description" class="ds-input" style="margin-top: 0.25rem; min-height: 180px; resize: vertical;" required>{{ old('description', str_replace('\n', "\n", $program->description)) }}</textarea>
                 <x-input-error :messages="$errors->get('description')" style="margin-top: 0.5rem;" />
             </div>
 

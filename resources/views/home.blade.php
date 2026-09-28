@@ -97,14 +97,18 @@
         <div class="ds-grid-3">
             @forelse($programs ?? [] as $program)
                 <div class="ds-card" style="display: flex; flex-direction: column; height: 100%;">
-                    <img src="{{ $program->image ? asset($program->image) : 'https://images.unsplash.com/photo-1504512485720-7d83a16ee930?w=600&q=80' }}" alt="{{ $program->title }}" class="ds-card-img" loading="lazy">
+                    @php
+                        $imgPath = $program->image ? str_replace('storage/', '', $program->image) : null;
+                        $hasImage = $imgPath && \Illuminate\Support\Facades\Storage::disk('public')->exists($imgPath);
+                    @endphp
+                    <img src="{{ $hasImage ? asset($program->image) : 'https://images.unsplash.com/photo-1504512485720-7d83a16ee930?w=600&q=80' }}" alt="{{ $program->title }}" class="ds-card-img" loading="lazy">
                     <div class="ds-card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
                         <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:0.5rem;">
                             <span class="ds-badge ds-badge-taupe">{{ $program->duration ?? '3 jours' }}</span>
                             <span class="ds-badge ds-badge-gold">{{ $program->difficulty ?? 'Modéré' }}</span>
                         </div>
                         <h3 class="ds-card-title">{{ $program->title }}</h3>
-                        <p class="ds-card-text" style="margin-bottom:1rem; flex-grow: 1;">{!! nl2br(e(Str::limit($program->description, 100))) !!}</p>
+                        <p class="ds-card-text" style="margin-bottom:1rem; flex-grow: 1;">{!! nl2br(e(Str::limit(str_replace('\n', "\n", $program->description), 100))) !!}</p>
                         <div style="display:flex; justify-content:space-between; align-items:center;">
                             <div>
                                 <span style="font-size: 0.75rem; color: var(--taupe); display: block;">{{ __('À partir de') }}</span>

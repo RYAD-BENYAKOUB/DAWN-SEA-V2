@@ -77,7 +77,9 @@
                 @foreach($programs as $program)
                     <div class="ds-card ds-animate-in" style="display: flex; flex-direction: column; height: 100%;">
                         @php
-                            $imgUrl = $program->image ? asset($program->image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80';
+                            $imgPath = $program->image ? str_replace('storage/', '', $program->image) : null;
+                            $hasImage = $imgPath && \Illuminate\Support\Facades\Storage::disk('public')->exists($imgPath);
+                            $imgUrl = $hasImage ? asset($program->image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80';
                         @endphp
                         <div style="position: relative;">
                             <img src="{{ $imgUrl }}" alt="{{ $program->title }}" class="ds-card-img" style="object-fit: cover;">
@@ -107,7 +109,7 @@
                             </h3>
 
                             <p style="font-size: 0.9rem; color: var(--charcoal-soft); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
-                                {!! nl2br(e(Str::limit($program->description, 130))) !!}
+                                {!! nl2br(e(Str::limit(str_replace('\n', "\n", $program->description), 130))) !!}
                             </p>
 
                             <hr style="border: 0; border-top: 1px solid rgba(168, 155, 138, 0.1); margin: 0 0 1.25rem 0;">
@@ -146,3 +148,4 @@
     </div>
 </div>
 @endsection
+

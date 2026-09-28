@@ -4,7 +4,9 @@
 
 @section('content')
 @php
-    $imgUrl = $program->image ? asset($program->image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80';
+    $imgPath = $program->image ? str_replace('storage/', '', $program->image) : null;
+    $hasImage = $imgPath && \Illuminate\Support\Facades\Storage::disk('public')->exists($imgPath);
+    $imgUrl = $hasImage ? asset($program->image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80';
     $avgRating = $program->average_rating;
     $reviewsCount = $program->reviews_count;
 @endphp
@@ -74,7 +76,7 @@
                         {{ __('Description de l\'expérience') }}
                     </h2>
                     <div style="line-height: 1.8; color: var(--charcoal-soft); font-size: 1.05rem;">
-                        {!! nl2br(e($program->description)) !!}
+                        {!! nl2br(e(str_replace('\n', "\n", $program->description))) !!}
                     </div>
                 </div>
 
@@ -448,3 +450,4 @@
 })();
 </script>
 @endsection
+

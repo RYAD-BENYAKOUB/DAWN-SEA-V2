@@ -122,7 +122,9 @@
                     @foreach($user->favoritePrograms as $program)
                         <div class="ds-card">
                             @php
-                                $imgUrl = $program->image ? asset($program->image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80';
+                                $imgPath = $program->image ? str_replace('storage/', '', $program->image) : null;
+                                $hasImage = $imgPath && \Illuminate\Support\Facades\Storage::disk('public')->exists($imgPath);
+                                $imgUrl = $hasImage ? asset($program->image) : 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80';
                             @endphp
                             <div style="position: relative;">
                                 <img src="{{ $imgUrl }}" alt="{{ $program->title }}" class="ds-card-img" style="height: 180px; object-fit: cover;">
