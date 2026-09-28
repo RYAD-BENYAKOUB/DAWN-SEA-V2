@@ -25,8 +25,31 @@ php artisan event:cache
 # 5. Reset Spatie permission cache
 php artisan permission:cache-reset 2>/dev/null || true
 
-# 6. Default PORT if not set by Railway
+# 6. Runtime Port Configuration
 export PORT="${PORT:-8080}"
 
-echo "=== Starting Apache on port ${PORT} ==="
+# Validate PORT is numeric
+if ! [[ "$PORT" =~ ^[0-9]+$ ]]; then
+    echo "Error: PORT is not numeric: $PORT"
+    exit 1
+fi
+
+echo "=== Railway PORT ==="
+echo "$PORT"
+
+# Update Apache configuration for the runtime port
+sed -i "s/Listen 80/Listen ${PORT}/g" /etc/apache2/ports.conf
+sed -i "s/:80/:${PORT}/g" /etc/apache2/sites-available/000-default.conf
+
+# 7. Diagnostics
+echo "=== Enabled MPM modules ==="
+find /etc/apache2/mods-enabled -maxdepth 1 -type l -name 'mpm_*' -printf '%f\n' || true
+
+echo "=== Apache MPM LoadModule directives ==="
+grep -Rni "LoadModule.*mpm" /etc/apache2 || true
+
+echo "=== Apache config test ==="
+apache2ctl -t
+
+echo "=== Starting Apache ==="
 exec apache2-foreground
