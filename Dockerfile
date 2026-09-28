@@ -52,7 +52,7 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 
 # 5. Enable required Apache modules and perform HARD DETERMINISTIC MPM CLEANUP
 RUN set -eux; \
-    a2dismod mpm_event mpm_worker mpm_itk || true; \
+    a2enmod rewrite headers; \
     rm -f /etc/apache2/mods-enabled/mpm_event.load; \
     rm -f /etc/apache2/mods-enabled/mpm_event.conf; \
     rm -f /etc/apache2/mods-enabled/mpm_worker.load; \
@@ -61,22 +61,33 @@ RUN set -eux; \
     rm -f /etc/apache2/mods-enabled/mpm_itk.conf; \
     rm -f /etc/apache2/mods-enabled/mpm_prefork.load; \
     rm -f /etc/apache2/mods-enabled/mpm_prefork.conf; \
-    a2enmod mpm_prefork rewrite headers; \
-    echo "=== FINAL MPM STATE ==="; \
+    ln -s ../mods-available/mpm_prefork.load /etc/apache2/mods-enabled/mpm_prefork.load; \
+    if [ -f /etc/apache2/mods-available/mpm_prefork.conf ]; then \
+        ln -s ../mods-available/mpm_prefork.conf /etc/apache2/mods-enabled/mpm_prefork.conf; \
+    fi; \
+    echo "=== FINAL ACTIVE MPM SYMLINKS ==="; \
     find /etc/apache2/mods-enabled -maxdepth 1 -type l -name 'mpm_*' -printf '%f -> %l\n' | sort; \
     echo "=== MPM LOAD DIRECTIVES ==="; \
     grep -RniE '^[[:space:]]*LoadModule[[:space:]]+mpm_' /etc/apache2 2>/dev/null || true; \
     MPM_COUNT="$(find /etc/apache2/mods-enabled -maxdepth 1 -type l -name 'mpm_*.load' | wc -l)"; \
     if [ "$MPM_COUNT" -ne 1 ]; then \
-        echo "ERROR: Expected exactly 1 active Apache MPM, found $MPM_COUNT"; \
+        echo "ERROR: Expected exactly ONE active MPM .load file. Found: $MPM_COUNT"; \
         find /etc/apache2/mods-enabled -maxdepth 1 -type l -name 'mpm_*' -ls; \
         exit 1; \
     fi; \
-    if [ ! -e /etc/apache2/mods-enabled/mpm_prefork.load ]; then \
-        echo "ERROR: mpm_prefork is not enabled"; \
+    if [ ! -L /etc/apache2/mods-enabled/mpm_prefork.load ]; then \
+        echo "ERROR: mpm_prefork.load is not active"; \
         exit 1; \
     fi; \
-    echo "Apache MPM validation passed: mpm_prefork only."; \
+    if [ -L /etc/apache2/mods-enabled/mpm_event.load ]; then \
+        echo "ERROR: mpm_event.load is STILL ACTIVE"; \
+        exit 1; \
+    fi; \
+    if [ -L /etc/apache2/mods-enabled/mpm_worker.load ]; then \
+        echo "ERROR: mpm_worker.load is STILL ACTIVE"; \
+        exit 1; \
+    fi; \
+    echo "Apache MPM validation PASSED: mpm_prefork only."; \
     apache2ctl -t
 
 # 6. Install Composer

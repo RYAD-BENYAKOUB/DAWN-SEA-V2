@@ -41,12 +41,22 @@ echo "$PORT"
 sed -i "s/Listen 80/Listen ${PORT}/g" /etc/apache2/ports.conf
 sed -i "s/:80/:${PORT}/g" /etc/apache2/sites-available/000-default.conf
 
-# 7. Diagnostics
-echo "=== Enabled MPM modules ==="
-find /etc/apache2/mods-enabled -maxdepth 1 -type l -name 'mpm_*' -printf '%f\n' || true
+# 7. Diagnostics & Runtime Enforcements
+echo "=== RUNTIME ACTIVE MPMs ==="
+find /etc/apache2/mods-enabled -maxdepth 1 -type l -name 'mpm_*' -printf '%f -> %l\n' | sort || true
 
-echo "=== Apache MPM LoadModule directives ==="
-grep -Rni "LoadModule.*mpm" /etc/apache2 || true
+echo "=== RUNTIME MPM LOAD DIRECTIVES ==="
+grep -RniE '^[[:space:]]*LoadModule[[:space:]]+mpm_' /etc/apache2 2>/dev/null || true
+
+# Enforce the runtime state before booting Apache
+rm -f /etc/apache2/mods-enabled/mpm_event.load
+rm -f /etc/apache2/mods-enabled/mpm_event.conf
+rm -f /etc/apache2/mods-enabled/mpm_worker.load
+rm -f /etc/apache2/mods-enabled/mpm_worker.conf
+
+if [ ! -L /etc/apache2/mods-enabled/mpm_prefork.load ]; then
+    ln -s ../mods-available/mpm_prefork.load /etc/apache2/mods-enabled/mpm_prefork.load
+fi
 
 echo "=== Apache config test ==="
 apache2ctl -t
