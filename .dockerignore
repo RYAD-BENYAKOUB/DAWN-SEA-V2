@@ -38,3 +38,7 @@ Thumbs.db
 # Documentation (not needed in container)
 README.md
 ARCHITECTURE_GUIDELINES.md
+# Vite dev server file
+public/hot
+# Ignore local build artifacts so we use the ones built in Stage 1
+public/build
