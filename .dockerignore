@@ -1,9 +1,40 @@
+# Environment files (secrets)
 .env
 .env.*
+!.env.example
+
+# Security-sensitive scripts
 create_superadmin.php
 copy_data.php
-test.jpg
+
+# Git
 .git
-node_modules
-/storage/logs
-/tests
+.gitignore
+.gitattributes
+
+# Development files
+test.jpg
+tests/
+phpunit.xml
+.phpunit.result.cache
+.phpunit.cache/
+
+# Node modules (rebuilt in Docker)
+node_modules/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+/storage/logs/*.log
+
+# Documentation (not needed in container)
+README.md
+ARCHITECTURE_GUIDELINES.md

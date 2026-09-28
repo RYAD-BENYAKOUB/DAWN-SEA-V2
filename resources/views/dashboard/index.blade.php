@@ -76,11 +76,11 @@
             @forelse($recentFavorites ?? [] as $fav)
                 <div style="display:flex; align-items:center; gap:0.75rem; padding:0.75rem 0; border-bottom:1px solid rgba(168,155,138,0.1);">
                     <div class="ds-sidebar-avatar-placeholder" style="width:36px; height:36px; font-size:0.8rem; flex-shrink:0;">
-                        {{ strtoupper(substr($fav->user->name ?? 'U', 0, 1)) }}
+                        {{ strtoupper(substr($fav->user_name ?? 'U', 0, 1)) }}
                     </div>
                     <div style="flex:1; min-width:0;">
-                        <div style="font-weight:600; font-size:0.85rem; color:var(--charcoal);">{{ $fav->user->name ?? 'Utilisateur' }}</div>
-                        <div style="font-size:0.75rem; color:var(--taupe); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ __('a aimé') }} {{ $fav->program->title ?? 'Programme' }}</div>
+                        <div style="font-weight:600; font-size:0.85rem; color:var(--charcoal);">{{ $fav->user_name ?? 'Utilisateur' }}</div>
+                        <div style="font-size:0.75rem; color:var(--taupe); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ __('a aimé') }} {{ $fav->program_title ?? 'Programme' }}</div>
                     </div>
                 </div>
             @empty
@@ -134,7 +134,7 @@
                             @endif
                         </td>
                         <td>
-                            <a href="{{ url('/dashboard/programs/' . $program->id . '/edit') }}" class="ds-btn ds-btn-ghost ds-btn-sm">{{ __('Modifier') }}</a>
+                            <a href="{{ route('dashboard.programs.edit', $program) }}" class="ds-btn ds-btn-ghost ds-btn-sm">{{ __('Modifier') }}</a>
                         </td>
                     </tr>
                 @empty

@@ -18,11 +18,17 @@ class RegistrationTest extends TestCase
 
     public function test_new_users_can_register(): void
     {
+        // Seed required Spatie roles for the test
+        \Spatie\Permission\Models\Role::firstOrCreate(['name' => 'Participant']);
+        \Spatie\Permission\Models\Role::firstOrCreate(['name' => 'Organisateur']);
+
         $response = $this->post('/register', [
-            'name' => 'Test User',
+            'first_name' => 'Test',
+            'last_name' => 'User',
             'email' => 'test@example.com',
             'password' => 'password',
             'password_confirmation' => 'password',
+            'role' => 'user',
         ]);
 
         $this->assertAuthenticated();

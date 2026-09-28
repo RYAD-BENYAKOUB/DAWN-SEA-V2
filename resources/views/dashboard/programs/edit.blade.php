@@ -16,7 +16,7 @@
         </div>
         
         <!-- Delete Button (trigger form) -->
-        <form method="POST" action="{{ route('dashboard.programs.destroy', $program->id) }}" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer définitivement ce programme ?');">
+        <form method="POST" action="{{ route('dashboard.programs.destroy', $program) }}" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer définitivement ce programme ?');">
             @csrf
             @method('DELETE')
             <button type="submit" class="ds-btn ds-btn-danger ds-btn-sm" style="background: transparent; border: 1.5px solid var(--error); color: var(--error);">
@@ -27,7 +27,7 @@
 
     <!-- Form Card -->
     <div class="ds-card-static" style="background: var(--white); padding: 3rem 2.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border: 1px solid rgba(168,155,138,0.12);">
-        <form method="POST" action="{{ route('dashboard.programs.update', $program->id) }}" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <form method="POST" action="{{ route('dashboard.programs.update', $program) }}" style="display: flex; flex-direction: column; gap: 1.5rem;">
             @csrf
             @method('PATCH')
 
