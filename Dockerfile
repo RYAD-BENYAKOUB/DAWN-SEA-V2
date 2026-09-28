@@ -50,8 +50,9 @@ ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
-# 5. Enable required Apache modules
-RUN a2enmod rewrite headers
+# 5. Enable required Apache modules and ensure only ONE MPM is loaded (mod_php requires prefork)
+RUN a2dismod mpm_event mpm_worker || true \
+    && a2enmod mpm_prefork rewrite headers
 
 # 6. Configure Apache to listen on Railway's $PORT (default 8080)
 RUN sed -i 's/Listen 80/Listen ${PORT}/g' /etc/apache2/ports.conf
