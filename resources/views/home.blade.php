@@ -32,7 +32,7 @@
 <!-- Stats Band -->
 <section style="background:var(--charcoal); padding:2.5rem 0;">
     <div class="ds-container">
-        <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:2rem; text-align:center;">
+        <div class="ds-grid-4" style="text-align:center;">
             <div class="ds-animate-in ds-animate-delay-1">
                 <div style="font-family:var(--font-serif); font-size:2.5rem; font-weight:700; color:var(--gold);">{{ $stats['programs'] ?? '50' }}+</div>
                 <div style="font-size:0.85rem; color:rgba(255,255,255,0.6); text-transform:uppercase; letter-spacing:0.05em;">{{ __('Programmes') }}</div>

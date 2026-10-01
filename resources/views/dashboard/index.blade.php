@@ -58,7 +58,7 @@
 </div>
 
 <!-- Chart + Recent Activity -->
-<div style="display:grid; grid-template-columns:2fr 1fr; gap:1.5rem; margin-bottom:2rem;">
+<div class="ds-grid-dashboard" style="margin-bottom:2rem;">
     <!-- Visits Chart -->
     <div class="ds-chart-card">
         <div class="ds-chart-header">

@@ -7,7 +7,7 @@
         @csrf
         @method('patch')
 
-        <div style="display: flex; gap: 1rem;">
+        <div class="ds-grid-2" style="gap: 1rem;">
             <div class="ds-input-group" style="flex: 1;">
                 <x-input-label for="first_name" :value="__('Prénom')" />
                 <x-text-input id="first_name" name="first_name" type="text" style="margin-top: 0.25rem;" :value="old('first_name', $user->first_name)" required autofocus autocomplete="given-name" />
@@ -26,7 +26,7 @@
             <x-input-error style="margin-top: 0.5rem;" :messages="$errors->get('avatar')" />
         </div>
 
-        <div style="display: flex; gap: 1rem;">
+        <div class="ds-grid-2" style="gap: 1rem;">
             <div class="ds-input-group" style="flex: 1;">
                 <x-input-label for="phone" :value="__('Téléphone')" />
                 <x-text-input id="phone" name="phone" type="tel" style="margin-top: 0.25rem;" :value="old('phone', $user->phone)" />

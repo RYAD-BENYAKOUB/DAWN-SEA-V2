@@ -80,15 +80,22 @@
                 @auth
                     <a href="{{ url('/profile') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--gold); font-weight:600; font-size:0.9rem;">{{ Auth::user()->name }}</a>
                     @if(Auth::user()->isAdmin())
-                        <a href="{{ route('dashboard.superadmin') }}" style="display:block; padding:0.5rem 1rem; color:var(--charcoal-soft); text-decoration:none; font-size:0.9rem; transition:background 0.2s;">
+                        <a href="{{ route('dashboard.superadmin') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); text-decoration:none; font-size:0.9rem; transition:background 0.2s;">
                             {{ __('Administration') }}
                         </a>
                     @endif
-                    <a href="{{ route('dashboard') }}" style="display:block; padding:0.5rem 1rem; color:var(--charcoal-soft); text-decoration:none; font-size:0.9rem; transition:background 0.2s;">
+                    <a href="{{ route('dashboard') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); text-decoration:none; font-size:0.9rem; transition:background 0.2s;">
                         {{ __('Tableau de bord') }}
                     </a>
+                    <form method="POST" action="{{ route('logout') }}" style="margin:0;">
+                        @csrf
+                        <button type="submit" style="display:block; width:100%; text-align:left; background:none; border:none; padding:0.75rem 1.5rem; color:var(--error); font-size:0.9rem; cursor:pointer;">
+                            {{ __('Déconnexion') }}
+                        </button>
+                    </form>
                 @else
                     <a href="{{ route('login') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--gold); font-weight:600; font-size:0.9rem;">{{ __('Connexion') }}</a>
+                    <a href="{{ route('register') }}" style="display:block; padding:0.75rem 1.5rem; color:var(--charcoal-soft); font-size:0.9rem;">{{ __('S\'inscrire') }}</a>
                 @endauth
             </div>
         </nav>

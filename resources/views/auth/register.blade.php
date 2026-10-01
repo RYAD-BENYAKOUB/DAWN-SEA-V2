@@ -6,7 +6,7 @@
         @csrf
 
         <!-- Prénom & Nom -->
-        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+        <div class="ds-grid-2" style="gap: 1rem; margin-bottom: 1.5rem;">
             <div style="flex: 1;">
                 <label for="first_name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">{{ __('Prénom') }}</label>
                 <input id="first_name" class="ds-input" type="text" name="first_name" value="{{ old('first_name') }}" required autofocus autocomplete="given-name" placeholder="Votre prénom" />
@@ -29,7 +29,7 @@
         </div>
 
         <!-- Téléphone & Date de naissance -->
-        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+        <div class="ds-grid-2" style="margin-bottom: 1.5rem; gap: 1rem;">
             <div style="flex: 1;">
                 <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">{{ __('Téléphone (Optionnel)') }}</label>
                 <input id="phone" class="ds-input" type="tel" name="phone" value="{{ old('phone') }}" autocomplete="tel" placeholder="+213..." />
@@ -43,7 +43,7 @@
         </div>
 
         <!-- Pays de naissance & Avatar -->
-        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+        <div class="ds-grid-2" style="margin-bottom: 1.5rem; gap: 1rem;">
             <div style="flex: 1;">
                 <label for="country_of_birth" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">{{ __('Pays de naissance (Optionnel)') }}</label>
                 <input id="country_of_birth" class="ds-input" type="text" name="country_of_birth" value="{{ old('country_of_birth') }}" placeholder="Ex: Algérie" />
@@ -59,7 +59,7 @@
         <!-- Role Selection -->
         <div class="ds-input-group">
             <label class="ds-label">{{ __('Je suis') }}</label>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+            <div class="ds-grid-2" style="gap:0.75rem;">
                 <label style="display:flex; align-items:center; gap:0.75rem; padding:0.875rem 1rem; border:1.5px solid var(--taupe-lighter); border-radius:var(--radius-sm); cursor:pointer; transition:all 0.2s;" onclick="this.querySelector('input').checked=true; this.style.borderColor='var(--gold)'; this.style.background='var(--gold-glow)'; this.parentElement.children[1].style.borderColor='var(--taupe-lighter)'; this.parentElement.children[1].style.background='transparent';">
                     <input type="radio" name="role" value="user" {{ old('role', 'user') === 'user' ? 'checked' : '' }} style="accent-color:var(--gold);">
                     <div>

@@ -820,6 +820,12 @@
         gap: 1.5rem;
     }
 
+    .ds-grid-dashboard {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
     /* ===== TABLE ===== */
     .ds-table {
         width: 100%;
@@ -1248,11 +1254,13 @@
 
     .ds-grid-2,
     .ds-grid-3,
-    .ds-grid-4 {
+    .ds-grid-4,
+    .ds-grid-dashboard {
         grid-template-columns: 1fr;
     }
 
-    .ds-navbar-links {
+    .ds-navbar-links,
+    .ds-navbar-actions {
         display: none;
     }
 
